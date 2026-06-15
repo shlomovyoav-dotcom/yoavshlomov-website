@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yoav Shlomov — Jazz Guitarist & Producer</title>
+  <meta name="description" content="Yoav Shlomov — Tel Aviv-based jazz guitarist, composer and producer. Listen, upcoming concerts, press kit." />
+  <meta property="og:title" content="Yoav Shlomov — Jazz Guitarist & Producer" />
+  <meta property="og:description" content="Tel Aviv-based jazz musician and producer." />
+  <meta property="og:image" content="https://static.wixstatic.com/media/f48d1e_e82bb678694c4ca783833282591473db~mv2.jpeg/v1/fill/w_1200,h_800,al_c,q_85,enc_avif,quality_auto/f48d1e_e82bb678694c4ca783833282591473db~mv2.jpeg" />
+  <meta property="og:url" content="https://yoavshlomov.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav-logo">Yoav Shlomov</a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="nav-links">
+      <a href="#music" onclick="closeMenu()">Music</a>
+      <a href="#bio" onclick="closeMenu()">Bio</a>
+      <a href="#concerts" onclick="closeMenu()">Concerts</a>
+      <a href="#press" onclick="closeMenu()">Press</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <p class="hero-sub">Tel Aviv-based</p>
+      <h1 class="hero-name">Yoav<br>Shlomov</h1>
+      <p class="hero-tagline">Jazz Guitarist &amp; Producer</p>
+      <div class="hero-socials">
+        <a href="https://open.spotify.com/artist/0hO3pziHIvqoQhwTICLgll" target="_blank" rel="noopener" aria-label="Spotify">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/yoavhakohav" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@Yoavhakohav" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+        </a>
+      </div>
+      <a href="#music" class="hero-cta">Listen Now</a>
+    </div>
+    <div class="hero-image">
+      <img
+        src="https://static.wixstatic.com/media/f48d1e_e82bb678694c4ca783833282591473db~mv2.jpeg/v1/fill/w_886,h_608,al_c,q_85,enc_avif,quality_auto/f48d1e_e82bb678694c4ca783833282591473db~mv2.jpeg"
+        alt="Yoav Shlomov — jazz guitarist illustration"
+        loading="eager"
+      />
+    </div>
+  </section>
+
+  <!-- MUSIC -->
+  <section class="section music" id="music">
+    <div class="section-inner">
+      <h2 class="section-title">Music</h2>
+      <p class="section-sub">Recent releases</p>
+      <div class="music-grid">
+
+        <div class="track-card">
+          <iframe
+            src="https://open.spotify.com/embed/album/5QamvPbVeonJOc0crP0KIm?utm_source=generator&theme=0"
+            width="100%" height="152" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy" title="3/4 — Yoav Shlomov">
+          </iframe>
+          <div class="track-meta"><span class="track-year">2025</span></div>
+        </div>
+
+        <div class="track-card">
+          <iframe
+            src="https://open.spotify.com/embed/album/0Mq8M8eWmFJdmKgpM2vm9C?utm_source=generator&theme=0"
+            width="100%" height="152" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy" title="Like Sonny — Yoav Shlomov">
+          </iframe>
+          <div class="track-meta"><span class="track-year">2025</span></div>
+        </div>
+
+        <div class="track-card">
+          <iframe
+            src="https://open.spotify.com/embed/album/372JLsEXQguUUTd73gwCRW?utm_source=generator&theme=0"
+            width="100%" height="152" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy" title="Hell Nah — Yoav Shlomov">
+          </iframe>
+          <div class="track-meta"><span class="track-year">2024</span></div>
+        </div>
+
+        <div class="track-card">
+          <iframe
+            src="https://open.spotify.com/embed/album/0fsWV99MD98gs79B2ZawyS?utm_source=generator&theme=0"
+            width="100%" height="152" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy" title="Tired — Yoav Shlomov">
+          </iframe>
+          <div class="track-meta"><span class="track-year">2024</span></div>
+        </div>
+
+        <div class="track-card">
+          <iframe
+            src="https://open.spotify.com/embed/album/1zWf7hBEUMUrqs3gN4o3sz?utm_source=generator&theme=0"
+            width="100%" height="152" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy" title="i cAn feel u NoW — Yoav Shlomov">
+          </iframe>
+          <div class="track-meta"><span class="track-year">2024</span></div>
+        </div>
+
+        <div class="track-card">
+          <iframe
+            src="https://open.spotify.com/embed/album/0sIGDeJjq88tbOmcia8iMf?utm_source=generator&theme=0"
+            width="100%" height="152" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy" title="Bye Bye Everything — Yoav Shlomov">
+          </iframe>
+          <div class="track-meta"><span class="track-year">2023</span></div>
+        </div>
+
+      </div>
+      <div class="music-cta">
+        <a href="https://open.spotify.com/artist/0hO3pziHIvqoQhwTICLgll" target="_blank" rel="noopener" class="btn-outline">
+          Full discography on Spotify
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIO -->
+  <section class="section bio" id="bio">
+    <div class="section-inner bio-inner">
+      <div class="bio-quotes">
+        <blockquote>
+          <p>"One of the highly talented musicians&hellip; This young man is without doubt an outstanding musician with great qualities of music perception, music knowledge, music technique and extended capabilities!!"</p>
+          <cite>— Billy Harper</cite>
+        </blockquote>
+        <blockquote>
+          <p>"It was indeed a pleasure to work with a guitarist as dedicated and hard-working as Yoav."</p>
+          <cite>— Reggie Workman</cite>
+        </blockquote>
+      </div>
+      <div class="bio-text">
+        <h2 class="section-title">Bio</h2>
+        <p>Yoav Shlomov, a Tel Aviv native, boasts a prolific jazz guitar career spanning many years. His musical journey has been marked by collaborations with esteemed artists such as James Francies, Shlomo Gronich, Eli Magen, Tom Oren, Adi Rennert, Yonatan Daskal, Jenny Penkin, Ofri Nehemya, and Tomer Bar.</p>
+        <p>He has shared stages with Larry Goldings, Omer Avital, and Stacy Dillard, and played iconic venues worldwide — from Smalls NYC and FatCat to the Red Sea Jazz Festival, Beit Haamudim, and Jazz Kissa. He has been featured on mainstream radio stations including 88fm, Galatz, KZ Radio, and Kan 11.</p>
+        <p>His profound passion for improvisation and his dedication to his craft have solidified his status as a prominent figure in the global jazz scene. His limitless and genre-less tunes make his music unique to any listener.</p>
+        <a href="#press" class="btn-outline">Full press kit</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONCERTS -->
+  <section class="section concerts" id="concerts">
+    <div class="section-inner">
+      <h2 class="section-title">Concerts</h2>
+      <div class="concert-list">
+
+        <div class="concert-item">
+          <div class="concert-date">
+            <span class="concert-day">28</span>
+            <span class="concert-month">May 2024</span>
+          </div>
+          <div class="concert-info">
+            <h3>Beit Haamudim</h3>
+            <p>Yoav Shlomov w. Yonatan Levi &amp; Yuval Drabkin</p>
+            <span class="concert-time">09:00</span>
+          </div>
+        </div>
+
+        <div class="concert-item">
+          <div class="concert-date">
+            <span class="concert-day">17</span>
+            <span class="concert-month">Mar 2024</span>
+          </div>
+          <div class="concert-info">
+            <h3>Jazz Kissa</h3>
+            <p>Yoav Shlomov w. Yonatan Levi &amp; Yuval Drabkin</p>
+            <span class="concert-time">19:30</span>
+          </div>
+        </div>
+
+      </div>
+      <p class="concerts-note">For booking inquiries, <a href="#contact">get in touch</a>.</p>
+    </div>
+  </section>
+
+  <!-- PRESS KIT -->
+  <section class="section press" id="press">
+    <div class="section-inner press-inner">
+      <h2 class="section-title">Press Kit</h2>
+      <div class="press-grid">
+        <div class="press-block">
+          <h3>Short Bio</h3>
+          <p>Tel Aviv-based jazz guitarist, composer and producer. Performed at Smalls NYC, Red Sea Jazz Festival, Jazz Kissa and Beit Haamudim. Featured on 88fm, Galatz and Kan 11. Collaborated with Billy Harper, Reggie Workman, James Francies, Eli Magen and more.</p>
+        </div>
+        <div class="press-block">
+          <h3>Quotes</h3>
+          <ul>
+            <li>"Outstanding musician with great qualities of music perception, music knowledge, music technique and extended capabilities!" — <em>Billy Harper</em></li>
+            <li>"A guitarist as dedicated and hard-working as Yoav." — <em>Reggie Workman</em></li>
+          </ul>
+        </div>
+        <div class="press-block">
+          <h3>Links</h3>
+          <ul class="press-links">
+            <li><a href="https://open.spotify.com/artist/0hO3pziHIvqoQhwTICLgll" target="_blank" rel="noopener">Spotify</a></li>
+            <li><a href="https://www.instagram.com/yoavhakohav" target="_blank" rel="noopener">Instagram @yoavhakohav</a></li>
+            <li><a href="https://www.youtube.com/@Yoavhakohav" target="_blank" rel="noopener">YouTube</a></li>
+          </ul>
+        </div>
+        <div class="press-block">
+          <h3>High-res Photo</h3>
+          <a href="https://static.wixstatic.com/media/f48d1e_e82bb678694c4ca783833282591473db~mv2.jpeg" target="_blank" rel="noopener" class="btn-outline press-photo-btn">Download press photo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="section-inner contact-inner">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-sub">Bookings, collaborations, and general inquiries.</p>
+      <form
+        action="https://formsubmit.co/shlomovyoav@gmail.com"
+        method="POST"
+        class="contact-form"
+      >
+        <input type="hidden" name="_subject" value="Message from yoavshlomov.com" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://yoavshlomov.com/#contact" />
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First name</label>
+            <input type="text" id="fname" name="first_name" autocomplete="given-name" />
+          </div>
+          <div class="form-group">
+            <label for="lname">Last name</label>
+            <input type="text" id="lname" name="last_name" autocomplete="family-name" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required autocomplete="email" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-name">Yoav Shlomov</span>
+      <nav class="footer-links">
+        <a href="#music">Music</a>
+        <a href="#bio">Bio</a>
+        <a href="#concerts">Concerts</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="https://open.spotify.com/artist/0hO3pziHIvqoQhwTICLgll" target="_blank" rel="noopener" aria-label="Spotify">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/yoavhakohav" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@Yoavhakohav" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+        </a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; <span id="yr"></span> Yoav Shlomov</p>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // sticky nav shadow
+    window.addEventListener('scroll', () => {
+      document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          const offset = document.getElementById('nav').offsetHeight;
+          window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+        }
+      });
+    });
+
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('open');
+    }
+    function closeMenu() {
+      document.getElementById('nav-links').classList.remove('open');
+    }
+  </script>
+</body>
+</html>

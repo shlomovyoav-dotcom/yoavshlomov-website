@@ -33,6 +33,13 @@
 
   <!-- HERO -->
   <section class="hero" id="home">
+    <img
+      class="hero-bg"
+      src="https://static.wixstatic.com/media/f48d1e_e82bb678694c4ca783833282591473db~mv2.jpeg/v1/fill/w_1920,h_1280,al_c,q_85,enc_avif,quality_auto/f48d1e_e82bb678694c4ca783833282591473db~mv2.jpeg"
+      alt="Yoav Shlomov — jazz guitarist illustration"
+      loading="eager"
+    />
+    <div class="hero-overlay"></div>
     <div class="hero-text">
       <p class="hero-sub">Tel Aviv-based</p>
       <h1 class="hero-name">Yoav<br>Shlomov</h1>
@@ -50,13 +57,6 @@
       </div>
       <a href="#music" class="hero-cta">Listen Now</a>
     </div>
-    <div class="hero-image">
-      <img
-        src="https://static.wixstatic.com/media/f48d1e_e82bb678694c4ca783833282591473db~mv2.jpeg/v1/fill/w_886,h_608,al_c,q_85,enc_avif,quality_auto/f48d1e_e82bb678694c4ca783833282591473db~mv2.jpeg"
-        alt="Yoav Shlomov — jazz guitarist illustration"
-        loading="eager"
-      />
-    </div>
   </section>
 
   <!-- MUSIC -->
@@ -69,7 +69,7 @@
         <div class="track-card">
           <iframe
             src="https://open.spotify.com/embed/album/5QamvPbVeonJOc0crP0KIm?utm_source=generator&theme=0"
-            width="100%" height="152" frameBorder="0" allowfullscreen=""
+            width="100%" height="352" frameBorder="0" allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy" title="3/4 — Yoav Shlomov">
           </iframe>
@@ -79,7 +79,7 @@
         <div class="track-card">
           <iframe
             src="https://open.spotify.com/embed/album/0Mq8M8eWmFJdmKgpM2vm9C?utm_source=generator&theme=0"
-            width="100%" height="152" frameBorder="0" allowfullscreen=""
+            width="100%" height="352" frameBorder="0" allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy" title="Like Sonny — Yoav Shlomov">
           </iframe>
@@ -89,7 +89,7 @@
         <div class="track-card">
           <iframe
             src="https://open.spotify.com/embed/album/372JLsEXQguUUTd73gwCRW?utm_source=generator&theme=0"
-            width="100%" height="152" frameBorder="0" allowfullscreen=""
+            width="100%" height="352" frameBorder="0" allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy" title="Hell Nah — Yoav Shlomov">
           </iframe>
@@ -99,7 +99,7 @@
         <div class="track-card">
           <iframe
             src="https://open.spotify.com/embed/album/0fsWV99MD98gs79B2ZawyS?utm_source=generator&theme=0"
-            width="100%" height="152" frameBorder="0" allowfullscreen=""
+            width="100%" height="352" frameBorder="0" allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy" title="Tired — Yoav Shlomov">
           </iframe>
@@ -109,7 +109,7 @@
         <div class="track-card">
           <iframe
             src="https://open.spotify.com/embed/album/1zWf7hBEUMUrqs3gN4o3sz?utm_source=generator&theme=0"
-            width="100%" height="152" frameBorder="0" allowfullscreen=""
+            width="100%" height="352" frameBorder="0" allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy" title="i cAn feel u NoW — Yoav Shlomov">
           </iframe>
@@ -119,7 +119,7 @@
         <div class="track-card">
           <iframe
             src="https://open.spotify.com/embed/album/0sIGDeJjq88tbOmcia8iMf?utm_source=generator&theme=0"
-            width="100%" height="152" frameBorder="0" allowfullscreen=""
+            width="100%" height="352" frameBorder="0" allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy" title="Bye Bye Everything — Yoav Shlomov">
           </iframe>
@@ -155,6 +155,26 @@
         <p>His profound passion for improvisation and his dedication to his craft have solidified his status as a prominent figure in the global jazz scene. His limitless and genre-less tunes make his music unique to any listener.</p>
         <a href="#press" class="btn-outline">Full press kit</a>
       </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter" id="newsletter">
+    <div class="newsletter-inner">
+      <p class="newsletter-eyebrow">Stay in the loop</p>
+      <h2 class="newsletter-title">New music, concerts, and updates.</h2>
+      <p class="newsletter-sub">Join the list. No spam — only the real stuff.</p>
+      <form
+        action="https://formsubmit.co/shlomovyoav@gmail.com"
+        method="POST"
+        class="newsletter-form"
+      >
+        <input type="hidden" name="_subject" value="Newsletter signup — yoavshlomov.com" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://yoavshlomov.com/#newsletter" />
+        <input type="email" name="email" placeholder="Your email address" required autocomplete="email" />
+        <button type="submit">Subscribe</button>
+      </form>
     </div>
   </section>
 

@@ -352,6 +352,11 @@ blockquote cite {
   border: 1px solid var(--rule);
   padding: 0.15rem 0.5rem;
 }
+.concerts-empty {
+  font-size: 1rem;
+  color: var(--muted);
+  margin-bottom: 1.25rem;
+}
 .concerts-note {
   font-size: 0.875rem;
   color: var(--muted);

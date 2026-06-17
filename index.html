@@ -3,18 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yoav Shlomov — Jazz Guitarist & Producer</title>
-  <meta name="description" content="Yoav Shlomov — Tel Aviv-based jazz guitarist, composer and producer. Listen, upcoming concerts, press kit." />
-  <meta property="og:title" content="Yoav Shlomov — Jazz Guitarist & Producer" />
-  <meta property="og:description" content="Tel Aviv-based jazz musician and producer." />
+  <title>Yoav Shlomov — Jazz Guitarist, Composer & Producer</title>
+  <meta name="description" content="Yoav Shlomov — Tel Aviv-based jazz guitarist, film composer and producer. Listen, upcoming concerts, press kit and bookings." />
+  <link rel="canonical" href="https://yoavshlomov.com/" />
+  <meta name="theme-color" content="#0e0e0e" />
+  <meta name="author" content="Yoav Shlomov" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Yoav Shlomov" />
+  <meta property="og:title" content="Yoav Shlomov — Jazz Guitarist, Composer & Producer" />
+  <meta property="og:description" content="Tel Aviv-based jazz guitarist, film composer and producer." />
   <meta property="og:image" content="https://yoavshlomov.com/images/hero-illustration.jpg" />
-  <meta property="og:url" content="https://yoavshlomov.com" />
+  <meta property="og:url" content="https://yoavshlomov.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Yoav Shlomov — Jazz Guitarist, Composer & Producer" />
+  <meta name="twitter:description" content="Tel Aviv-based jazz guitarist, film composer and producer." />
+  <meta name="twitter:image" content="https://yoavshlomov.com/images/hero-illustration.jpg" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Yoav Shlomov",
+    "url": "https://yoavshlomov.com/",
+    "image": "https://yoavshlomov.com/images/hero-illustration.jpg",
+    "jobTitle": "Jazz Guitarist, Composer & Producer",
+    "homeLocation": { "@type": "Place", "name": "Tel Aviv, Israel" },
+    "sameAs": [
+      "https://open.spotify.com/artist/0hO3pziHIvqoQhwTICLgll",
+      "https://www.instagram.com/yoavhakohav",
+      "https://www.youtube.com/@Yoavhakohav"
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a href="#music" class="skip-link">Skip to content</a>
 
   <!-- NAV -->
   <header class="nav" id="nav">
@@ -156,7 +188,7 @@
         <h2 class="section-title">Bio</h2>
         <p>Yoav Shlomov, a Tel Aviv native, boasts a prolific jazz guitar career spanning many years. His musical journey has been marked by collaborations with esteemed artists such as James Francies, Shlomo Gronich, Eli Magen, Tom Oren, Adi Rennert, Yonatan Daskal, Jenny Penkin, Ofri Nehemya, and Tomer Bar.</p>
         <p>He has shared stages with Larry Goldings, Omer Avital, and Stacy Dillard, and played iconic venues worldwide — from Smalls NYC and FatCat to the Red Sea Jazz Festival, Beit Haamudim, and Jazz Kissa. He has been featured on mainstream radio stations including 88fm, Galatz, KZ Radio, and Kan 11.</p>
-        <p>His profound passion for improvisation and his dedication to his craft have solidified his status as a prominent figure in the global jazz scene. His limitless and genre-less tunes make his music unique to any listener.</p>
+        <p>Beyond the stage, Yoav composes and produces original scores for film and picture, with a released catalog featured across sync and streaming platforms. His profound passion for improvisation and his dedication to his craft have solidified his status as a prominent figure in the global jazz scene. His limitless and genre-less tunes make his music unique to any listener.</p>
         <a href="#press" class="btn-outline">Full press kit</a>
       </div>
     </div>
@@ -309,6 +341,21 @@
     }
     function closeMenu() {
       document.getElementById('nav-links').classList.remove('open');
+    }
+
+    // scroll reveal (respects reduced-motion)
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const revealEls = document.querySelectorAll('.section .section-inner, .newsletter-inner, .hero-text');
+    if (reduceMotion || !('IntersectionObserver' in window)) {
+      revealEls.forEach(el => el.classList.add('reveal', 'in'));
+    } else {
+      revealEls.forEach(el => el.classList.add('reveal'));
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      revealEls.forEach(el => io.observe(el));
     }
   </script>
 </body>

@@ -316,6 +316,15 @@ textarea:focus-visible {
   margin: 0 auto;
   text-align: center;
 }
+.bio-photo {
+  margin: 0 auto 3.5rem;
+  max-width: 520px;
+}
+.bio-photo img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(8%) contrast(1.02);
+}
 .bio-quotes {
   display: flex;
   flex-direction: column;
@@ -443,6 +452,18 @@ blockquote cite {
   transition: border-color 0.2s;
 }
 .press-links a:hover { border-color: var(--paper); }
+.press-photo-thumb {
+  display: block;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border: 1px solid rgba(245, 244, 240, 0.15);
+}
+.press-photo-thumb img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+.press-photo-thumb:hover img { transform: scale(1.04); }
 .press-photo-btn {
   border-color: rgba(245, 244, 240, 0.5);
   color: var(--paper);

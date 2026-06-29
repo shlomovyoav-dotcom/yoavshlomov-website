@@ -1,0 +1,9 @@
+# Cloudflare / Wrangler local cache
+.wrangler/
+
+# OS junk
+.DS_Store
+
+# Node (if ever used)
+node_modules/
+npm-debug.log*

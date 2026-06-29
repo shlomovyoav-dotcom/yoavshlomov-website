@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yoav Shlomov — EPK / One-Sheet</title>
+  <meta name="description" content="Yoav Shlomov — electronic press kit one-sheet. Bio, discography, performances, photos and booking contact." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://yoavshlomov.com/press.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root { --ink:#0e0e0e; --paper:#f5f4f0; --muted:#6b6b66; --line:#d8d6cf; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "DM Sans", system-ui, sans-serif;
+      color: var(--ink);
+      background: #e9e8e3;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .sheet {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 3rem;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+    }
+    .toolbar {
+      max-width: 900px;
+      margin: 1.5rem auto 0;
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      padding: 0 0.5rem;
+    }
+    .toolbar a, .toolbar button {
+      font: inherit;
+      font-size: 0.85rem;
+      padding: 0.55rem 1.1rem;
+      border: 1px solid var(--ink);
+      background: none;
+      color: var(--ink);
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 2px;
+    }
+    .toolbar a:hover, .toolbar button:hover { background: var(--ink); color: #fff; }
+    .head { display: flex; gap: 2rem; align-items: flex-start; border-bottom: 2px solid var(--ink); padding-bottom: 1.5rem; }
+    .head img { width: 150px; height: auto; flex: 0 0 150px; filter: grayscale(100%); }
+    .head h1 { font-family: "Playfair Display", serif; font-size: 2.4rem; margin: 0 0 0.25rem; }
+    .head .role { font-size: 1rem; color: var(--muted); margin: 0 0 0.75rem; }
+    .head .contact { font-size: 0.85rem; }
+    .head .contact a { color: var(--ink); }
+    h2 {
+      font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--muted); margin: 2rem 0 0.6rem;
+    }
+    p { font-size: 0.92rem; margin: 0 0 0.7rem; }
+    .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 2.5rem; }
+    ul { margin: 0; padding-left: 1.1rem; font-size: 0.9rem; }
+    li { margin-bottom: 0.3rem; }
+    .disco { list-style: none; padding: 0; }
+    .disco li { display: flex; justify-content: space-between; border-bottom: 1px solid var(--line); padding: 0.25rem 0; }
+    .disco span { color: var(--muted); }
+    blockquote { margin: 0 0 0.9rem; padding-left: 1rem; border-left: 2px solid var(--line); font-style: italic; font-size: 0.92rem; }
+    blockquote cite { display: block; font-style: normal; color: var(--muted); font-size: 0.82rem; margin-top: 0.2rem; }
+    a { color: var(--ink); }
+    .foot { margin-top: 2.5rem; border-top: 1px solid var(--line); padding-top: 1rem; font-size: 0.8rem; color: var(--muted); }
+    @media (max-width: 640px) {
+      .sheet { padding: 1.5rem; }
+      .head { flex-direction: column; }
+      .cols { grid-template-columns: 1fr; }
+    }
+    @media print {
+      body { background: #fff; }
+      .toolbar { display: none; }
+      .sheet { box-shadow: none; margin: 0; max-width: none; padding: 0; }
+      a { text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <button onclick="window.print()">Save as PDF / Print</button>
+    <a href="press/yoav-shlomov-bio.txt" download>Download bio (text)</a>
+    <a href="images/yoav-portrait.jpg" download>Portrait</a>
+    <a href="images/yoav-live-bw.jpg" download>Live photo</a>
+    <a href="/">← Back to site</a>
+  </div>
+
+  <div class="sheet">
+    <div class="head">
+      <img src="images/yoav-portrait.jpg" alt="Yoav Shlomov" />
+      <div>
+        <h1>Yoav Shlomov</h1>
+        <p class="role">Jazz Guitarist, Composer &amp; Producer — Tel Aviv, Israel</p>
+        <p class="contact">
+          Booking &amp; press: <a href="mailto:shlomovyoav@gmail.com">shlomovyoav@gmail.com</a><br />
+          <a href="https://yoavshlomov.com">yoavshlomov.com</a> ·
+          <a href="https://open.spotify.com/artist/0hO3pziHIvqoQhwTICLgll">Spotify</a> ·
+          <a href="https://www.instagram.com/yoavhakohav">Instagram @yoavhakohav</a> ·
+          <a href="https://www.youtube.com/@Yoavhakohav">YouTube</a>
+        </p>
+      </div>
+    </div>
+
+    <h2>Biography</h2>
+    <p>Yoav Shlomov, a Tel Aviv native, boasts a prolific jazz guitar career spanning many years. His musical journey has been marked by collaborations with esteemed artists such as James Francies, Shlomo Gronich, Eli Magen, Tom Oren, Adi Rennert, Yonatan Daskal, Jenny Penkin, Ofri Nehemya, and Tomer Bar.</p>
+    <p>He has shared stages with Larry Goldings, Omer Avital, and Stacy Dillard, and played iconic venues worldwide — from Smalls NYC and FatCat to the Red Sea Jazz Festival, Beit Haamudim, and Jazz Kissa. He has been featured on mainstream radio stations including 88fm, Galatz, KZ Radio, and Kan 11.</p>
+    <p>Beyond the stage, Yoav composes and produces original scores for film and picture, with a released catalog featured across sync and streaming platforms. His profound passion for improvisation and his dedication to his craft have solidified his status as a prominent figure in the global jazz scene. His limitless and genre-less tunes make his music unique to any listener.</p>
+
+    <div class="cols">
+      <div>
+        <h2>Selected discography</h2>
+        <ul class="disco">
+          <li><a href="https://open.spotify.com/album/5QamvPbVeonJOc0crP0KIm">3/4</a><span>2025</span></li>
+          <li><a href="https://open.spotify.com/album/0Mq8M8eWmFJdmKgpM2vm9C">Like Sonny</a><span>2025</span></li>
+          <li><a href="https://open.spotify.com/album/372JLsEXQguUUTd73gwCRW">Hell Nah</a><span>2024</span></li>
+          <li><a href="https://open.spotify.com/album/0fsWV99MD98gs79B2ZawyS">Tired</a><span>2024</span></li>
+          <li><a href="https://open.spotify.com/album/1zWf7hBEUMUrqs3gN4o3sz">i cAn feel u NoW</a><span>2024</span></li>
+          <li><a href="https://open.spotify.com/album/0sIGDeJjq88tbOmcia8iMf">Bye Bye Everything</a><span>2023</span></li>
+        </ul>
+
+        <h2>Selected performances</h2>
+        <ul>
+          <li>Smalls Jazz Club, NYC</li>
+          <li>FatCat, NYC</li>
+          <li>Red Sea Jazz Festival</li>
+          <li>Beit Haamudim, Tel Aviv</li>
+          <li>Jazz Kissa, Tel Aviv</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Press quotes</h2>
+        <blockquote>
+          "Outstanding musician with great qualities of music perception, music knowledge, music technique and extended capabilities!"
+          <cite>— Billy Harper</cite>
+        </blockquote>
+        <blockquote>
+          "It was indeed a pleasure to work with a guitarist as dedicated and hard-working as Yoav."
+          <cite>— Reggie Workman</cite>
+        </blockquote>
+
+        <h2>Selected collaborations</h2>
+        <p>Billy Harper, Reggie Workman, James Francies, Larry Goldings, Omer Avital, Stacy Dillard, Shlomo Gronich, Eli Magen, Tom Oren, Adi Rennert, Yonatan Daskal, Jenny Penkin, Ofri Nehemya, Tomer Bar.</p>
+
+        <h2>Radio &amp; TV</h2>
+        <p>88fm, Galatz, KZ Radio, Kan 11.</p>
+      </div>
+    </div>
+
+    <h2>Stage &amp; tech</h2>
+    <p>Trio / quartet and solo formats available. Stage plot and technical rider supplied on confirmation.</p>
+
+    <p class="foot">High-res, print-ready (300dpi) photos available on request — shlomovyoav@gmail.com · yoavshlomov.com</p>
+  </div>
+</body>
+</html>

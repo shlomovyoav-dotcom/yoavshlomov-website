@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /l/
 Disallow: /references/
 
 Sitemap: https://yoavshlomov.com/sitemap.xml

@@ -1,0 +1,3 @@
+/references      /404.html 404
+/references/*    /404.html 404
+/l               /404.html 404

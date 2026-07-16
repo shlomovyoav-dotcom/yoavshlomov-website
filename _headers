@@ -9,3 +9,7 @@
   Referrer-Policy: no-referrer
   Cache-Control: private, no-store, must-revalidate
   X-Frame-Options: DENY
+
+/dns/*.mobileconfig
+  Content-Type: application/x-apple-aspen-config
+  X-Robots-Tag: noindex

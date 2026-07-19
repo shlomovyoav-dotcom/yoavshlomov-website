@@ -13,3 +13,15 @@
 /dns/*.mobileconfig
   Content-Type: application/x-apple-aspen-config
   X-Robots-Tag: noindex
+
+/hoopoe
+  Cache-Control: no-store, must-revalidate
+  X-Robots-Tag: noindex
+
+/hoopoe/
+  Cache-Control: no-store, must-revalidate
+  X-Robots-Tag: noindex
+
+/hoopoe/*
+  Cache-Control: no-store, must-revalidate
+  X-Robots-Tag: noindex

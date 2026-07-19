@@ -318,12 +318,13 @@ textarea:focus-visible {
 }
 .bio-photo {
   margin: 0 auto 3.5rem;
-  max-width: 520px;
+  max-width: 560px;
 }
 .bio-photo img {
   width: 100%;
   height: auto;
-  filter: grayscale(8%) contrast(1.02);
+  filter: grayscale(6%) contrast(1.03);
+  object-fit: cover;
 }
 .bio-quotes {
   display: flex;

@@ -11,3 +11,7 @@
 /hoopoe               /404.html 404
 /hoopoe/              /404.html 404
 /hoopoe/*             /404.html 404
+
+# Removed temporary iPhone config profiles (2026-07-21)
+/dns/family.mobileconfig      /404.html 404
+/dns/ig-block.mobileconfig     /404.html 404

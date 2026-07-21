@@ -979,23 +979,179 @@
 				<string>https://www.yolk.ai</string>
 				<string>https://www.youjizz.com</string>
 				<string>https://www.youporn.com</string>
+				<string>https://b.i.instagram.com</string>
+				<string>https://b-fallback.i.instagram.com</string>
+				<string>https://accountscenter.instagram.com</string>
+				<string>https://api.instagram.com</string>
+				<string>https://www.api.instagram.com</string>
+				<string>https://l.instagram.com</string>
+				<string>https://mako.co.il</string>
+				<string>http://mako.co.il</string>
+				<string>https://www.mako.co.il</string>
+				<string>http://www.mako.co.il</string>
+				<string>https://n12.mako.co.il</string>
+				<string>http://n12.mako.co.il</string>
+				<string>https://keshet-tv.com</string>
+				<string>http://keshet-tv.com</string>
+				<string>https://www.keshet-tv.com</string>
+				<string>http://www.keshet-tv.com</string>
+				<string>https://mega.n12.co.il</string>
+				<string>http://mega.n12.co.il</string>
+				<string>https://player.n12.co.il</string>
+				<string>http://player.n12.co.il</string>
+				<string>https://cdn.n12.co.il</string>
+				<string>http://cdn.n12.co.il</string>
+				<string>https://static.n12.co.il</string>
+				<string>http://static.n12.co.il</string>
+				<string>https://m.n12.co.il</string>
+				<string>http://m.n12.co.il</string>
+				<string>https://ynet-pic1.yit.co.il</string>
+				<string>http://ynet-pic1.yit.co.il</string>
+				<string>https://z.ynet.co.il</string>
+				<string>http://z.ynet.co.il</string>
+				<string>https://www.m.ynet.co.il</string>
+				<string>http://www.m.ynet.co.il</string>
+				<string>https://restaurant-api.wolt.com</string>
+				<string>http://restaurant-api.wolt.com</string>
+				<string>https://consumer-api.wolt.com</string>
+				<string>http://consumer-api.wolt.com</string>
+				<string>https://woltapi.com</string>
+				<string>http://woltapi.com</string>
+				<string>https://www.woltapi.com</string>
+				<string>http://www.woltapi.com</string>
+				<string>https://consumers-cdn.wolt.com</string>
+				<string>http://consumers-cdn.wolt.com</string>
+				<string>https://api.wolt.com</string>
+				<string>http://api.wolt.com</string>
+				<string>http://wolt.com</string>
+				<string>http://wolt.co.il</string>
+				<string>https://api.10bis.co.il</string>
+				<string>http://api.10bis.co.il</string>
+				<string>https://www.api.10bis.co.il</string>
+				<string>http://www.api.10bis.co.il</string>
+				<string>https://10bis.com</string>
+				<string>http://10bis.com</string>
+				<string>https://www.10bis.com</string>
+				<string>http://www.10bis.com</string>
+				<string>https://api.mishloha.co.il</string>
+				<string>http://api.mishloha.co.il</string>
+				<string>https://mishloha.com</string>
+				<string>http://mishloha.com</string>
+				<string>https://tc.yango.com</string>
+				<string>http://tc.yango.com</string>
+				<string>https://yango.yandex.com</string>
+				<string>http://yango.yandex.com</string>
+				<string>https://eda.yandex</string>
+				<string>http://eda.yandex</string>
+				<string>https://order.dominos.co.il</string>
+				<string>http://order.dominos.co.il</string>
+				<string>https://www.order.dominos.co.il</string>
+				<string>http://www.order.dominos.co.il</string>
+				<string>https://api.dominos.com</string>
+				<string>http://api.dominos.com</string>
+				<string>https://api.papajohns.com</string>
+				<string>http://api.papajohns.com</string>
+				<string>https://ordering.papajohns.com</string>
+				<string>http://ordering.papajohns.com</string>
+				<string>https://api.mcdonalds.com</string>
+				<string>http://api.mcdonalds.com</string>
+				<string>http://www.mcdonalds.co.il</string>
+				<string>https://api.bk.com</string>
+				<string>http://api.bk.com</string>
+				<string>https://order.bk.com</string>
+				<string>http://order.bk.com</string>
+				<string>http://b.i.instagram.com</string>
+				<string>http://accountscenter.instagram.com</string>
+				<string>http://api.instagram.com</string>
+				<string>https://yuligroup.com</string>
+				<string>http://yuligroup.com</string>
+				<string>https://www.yuligroup.com</string>
+				<string>http://www.yuligroup.com</string>
+				<string>https://facebook.com</string>
+				<string>http://facebook.com</string>
+				<string>https://www.facebook.com</string>
+				<string>http://www.facebook.com</string>
+				<string>https://m.facebook.com</string>
+				<string>http://m.facebook.com</string>
+				<string>https://web.facebook.com</string>
+				<string>http://web.facebook.com</string>
+				<string>https://mobile.facebook.com</string>
+				<string>http://mobile.facebook.com</string>
+				<string>https://fb.com</string>
+				<string>http://fb.com</string>
+				<string>https://www.fb.com</string>
+				<string>http://www.fb.com</string>
+				<string>https://fb.me</string>
+				<string>http://fb.me</string>
+				<string>https://facebook.net</string>
+				<string>http://facebook.net</string>
+				<string>https://connect.facebook.net</string>
+				<string>http://connect.facebook.net</string>
+				<string>https://graph.facebook.com</string>
+				<string>http://graph.facebook.com</string>
+				<string>https://api.facebook.com</string>
+				<string>http://api.facebook.com</string>
+				<string>https://edge-chat.facebook.com</string>
+				<string>http://edge-chat.facebook.com</string>
+				<string>https://fbcdn.net</string>
+				<string>http://fbcdn.net</string>
+				<string>https://static.xx.fbcdn.net</string>
+				<string>http://static.xx.fbcdn.net</string>
+				<string>https://scontent.fbcdn.net</string>
+				<string>http://scontent.fbcdn.net</string>
+				<string>https://fbsbx.com</string>
+				<string>http://fbsbx.com</string>
+				<string>https://messenger.com</string>
+				<string>http://messenger.com</string>
+				<string>https://www.messenger.com</string>
+				<string>http://www.messenger.com</string>
+				<string>https://twitter.com</string>
+				<string>http://twitter.com</string>
+				<string>https://www.twitter.com</string>
+				<string>http://www.twitter.com</string>
+				<string>https://mobile.twitter.com</string>
+				<string>http://mobile.twitter.com</string>
+				<string>https://m.twitter.com</string>
+				<string>http://m.twitter.com</string>
+				<string>https://api.twitter.com</string>
+				<string>http://api.twitter.com</string>
+				<string>https://t.co</string>
+				<string>http://t.co</string>
+				<string>https://twimg.com</string>
+				<string>http://twimg.com</string>
+				<string>https://abs.twimg.com</string>
+				<string>http://abs.twimg.com</string>
+				<string>https://pbs.twimg.com</string>
+				<string>http://pbs.twimg.com</string>
+				<string>https://video.twimg.com</string>
+				<string>http://video.twimg.com</string>
+				<string>https://x.com</string>
+				<string>http://x.com</string>
+				<string>https://www.x.com</string>
+				<string>http://www.x.com</string>
+				<string>https://mobile.x.com</string>
+				<string>http://mobile.x.com</string>
+				<string>https://api.x.com</string>
+				<string>http://api.x.com</string>
 			</array>
 			<key>FilterType</key>
 			<string>BuiltIn</string>
 			<key>PayloadDisplayName</key>
 			<string>Blocked Sites (Yoav)</string>
 			<key>PayloadIdentifier</key>
-			<string>com.yoav.webfilter.50A0F9C9-211F-414F-9965-307108304530</string>
+			<string>com.yoav.webfilter.706AC285-45F1-47CF-BD51-7DBFF7629FE3</string>
 			<key>PayloadType</key>
 			<string>com.apple.webcontent-filter</string>
 			<key>PayloadUUID</key>
-			<string>50A0F9C9-211F-414F-9965-307108304530</string>
+			<string>706AC285-45F1-47CF-BD51-7DBFF7629FE3</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>PermittedURLs</key>
 			<array/>
 			<key>UserDefinedName</key>
 			<string>Yoav Blocklist</string>
+			<key>ContentFilterUUID</key>
+			<string>706AC285-45F1-47CF-BD51-7DBFF7629FE3</string>
 		</dict>
 		<dict>
 			<key>DNSSettings</key>
@@ -1025,17 +1181,17 @@
 		</dict>
 	</array>
 	<key>PayloadDescription</key>
-	<string>Blocks porn/malware (Cloudflare Family DNS) + a custom list of sites: food delivery, fast food, Instagram, news sites, and everything blocked on the Mac.</string>
+	<string>Blocks food delivery, fast food, Instagram, N12/Mako/Ynet sites and app API hosts. No Screen Time required for site/API layer.</string>
 	<key>PayloadDisplayName</key>
-	<string>Yoav — Full Blocklist (synced from Mac)</string>
+	<string>Yoav — Full Blocklist (apps+sites)</string>
 	<key>PayloadIdentifier</key>
-	<string>com.yoav.iphone.fullblock.42F4200C-FB07-4329-B973-E6A2C8B5ADA1</string>
+	<string>com.yoav.iphone.fullblock.0FC13DA3-109E-4838-99A6-AD8456BEBA44</string>
 	<key>PayloadRemovalDisallowed</key>
 	<false/>
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>42F4200C-FB07-4329-B973-E6A2C8B5ADA1</string>
+	<string>0FC13DA3-109E-4838-99A6-AD8456BEBA44</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 </dict>

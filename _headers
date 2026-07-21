@@ -10,8 +10,13 @@
   Cache-Control: private, no-store, must-revalidate
   X-Frame-Options: DENY
 
+/dns/*
+  Cache-Control: no-store, must-revalidate
+  X-Robots-Tag: noindex
+
 /dns/*.mobileconfig
   Content-Type: application/x-apple-aspen-config
+  Cache-Control: no-store, must-revalidate
   X-Robots-Tag: noindex
 
 /hoopoe

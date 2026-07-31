@@ -7,3 +7,8 @@
 # Node (if ever used)
 node_modules/
 npm-debug.log*
+
+# Internal working files / brand source art (not served)
+_preview/
+brand/
+images/hero-pardes.*

@@ -6,7 +6,7 @@
   <title>Yoav Shlomov — Jazz Guitarist, Composer & Producer</title>
   <meta name="description" content="Yoav Shlomov — Tel Aviv-based jazz guitarist, film composer and producer. Listen, upcoming concerts, press kit and bookings." />
   <link rel="canonical" href="https://yoavshlomov.com/" />
-  <meta name="theme-color" content="#0e0e0e" />
+  <meta name="theme-color" content="#10241f" />
   <meta name="author" content="Yoav Shlomov" />
 
   <meta property="og:type" content="website" />
@@ -83,15 +83,17 @@
       <a href="#music" class="hero-cta">Listen Now</a>
     </div>
     <div class="hero-art">
-      <img
-        src="images/hero-illustration.jpg"
-        srcset="images/hero-illustration.jpg 886w"
-        sizes="(max-width: 800px) 100vw, 50vw"
-        width="886"
-        height="886"
-        alt="Yoav Shlomov — jazz guitarist illustration"
-        loading="eager"
-      />
+      <video
+        class="hero-video"
+        poster="images/hero-anim-poster.jpg"
+        autoplay muted loop playsinline preload="auto"
+        width="886" height="886"
+        aria-label="Yoav Shlomov — animated illustration: a guitarist playing in a magical jungle">
+        <source src="images/hero-anim.webm" type="video/webm" />
+        <source src="images/hero-anim.mp4" type="video/mp4" />
+        <img src="images/hero-anim-poster.jpg" width="886" height="886"
+             alt="Yoav Shlomov — jazz guitarist illustration in a magical jungle" loading="eager" />
+      </video>
     </div>
   </section>
 
@@ -171,6 +173,9 @@
     </div>
   </section>
 
+  <!-- PARDES scene band -->
+  <div class="scene-band scene-waterfall" role="img" aria-label="Illustration — a guitarist and a tiger beside a jungle waterfall"></div>
+
   <!-- BIO -->
   <section class="section bio" id="bio">
     <div class="section-inner bio-inner">
@@ -221,6 +226,9 @@
       </form>
     </div>
   </section>
+
+  <!-- PARDES scene band -->
+  <div class="scene-band scene-canoe" role="img" aria-label="Illustration — a guitarist drifting in a canoe on a jungle river at golden hour"></div>
 
   <!-- CONCERTS -->
   <section class="section concerts" id="concerts">

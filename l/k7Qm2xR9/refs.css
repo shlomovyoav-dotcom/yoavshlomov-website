@@ -174,3 +174,28 @@ h1 {
   .actions .dl { display: none; }
   .privacy { display: none; }
 }
+
+/* ---- letter download links ---- */
+.letter-links { margin: .55rem 0 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.letter-links .dl {
+  display: inline-block; font-size: .78rem; letter-spacing: .06em; text-transform: uppercase;
+  padding: .42rem 1rem; border: 1px solid currentColor; border-radius: 999px;
+  text-decoration: none; opacity: .85; transition: opacity .2s, background .2s, color .2s;
+}
+.letter-links .dl:hover { opacity: 1; background: currentColor; }
+.letter-links .dl:hover { color: #fff; }
+
+/* ---- private hub ---- */
+.hub-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.1rem; margin: 2rem 0 2.5rem; }
+.hub-card {
+  display: flex; flex-direction: column; gap: .4rem; text-decoration: none; color: inherit;
+  border: 1px solid rgba(120,120,120,.28); border-radius: 14px; padding: 1.2rem 1.3rem;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.hub-card:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0,0,0,.10); border-color: rgba(120,120,120,.5); }
+.hub-tag { font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; opacity: .6; }
+.hub-card h2 { margin: .1rem 0 .2rem; font-size: 1.15rem; }
+.hub-card p { font-size: .87rem; opacity: .75; margin: 0; line-height: 1.55; }
+.hub-go { margin-top: .5rem; font-size: .8rem; letter-spacing: .04em; opacity: .8; }
+.foot-note { font-size: .78rem; opacity: .55; line-height: 1.6; margin-top: 1.5rem; }
+.foot-note code { font-size: .74rem; padding: .1rem .35rem; border-radius: 4px; background: rgba(120,120,120,.15); }

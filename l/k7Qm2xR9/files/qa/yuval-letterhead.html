@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Recommendation — Yoav Shlomov — Yuval Bazilevich</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Arial Hebrew", sans-serif;
+    color: #111;
+    background: #fff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 16mm 22mm 22mm;
+    position: relative;
+    page-break-after: always;
+  }
+  .page:last-child { page-break-after: auto; }
+  .logo {
+    display: block;
+    width: 132px;
+    height: auto;
+    margin: 0 auto 18px;
+  }
+  .title {
+    text-align: center;
+    font-size: 14.5pt;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    margin: 0 0 22px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .body { font-size: 10.8pt; line-height: 1.58; }
+  .en .body { direction: ltr; text-align: left; }
+  .he .body { direction: rtl; text-align: right; }
+  .he .title { direction: rtl; }
+  .he .sig { direction: rtl; text-align: right; }
+  .he .sig-meta { direction: rtl; }
+  p { margin: 0 0 11px; }
+  .sig { margin-top: 22px; }
+  .sig img {
+    display: block;
+    height: 42px;
+    width: auto;
+    margin: 4px 0 2px;
+  }
+  .he .sig img { margin-left: auto; }
+  .sig-name {
+    font-weight: 700;
+    font-size: 11pt;
+    margin: 4px 0 0;
+  }
+  .sig-role {
+    font-size: 10.2pt;
+    color: #222;
+    margin: 2px 0 0;
+  }
+  .sig-meta {
+    margin-top: 8px;
+    font-size: 9.2pt;
+    color: #333;
+    line-height: 1.45;
+  }
+  .footer {
+    position: absolute;
+    left: 22mm;
+    right: 22mm;
+    bottom: 14mm;
+  }
+  .footer-rule {
+    border: 0;
+    border-top: 1px solid #111;
+    margin: 0 0 8px;
+  }
+  .footer-co {
+    font-weight: 700;
+    font-size: 9.5pt;
+    margin: 0 0 3px;
+  }
+  .footer-line {
+    font-size: 8.2pt;
+    color: #333;
+    line-height: 1.4;
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+
+  <section class="page en">
+    <img class="logo" src="assets/artlist-logo.png" alt="Artlist" />
+    <h1 class="title">Recommendation for Yoav Shlomov</h1>
+    <div class="body">
+      <p>To whom it may concern,</p>
+      <p>As Yoav Shlomov's team lead in the Growth team at Artlist, I can attest to his strong work ethic, reliability, and deep familiarity with our Growth and Billing domains.</p>
+      <p>Yoav owned QA across our most business-critical areas — the subscription, billing, and upgrade funnels. He delivered thorough, dependable manual coverage and took real initiative on automation: he maintained, extended, and improved our Playwright and CI end-to-end test infrastructure across the user states our team owned (visitor/guest, free trial, and upgrade flows), built automated test-account generation to reproduce subscription-specific scenarios on demand, and developed a tool that verified subscription pricing against expected values, catching billing misconfigurations before they reached production.</p>
+      <p>Beyond testing, he made the whole team faster. He set up analytics dashboards with automated alerts for drops in our conversion funnel, and authored a library of AI-assisted tools that streamlined how we write and prioritize test cases. He is a fast learner, communicates clearly, and is a genuinely collaborative teammate who is trusted across the team.</p>
+      <p>I am glad to recommend Yoav without reservation and would gladly elaborate on his contribution if helpful.</p>
+      <div class="sig">
+        <p>Sincerely,</p>
+        <img src="assets/signature_yuval.png" alt="Signature of Yuval Bazilevich" />
+        <p class="sig-name">Yuval Bazilevich</p>
+        <p class="sig-role">Growth Team Lead, Artlist</p>
+        <p class="sig-meta">Date: 30.06.2026<br/>Email: yuval.bazilevich@artlist.io</p>
+      </div>
+    </div>
+    <footer class="footer">
+      <hr class="footer-rule" />
+      <p class="footer-co">Artlist Ltd.</p>
+      <p class="footer-line">Beit Polak, 20 Ahad Ha'am St., Tel Aviv, 6514103, Israel | www.artlist.io</p>
+    </footer>
+  </section>
+
+  <section class="page he">
+    <img class="logo" src="assets/artlist-logo.png" alt="Artlist" />
+    <h1 class="title">מכתב המלצה — יואב שלומוב</h1>
+    <div class="body">
+      <p>לכל המעוניין,</p>
+      <p>בתפקידי כראש הצוות של יואב שלומוב בצוות ה-Growth בארטליסט, אני יכול להעיד על אתיקת עבודה חזקה, אמינות, והיכרות עמוקה עם תחומי ה-Growth וה-Billing שלנו.</p>
+      <p>יואב היה אחראי על בקרת האיכות בתחומים הקריטיים ביותר שלנו — תהליכי המנוי, החיוב והשדרוג (upgrade funnels). הוא סיפק כיסוי ידני יסודי ואמין, ולקח יוזמה אמיתית באוטומציה: הוא תיחזק, הוסיף ושיפר את תשתית ה-Playwright וה-CI שלנו על פני מצבי המשתמש שהצוות שלנו היה אחראי עליהם (אורח/מבקר, ניסיון חינם, ותהליכי שדרוג), בנה מנגנון אוטומטי ליצירת חשבונות בדיקה לשחזור תרחישי מנוי ספציפיים לפי דרישה, ופיתח כלי שאימת את התמחור מול ערכים צפויים ותפס שגיאות חיוב לפני שהגיעו לפרודקשן.</p>
+      <p>מעבר לבדיקות, הוא ייעל את עבודת כל הצוות. הוא הקים לוחות אנליטיים עם התראות אוטומטיות על ירידות בפאנל ההמרה, וכתב ספריית כלים מבוססי AI שייעלו את אופן כתיבת ותעדוף מקרי הבדיקה. הוא לומד מהר, מתקשר בבהירות, והוא חבר צוות שיתופי שזוכה לאמון בכל הצוות.</p>
+      <p>אני שמח להמליץ על יואב ללא היסוס, ואשמח להרחיב על תרומתו במידת הצורך.</p>
+      <div class="sig">
+        <p>בברכה,</p>
+        <img src="assets/signature_yuval.png" alt="חתימת יובל בזילביץ'" />
+        <p class="sig-name">יובל בזילביץ'</p>
+        <p class="sig-role">Growth Team Lead, ארטליסט</p>
+        <p class="sig-meta">תאריך: 30.06.2026<br/>אימייל: yuval.bazilevich@artlist.io</p>
+      </div>
+    </div>
+    <footer class="footer">
+      <hr class="footer-rule" />
+      <p class="footer-co">Artlist Ltd.</p>
+      <p class="footer-line">Beit Polak, 20 Ahad Ha'am St., Tel Aviv, 6514103, Israel | www.artlist.io</p>
+    </footer>
+  </section>
+
+</body>
+</html>

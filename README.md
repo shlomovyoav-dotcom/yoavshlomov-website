@@ -5,7 +5,21 @@ Replaces the Wix site at yoavhakohav.com. Free hosting via Cloudflare Pages.
 
 ## Stack
 
-Pure HTML + CSS. No build step, no dependencies, no framework.
+Pure HTML + CSS. No build step, no framework. The site deploys to Cloudflare Pages
+with no build command.
+
+## Local development
+
+The only dev dependency is [Wrangler](https://developers.cloudflare.com/workers/wrangler/),
+used to preview the site exactly as Cloudflare Pages serves it (including `_headers`,
+`_redirects` and the custom `404.html`).
+
+```bash
+npm ci          # install Wrangler (dev-only; production still needs no build)
+npm run dev     # serve at http://127.0.0.1:8788
+```
+
+`npm run start` is the same server bound to `0.0.0.0` for remote/dev environments.
 
 ## Deploy to Cloudflare Pages (free)
 

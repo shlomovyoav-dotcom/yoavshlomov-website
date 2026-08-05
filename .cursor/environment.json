@@ -1,0 +1,17 @@
+{
+  "name": "yoavshlomov-website",
+  "install": "npm ci",
+  "terminals": [
+    {
+      "name": "dev-server",
+      "command": "npm run start",
+      "description": "Cloudflare Pages dev server (wrangler) on port 8788, emulating _headers, _redirects and 404.html."
+    }
+  ],
+  "ports": [
+    {
+      "name": "site",
+      "port": 8788
+    }
+  ]
+}

@@ -10,278 +10,686 @@
 			<key>BlacklistedURLs</key>
 			<array>
 				<string>https://metartx.com</string>
+				<string>https://www.metartx.com</string>
 				<string>https://join.metartx.com</string>
 				<string>https://members.metartx.com</string>
 				<string>https://metart.com</string>
+				<string>https://www.metart.com</string>
 				<string>https://metartnetwork.com</string>
+				<string>https://www.metartnetwork.com</string>
 				<string>https://sso.metartnetwork.com</string>
 				<string>https://metart.network</string>
+				<string>https://www.metart.network</string>
 				<string>https://metartmoney.com</string>
+				<string>https://www.metartmoney.com</string>
 				<string>https://mansitegcdn.metartnetwork.com</string>
 				<string>https://cdn.metartx.com</string>
 				<string>https://static.metartx.com</string>
 				<string>https://api.metartx.com</string>
 				<string>https://media.metartx.com</string>
 				<string>https://pornhub.com</string>
+				<string>https://www.pornhub.com</string>
 				<string>https://pornhub.org</string>
+				<string>https://www.pornhub.org</string>
 				<string>https://xvideos.com</string>
+				<string>https://www.xvideos.com</string>
 				<string>https://xnxx.com</string>
+				<string>https://www.xnxx.com</string>
 				<string>https://xhamster.com</string>
+				<string>https://www.xhamster.com</string>
 				<string>https://xhamster.desi</string>
+				<string>https://www.xhamster.desi</string>
 				<string>https://xhamster2.com</string>
+				<string>https://www.xhamster2.com</string>
 				<string>https://redtube.com</string>
+				<string>https://www.redtube.com</string>
 				<string>https://youporn.com</string>
+				<string>https://www.youporn.com</string>
 				<string>https://tube8.com</string>
+				<string>https://www.tube8.com</string>
 				<string>https://spankbang.com</string>
+				<string>https://www.spankbang.com</string>
 				<string>https://eporner.com</string>
+				<string>https://www.eporner.com</string>
 				<string>https://beeg.com</string>
+				<string>https://www.beeg.com</string>
 				<string>https://tnaflix.com</string>
+				<string>https://www.tnaflix.com</string>
 				<string>https://thumbzilla.com</string>
+				<string>https://www.thumbzilla.com</string>
 				<string>https://porntrex.com</string>
+				<string>https://www.porntrex.com</string>
 				<string>https://pornmd.com</string>
+				<string>https://www.pornmd.com</string>
 				<string>https://porndig.com</string>
+				<string>https://www.porndig.com</string>
 				<string>https://hqporner.com</string>
+				<string>https://www.hqporner.com</string>
 				<string>https://txxx.com</string>
+				<string>https://www.txxx.com</string>
 				<string>https://hclips.com</string>
+				<string>https://www.hclips.com</string>
 				<string>https://upornia.com</string>
+				<string>https://www.upornia.com</string>
 				<string>https://vjav.com</string>
+				<string>https://www.vjav.com</string>
 				<string>https://jav.guru</string>
+				<string>https://www.jav.guru</string>
 				<string>https://javmost.com</string>
+				<string>https://www.javmost.com</string>
 				<string>https://javhd.com</string>
+				<string>https://www.javhd.com</string>
 				<string>https://brazzers.com</string>
+				<string>https://www.brazzers.com</string>
 				<string>https://bangbros.com</string>
+				<string>https://www.bangbros.com</string>
 				<string>https://realitykings.com</string>
+				<string>https://www.realitykings.com</string>
 				<string>https://naughtyamerica.com</string>
+				<string>https://www.naughtyamerica.com</string>
 				<string>https://mofos.com</string>
+				<string>https://www.mofos.com</string>
 				<string>https://digitalplayground.com</string>
+				<string>https://www.digitalplayground.com</string>
 				<string>https://twistys.com</string>
+				<string>https://www.twistys.com</string>
 				<string>https://babes.com</string>
+				<string>https://www.babes.com</string>
 				<string>https://chaturbate.com</string>
+				<string>https://www.chaturbate.com</string>
 				<string>https://stripchat.com</string>
+				<string>https://www.stripchat.com</string>
 				<string>https://bongacams.com</string>
+				<string>https://www.bongacams.com</string>
 				<string>https://cam4.com</string>
+				<string>https://www.cam4.com</string>
 				<string>https://livejasmin.com</string>
+				<string>https://www.livejasmin.com</string>
 				<string>https://onlyfans.com</string>
+				<string>https://www.onlyfans.com</string>
 				<string>https://fansly.com</string>
+				<string>https://www.fansly.com</string>
 				<string>https://manyvids.com</string>
+				<string>https://www.manyvids.com</string>
 				<string>https://clips4sale.com</string>
+				<string>https://www.clips4sale.com</string>
 				<string>https://pornpics.com</string>
+				<string>https://www.pornpics.com</string>
 				<string>https://imagefap.com</string>
+				<string>https://www.imagefap.com</string>
 				<string>https://motherless.com</string>
+				<string>https://www.motherless.com</string>
 				<string>https://erome.com</string>
+				<string>https://www.erome.com</string>
 				<string>https://rule34.xxx</string>
+				<string>https://www.rule34.xxx</string>
 				<string>https://rule34video.com</string>
+				<string>https://www.rule34video.com</string>
 				<string>https://e621.net</string>
+				<string>https://www.e621.net</string>
 				<string>https://gelbooru.com</string>
+				<string>https://www.gelbooru.com</string>
 				<string>https://sankakucomplex.com</string>
+				<string>https://www.sankakucomplex.com</string>
 				<string>https://nhentai.net</string>
+				<string>https://www.nhentai.net</string>
 				<string>https://hentaihaven.xxx</string>
+				<string>https://www.hentaihaven.xxx</string>
 				<string>https://hanime.tv</string>
+				<string>https://www.hanime.tv</string>
 				<string>https://fakku.net</string>
+				<string>https://www.fakku.net</string>
 				<string>https://literotica.com</string>
+				<string>https://www.literotica.com</string>
 				<string>https://asstr.org</string>
+				<string>https://www.asstr.org</string>
 				<string>https://sex.com</string>
+				<string>https://www.sex.com</string>
 				<string>https://youjizz.com</string>
+				<string>https://www.youjizz.com</string>
 				<string>https://porn.com</string>
+				<string>https://www.porn.com</string>
 				<string>https://4tube.com</string>
+				<string>https://www.4tube.com</string>
 				<string>https://drtuber.com</string>
+				<string>https://www.drtuber.com</string>
 				<string>https://sunporno.com</string>
+				<string>https://www.sunporno.com</string>
 				<string>https://pornone.com</string>
+				<string>https://www.pornone.com</string>
 				<string>https://fuq.com</string>
+				<string>https://www.fuq.com</string>
 				<string>https://lobstertube.com</string>
+				<string>https://www.lobstertube.com</string>
 				<string>https://ixxx.com</string>
+				<string>https://www.ixxx.com</string>
 				<string>https://porngo.com</string>
+				<string>https://www.porngo.com</string>
 				<string>https://xxxbunker.com</string>
+				<string>https://www.xxxbunker.com</string>
 				<string>https://perfectgirls.net</string>
+				<string>https://www.perfectgirls.net</string>
 				<string>https://pornhat.com</string>
+				<string>https://www.pornhat.com</string>
 				<string>https://anyporn.com</string>
+				<string>https://www.anyporn.com</string>
 				<string>https://gotporn.com</string>
+				<string>https://www.gotporn.com</string>
 				<string>https://fapster.xxx</string>
+				<string>https://www.fapster.xxx</string>
 				<string>https://porn300.com</string>
+				<string>https://www.porn300.com</string>
 				<string>https://pornktube.com</string>
+				<string>https://www.pornktube.com</string>
 				<string>https://pornid.xxx</string>
+				<string>https://www.pornid.xxx</string>
 				<string>https://porn00.org</string>
+				<string>https://www.porn00.org</string>
 				<string>https://pornzog.com</string>
+				<string>https://www.pornzog.com</string>
 				<string>https://pornlib.com</string>
+				<string>https://www.pornlib.com</string>
 				<string>https://pornwhite.com</string>
+				<string>https://www.pornwhite.com</string>
 				<string>https://pornrabbit.com</string>
+				<string>https://www.pornrabbit.com</string>
 				<string>https://pornoxo.com</string>
+				<string>https://www.pornoxo.com</string>
 				<string>https://pornicom.com</string>
+				<string>https://www.pornicom.com</string>
 				<string>https://pornhubpremium.com</string>
+				<string>https://www.pornhubpremium.com</string>
+				<string>https://pornworks.com</string>
+				<string>https://www.pornworks.com</string>
+				<string>https://pornworks.ai</string>
+				<string>https://www.pornworks.ai</string>
+				<string>https://pornmaker.ai</string>
+				<string>https://www.pornmaker.ai</string>
+				<string>https://easyporn.ai</string>
+				<string>https://www.easyporn.ai</string>
+				<string>https://pornjourney.ai</string>
+				<string>https://www.pornjourney.ai</string>
+				<string>https://pornjoy.ai</string>
+				<string>https://www.pornjoy.ai</string>
+				<string>https://pornpen.ai</string>
+				<string>https://www.pornpen.ai</string>
+				<string>https://imakeporn.com</string>
+				<string>https://www.imakeporn.com</string>
+				<string>https://myfreecams.com</string>
+				<string>https://www.myfreecams.com</string>
+				<string>https://camsoda.com</string>
+				<string>https://www.camsoda.com</string>
+				<string>https://flirt4free.com</string>
+				<string>https://www.flirt4free.com</string>
 				<string>https://vidfaceswap.com</string>
+				<string>https://www.vidfaceswap.com</string>
 				<string>https://vidsfaceswap.com</string>
 				<string>https://www.vidsfaceswap.com</string>
-				<string>https://www.vidfaceswap.com</string>
 				<string>https://api.vidsfaceswap.com</string>
 				<string>https://cdn.vidsfaceswap.com</string>
 				<string>https://app.vidsfaceswap.com</string>
 				<string>https://faceswapper.ai</string>
+				<string>https://www.faceswapper.ai</string>
 				<string>https://soulgen.net</string>
+				<string>https://www.soulgen.net</string>
 				<string>https://faceswap.dev</string>
+				<string>https://www.faceswap.dev</string>
 				<string>https://aifaceswap.io</string>
+				<string>https://www.aifaceswap.io</string>
 				<string>https://faceswap.video</string>
+				<string>https://www.faceswap.video</string>
 				<string>https://facefusion.com</string>
+				<string>https://www.facefusion.com</string>
 				<string>https://swapface.org</string>
+				<string>https://www.swapface.org</string>
 				<string>https://deepswap.ai</string>
+				<string>https://www.deepswap.ai</string>
 				<string>https://reface.ai</string>
+				<string>https://www.reface.ai</string>
 				<string>https://mrdeepfake.com</string>
+				<string>https://www.mrdeepfake.com</string>
 				<string>https://deepfakesweb.com</string>
-				<string>https://pornworks.com</string>
+				<string>https://www.deepfakesweb.com</string>
 				<string>https://remaker.ai</string>
+				<string>https://www.remaker.ai</string>
 				<string>https://facehub.ai</string>
+				<string>https://www.facehub.ai</string>
 				<string>https://facemagic.ai</string>
+				<string>https://www.facemagic.ai</string>
 				<string>https://roop.ai</string>
+				<string>https://www.roop.ai</string>
 				<string>https://fakeface.io</string>
+				<string>https://www.fakeface.io</string>
 				<string>https://face-swap.app</string>
+				<string>https://www.face-swap.app</string>
 				<string>https://faceswaplab.com</string>
+				<string>https://www.faceswaplab.com</string>
 				<string>https://deepfakeporn.app</string>
+				<string>https://www.deepfakeporn.app</string>
 				<string>https://deepfake.com</string>
+				<string>https://www.deepfake.com</string>
 				<string>https://undress.app</string>
+				<string>https://www.undress.app</string>
 				<string>https://clothoff.io</string>
+				<string>https://www.clothoff.io</string>
 				<string>https://nudify.online</string>
+				<string>https://www.nudify.online</string>
 				<string>https://deepnude.com</string>
+				<string>https://www.deepnude.com</string>
 				<string>https://undressai.com</string>
+				<string>https://www.undressai.com</string>
 				<string>https://deepnudenow.com</string>
+				<string>https://www.deepnudenow.com</string>
 				<string>https://nudify.site</string>
+				<string>https://www.nudify.site</string>
 				<string>https://dreamgf.ai</string>
+				<string>https://www.dreamgf.ai</string>
 				<string>https://undress.cc</string>
+				<string>https://www.undress.cc</string>
 				<string>https://nudify.vip</string>
+				<string>https://www.nudify.vip</string>
 				<string>https://clothoff.net</string>
+				<string>https://www.clothoff.net</string>
 				<string>https://undressing.io</string>
+				<string>https://www.undressing.io</string>
 				<string>https://nudifier.ai</string>
+				<string>https://www.nudifier.ai</string>
 				<string>https://ainude.ai</string>
+				<string>https://www.ainude.ai</string>
 				<string>https://clothoff.pro</string>
+				<string>https://www.clothoff.pro</string>
 				<string>https://deepnude.to</string>
+				<string>https://www.deepnude.to</string>
 				<string>https://nudify.me</string>
+				<string>https://www.nudify.me</string>
 				<string>https://undressher.app</string>
+				<string>https://www.undressher.app</string>
 				<string>https://clothoff.ai</string>
+				<string>https://www.clothoff.ai</string>
 				<string>https://nudifyai.com</string>
+				<string>https://www.nudifyai.com</string>
 				<string>https://deepnudeai.com</string>
+				<string>https://www.deepnudeai.com</string>
 				<string>https://clothoff.org</string>
+				<string>https://www.clothoff.org</string>
 				<string>https://undresslove.com</string>
+				<string>https://www.undresslove.com</string>
 				<string>https://nudify.net</string>
+				<string>https://www.nudify.net</string>
 				<string>https://deepnude.org</string>
-				<string>https://pornmate.com</string>
-				<string>https://theporndude.com</string>
-				<string>https://theporndude.vip</string>
-				<string>https://thepornlist.net</string>
-				<string>https://thepornguy.org</string>
-				<string>https://mypornbible.com</string>
-				<string>https://indianpornsites.net</string>
-				<string>https://toppornsites.com</string>
-				<string>https://porntubeslist.com</string>
-				<string>https://iwantporn.net</string>
-				<string>https://weknowporn.com</string>
-				<string>https://thepornlinks.com</string>
-				<string>https://tblop.com</string>
-				<string>https://gotblop.com</string>
-				<string>https://pornwhitelist.com</string>
-				<string>https://pornsites.xxx</string>
-				<string>https://bestofporn.com</string>
-				<string>https://thebestfetishsites.com</string>
-				<string>https://theredplayground.com</string>
-				<string>https://porncrash.com</string>
-				<string>https://adultsiteranking.com</string>
-				<string>https://fivestarpornsites.com</string>
-				<string>https://thepornapp.com</string>
-				<string>https://pornsheriff.com</string>
-				<string>https://steezylist.com</string>
-				<string>https://bigpornsiteslist.com</string>
-				<string>https://theporncouch.com</string>
-				<string>https://johnspornsites.com</string>
-				<string>https://tbpsl.com</string>
-				<string>https://linkorama.com</string>
-				<string>https://xxx.xxx</string>
+				<string>https://www.deepnude.org</string>
 				<string>https://undress.vip</string>
+				<string>https://www.undress.vip</string>
 				<string>https://undressly.ai</string>
+				<string>https://www.undressly.ai</string>
 				<string>https://unclothy.ai</string>
+				<string>https://www.unclothy.ai</string>
 				<string>https://undresswithai.com</string>
+				<string>https://www.undresswithai.com</string>
 				<string>https://n8ked.com</string>
+				<string>https://www.n8ked.com</string>
 				<string>https://n8ked.app</string>
+				<string>https://www.n8ked.app</string>
 				<string>https://nudify.plus</string>
+				<string>https://www.nudify.plus</string>
 				<string>https://nudifyplus.com</string>
+				<string>https://www.nudifyplus.com</string>
 				<string>https://nudifyher.com</string>
+				<string>https://www.nudifyher.com</string>
 				<string>https://joyfun.ai</string>
-				<string>https://pornworks.ai</string>
+				<string>https://www.joyfun.ai</string>
 				<string>https://seduced.ai</string>
+				<string>https://www.seduced.ai</string>
 				<string>https://unlucid.ai</string>
+				<string>https://www.unlucid.ai</string>
 				<string>https://promptchan.ai</string>
+				<string>https://www.promptchan.ai</string>
 				<string>https://candy.ai</string>
+				<string>https://www.candy.ai</string>
 				<string>https://ourdream.ai</string>
-				<string>https://pornmaker.ai</string>
+				<string>https://www.ourdream.ai</string>
 				<string>https://nubee.ai</string>
+				<string>https://www.nubee.ai</string>
 				<string>https://gptgirlfriend.online</string>
+				<string>https://www.gptgirlfriend.online</string>
 				<string>https://ainude.best</string>
+				<string>https://www.ainude.best</string>
 				<string>https://ainudez.com</string>
+				<string>https://www.ainudez.com</string>
 				<string>https://aiundress.cc</string>
+				<string>https://www.aiundress.cc</string>
 				<string>https://deepnude.online</string>
+				<string>https://www.deepnude.online</string>
 				<string>https://deepnudes.co</string>
+				<string>https://www.deepnudes.co</string>
 				<string>https://deepnudify.com</string>
+				<string>https://www.deepnudify.com</string>
 				<string>https://xnudes.ai</string>
+				<string>https://www.xnudes.ai</string>
 				<string>https://xnude.ai</string>
+				<string>https://www.xnude.ai</string>
 				<string>https://drawnudes.ai</string>
+				<string>https://www.drawnudes.ai</string>
 				<string>https://getnude.ai</string>
+				<string>https://www.getnude.ai</string>
 				<string>https://nudefusion.com</string>
-				<string>https://easyporn.ai</string>
-				<string>https://pornjourney.ai</string>
-				<string>https://pornjoy.ai</string>
+				<string>https://www.nudefusion.com</string>
 				<string>https://makenude.ai</string>
+				<string>https://www.makenude.ai</string>
 				<string>https://x-pictures.ai</string>
-				<string>https://pornpen.ai</string>
+				<string>https://www.x-pictures.ai</string>
 				<string>https://leakifyhub.com</string>
+				<string>https://www.leakifyhub.com</string>
 				<string>https://swapper.ai</string>
+				<string>https://www.swapper.ai</string>
 				<string>https://dreampaint.net</string>
+				<string>https://www.dreampaint.net</string>
 				<string>https://celebmaker.ai</string>
+				<string>https://www.celebmaker.ai</string>
 				<string>https://freenudifier.com</string>
+				<string>https://www.freenudifier.com</string>
 				<string>https://ai-deep-nude.com</string>
+				<string>https://www.ai-deep-nude.com</string>
 				<string>https://deep-nudes.com</string>
-				<string>https://imakeporn.com</string>
+				<string>https://www.deep-nudes.com</string>
 				<string>https://ppnude.com</string>
+				<string>https://www.ppnude.com</string>
 				<string>https://nudey.app</string>
+				<string>https://www.nudey.app</string>
 				<string>https://ai-nudes.com</string>
+				<string>https://www.ai-nudes.com</string>
 				<string>https://ndfy.ai</string>
+				<string>https://www.ndfy.ai</string>
 				<string>https://deepstrip.ai</string>
+				<string>https://www.deepstrip.ai</string>
 				<string>https://clothesremover.ai</string>
+				<string>https://www.clothesremover.ai</string>
 				<string>https://nakedly.ai</string>
+				<string>https://www.nakedly.ai</string>
 				<string>https://aipose.com</string>
+				<string>https://www.aipose.com</string>
 				<string>https://ainsfwtools.com</string>
+				<string>https://www.ainsfwtools.com</string>
+				<string>https://facefusion.io</string>
+				<string>https://www.facefusion.io</string>
+				<string>https://faceswaponline.com</string>
+				<string>https://www.faceswaponline.com</string>
+				<string>https://ai-face-swap.com</string>
+				<string>https://www.ai-face-swap.com</string>
+				<string>https://mirage.app</string>
+				<string>https://www.mirage.app</string>
+				<string>https://akool.com</string>
+				<string>https://www.akool.com</string>
+				<string>https://media.io</string>
+				<string>https://www.media.io</string>
+				<string>https://deepnude.cc</string>
+				<string>https://www.deepnude.cc</string>
+				<string>https://soulgen.ai</string>
+				<string>https://www.soulgen.ai</string>
+				<string>https://civitai.com</string>
+				<string>https://www.civitai.com</string>
+				<string>https://seaart.ai</string>
+				<string>https://www.seaart.ai</string>
+				<string>https://pixai.art</string>
+				<string>https://www.pixai.art</string>
+				<string>https://perchance.org</string>
+				<string>https://www.perchance.org</string>
+				<string>https://grok.com</string>
+				<string>https://www.grok.com</string>
+				<string>https://janitorai.com</string>
+				<string>https://www.janitorai.com</string>
+				<string>https://spicychat.ai</string>
+				<string>https://www.spicychat.ai</string>
+				<string>https://crushon.ai</string>
+				<string>https://www.crushon.ai</string>
+				<string>https://muah.ai</string>
+				<string>https://www.muah.ai</string>
+				<string>https://chub.ai</string>
+				<string>https://www.chub.ai</string>
+				<string>https://pornmate.com</string>
+				<string>https://www.pornmate.com</string>
+				<string>https://theporndude.com</string>
+				<string>https://www.theporndude.com</string>
+				<string>https://theporndude.vip</string>
+				<string>https://www.theporndude.vip</string>
+				<string>https://thepornlist.net</string>
+				<string>https://www.thepornlist.net</string>
+				<string>https://thepornguy.org</string>
+				<string>https://www.thepornguy.org</string>
+				<string>https://mypornbible.com</string>
+				<string>https://www.mypornbible.com</string>
+				<string>https://indianpornsites.net</string>
+				<string>https://www.indianpornsites.net</string>
+				<string>https://toppornsites.com</string>
+				<string>https://www.toppornsites.com</string>
+				<string>https://porntubeslist.com</string>
+				<string>https://www.porntubeslist.com</string>
+				<string>https://iwantporn.net</string>
+				<string>https://www.iwantporn.net</string>
+				<string>https://weknowporn.com</string>
+				<string>https://www.weknowporn.com</string>
+				<string>https://thepornlinks.com</string>
+				<string>https://www.thepornlinks.com</string>
+				<string>https://tblop.com</string>
+				<string>https://www.tblop.com</string>
+				<string>https://gotblop.com</string>
+				<string>https://www.gotblop.com</string>
+				<string>https://pornwhitelist.com</string>
+				<string>https://www.pornwhitelist.com</string>
+				<string>https://pornsites.xxx</string>
+				<string>https://www.pornsites.xxx</string>
+				<string>https://bestofporn.com</string>
+				<string>https://www.bestofporn.com</string>
+				<string>https://thebestfetishsites.com</string>
+				<string>https://www.thebestfetishsites.com</string>
+				<string>https://theredplayground.com</string>
+				<string>https://www.theredplayground.com</string>
+				<string>https://porncrash.com</string>
+				<string>https://www.porncrash.com</string>
+				<string>https://adultsiteranking.com</string>
+				<string>https://www.adultsiteranking.com</string>
+				<string>https://fivestarpornsites.com</string>
+				<string>https://www.fivestarpornsites.com</string>
+				<string>https://thepornapp.com</string>
+				<string>https://www.thepornapp.com</string>
+				<string>https://pornsheriff.com</string>
+				<string>https://www.pornsheriff.com</string>
+				<string>https://steezylist.com</string>
+				<string>https://www.steezylist.com</string>
+				<string>https://bigpornsiteslist.com</string>
+				<string>https://www.bigpornsiteslist.com</string>
+				<string>https://theporncouch.com</string>
+				<string>https://www.theporncouch.com</string>
+				<string>https://johnspornsites.com</string>
+				<string>https://www.johnspornsites.com</string>
+				<string>https://tbpsl.com</string>
+				<string>https://www.tbpsl.com</string>
+				<string>https://linkorama.com</string>
+				<string>https://www.linkorama.com</string>
+				<string>https://xxx.xxx</string>
+				<string>https://www.xxx.xxx</string>
 				<string>https://wolt.com</string>
+				<string>https://www.wolt.com</string>
 				<string>https://wolt.co.il</string>
+				<string>https://www.wolt.co.il</string>
 				<string>https://tenbis.co.il</string>
+				<string>https://www.tenbis.co.il</string>
 				<string>https://10bis.co.il</string>
+				<string>https://www.10bis.co.il</string>
 				<string>https://mishloha.co.il</string>
+				<string>https://www.mishloha.co.il</string>
 				<string>https://pluxee.co.il</string>
+				<string>https://www.pluxee.co.il</string>
 				<string>https://cibus.pluxee.co.il</string>
 				<string>https://consumers.pluxee.co.il</string>
-				<string>https://facefusion.io</string>
-				<string>https://faceswaponline.com</string>
-				<string>https://ai-face-swap.com</string>
-				<string>https://mirage.app</string>
-				<string>https://akool.com</string>
-				<string>https://media.io</string>
 				<string>https://yango.com</string>
+				<string>https://www.yango.com</string>
 				<string>https://deli.yango.com</string>
 				<string>https://yango.co.il</string>
+				<string>https://www.yango.co.il</string>
 				<string>https://dominos.co.il</string>
+				<string>https://www.dominos.co.il</string>
 				<string>https://dominos.com</string>
+				<string>https://www.dominos.com</string>
 				<string>https://order.dominos.com</string>
 				<string>https://papajohns.co.il</string>
+				<string>https://www.papajohns.co.il</string>
 				<string>https://papajohns.com</string>
+				<string>https://www.papajohns.com</string>
 				<string>https://mcdonalds.co.il</string>
+				<string>https://www.mcdonalds.co.il</string>
 				<string>https://mcdonalds.com</string>
+				<string>https://www.mcdonalds.com</string>
 				<string>https://burgerking.co.il</string>
+				<string>https://www.burgerking.co.il</string>
 				<string>https://burgerking.com</string>
+				<string>https://www.burgerking.com</string>
 				<string>https://bk.com</string>
+				<string>https://www.bk.com</string>
+				<string>https://restaurant-api.wolt.com</string>
+				<string>https://consumer-api.wolt.com</string>
+				<string>https://woltapi.com</string>
+				<string>https://www.woltapi.com</string>
+				<string>https://consumers-cdn.wolt.com</string>
+				<string>https://api.wolt.com</string>
+				<string>https://api.10bis.co.il</string>
+				<string>https://www.api.10bis.co.il</string>
+				<string>https://10bis.com</string>
+				<string>https://www.10bis.com</string>
+				<string>https://api.mishloha.co.il</string>
+				<string>https://mishloha.com</string>
+				<string>https://www.mishloha.com</string>
+				<string>https://tc.yango.com</string>
+				<string>https://yango.yandex.com</string>
+				<string>https://eda.yandex</string>
+				<string>https://www.eda.yandex</string>
+				<string>https://order.dominos.co.il</string>
+				<string>https://www.order.dominos.co.il</string>
+				<string>https://api.dominos.com</string>
+				<string>https://api.papajohns.com</string>
+				<string>https://ordering.papajohns.com</string>
+				<string>https://api.mcdonalds.com</string>
+				<string>https://api.bk.com</string>
+				<string>https://order.bk.com</string>
+				<string>https://app.mishloha.co.il</string>
+				<string>https://gett.com</string>
+				<string>https://www.gett.com</string>
+				<string>https://gett.co.il</string>
+				<string>https://www.gett.co.il</string>
+				<string>https://ridewithvia.com</string>
+				<string>https://www.ridewithvia.com</string>
+				<string>https://ubereats.com</string>
+				<string>https://www.ubereats.com</string>
+				<string>https://deliveroo.co.il</string>
+				<string>https://www.deliveroo.co.il</string>
+				<string>https://deliveroo.com</string>
+				<string>https://www.deliveroo.com</string>
+				<string>https://foodora.com</string>
+				<string>https://www.foodora.com</string>
+				<string>https://just-eat.com</string>
+				<string>https://www.just-eat.com</string>
+				<string>https://doordash.com</string>
+				<string>https://www.doordash.com</string>
+				<string>https://grubhub.com</string>
+				<string>https://www.grubhub.com</string>
+				<string>https://postmates.com</string>
+				<string>https://www.postmates.com</string>
+				<string>https://pizza-hut.co.il</string>
+				<string>https://www.pizza-hut.co.il</string>
+				<string>https://pizzahut.co.il</string>
+				<string>https://www.pizzahut.co.il</string>
+				<string>https://pizzahut.com</string>
+				<string>https://www.pizzahut.com</string>
+				<string>https://kfc.co.il</string>
+				<string>https://www.kfc.co.il</string>
+				<string>https://kfc.com</string>
+				<string>https://www.kfc.com</string>
+				<string>https://wendys.com</string>
+				<string>https://www.wendys.com</string>
+				<string>https://subway.co.il</string>
+				<string>https://www.subway.co.il</string>
+				<string>https://subway.com</string>
+				<string>https://www.subway.com</string>
+				<string>https://burgerim.co.il</string>
+				<string>https://www.burgerim.co.il</string>
+				<string>https://japanika.co.il</string>
+				<string>https://www.japanika.co.il</string>
+				<string>https://bbb.co.il</string>
+				<string>https://www.bbb.co.il</string>
+				<string>https://cafecafe.co.il</string>
+				<string>https://www.cafecafe.co.il</string>
+				<string>https://aroma.co.il</string>
+				<string>https://www.aroma.co.il</string>
+				<string>https://landwer.co.il</string>
+				<string>https://www.landwer.co.il</string>
+				<string>https://shipudim.co.il</string>
+				<string>https://www.shipudim.co.il</string>
+				<string>https://rest.co.il</string>
+				<string>https://www.rest.co.il</string>
+				<string>https://togo.co.il</string>
+				<string>https://www.togo.co.il</string>
+				<string>https://authentication.wolt.com</string>
+				<string>https://credentials.wolt.com</string>
+				<string>https://blob.wolt.com</string>
+				<string>https://images.wolt.com</string>
 				<string>https://instagram.com</string>
+				<string>https://www.instagram.com</string>
 				<string>https://i.instagram.com</string>
 				<string>https://graph.instagram.com</string>
 				<string>https://cdninstagram.com</string>
+				<string>https://www.cdninstagram.com</string>
 				<string>https://scontent.cdninstagram.com</string>
 				<string>https://accountscenter.instagram.com</string>
 				<string>https://b.i.instagram.com</string>
 				<string>https://api.instagram.com</string>
+				<string>https://facebook.com</string>
+				<string>https://www.facebook.com</string>
+				<string>https://fb.com</string>
+				<string>https://www.fb.com</string>
+				<string>https://fb.me</string>
+				<string>https://www.fb.me</string>
+				<string>https://facebook.net</string>
+				<string>https://www.facebook.net</string>
+				<string>https://fbcdn.net</string>
+				<string>https://www.fbcdn.net</string>
+				<string>https://fbsbx.com</string>
+				<string>https://www.fbsbx.com</string>
+				<string>https://messenger.com</string>
+				<string>https://www.messenger.com</string>
+				<string>https://twitter.com</string>
+				<string>https://www.twitter.com</string>
+				<string>https://x.com</string>
+				<string>https://www.x.com</string>
+				<string>https://t.co</string>
+				<string>https://www.t.co</string>
+				<string>https://twimg.com</string>
+				<string>https://www.twimg.com</string>
+				<string>https://reddit.com</string>
+				<string>https://www.reddit.com</string>
+				<string>https://old.reddit.com</string>
+				<string>https://redd.it</string>
+				<string>https://www.redd.it</string>
+				<string>https://i.redd.it</string>
+				<string>https://v.redd.it</string>
+				<string>https://preview.redd.it</string>
+				<string>https://redditmedia.com</string>
+				<string>https://www.redditmedia.com</string>
+				<string>https://redditstatic.com</string>
+				<string>https://www.redditstatic.com</string>
+				<string>https://threads.net</string>
+				<string>https://www.threads.net</string>
+				<string>https://threads.com</string>
+				<string>https://www.threads.com</string>
+				<string>https://m.facebook.com</string>
+				<string>https://mbasic.facebook.com</string>
+				<string>https://web.facebook.com</string>
+				<string>https://l.facebook.com</string>
+				<string>https://touch.facebook.com</string>
+				<string>https://mobile.twitter.com</string>
 				<string>https://n12.co.il</string>
+				<string>https://www.n12.co.il</string>
 				<string>https://ynet.co.il</string>
+				<string>https://www.ynet.co.il</string>
 				<string>https://m.ynet.co.il</string>
 				<string>https://mako.co.il</string>
 				<string>https://www.mako.co.il</string>
@@ -296,52 +704,9 @@
 				<string>https://ynet-pic1.yit.co.il</string>
 				<string>https://z.ynet.co.il</string>
 				<string>https://www.m.ynet.co.il</string>
-				<string>https://restaurant-api.wolt.com</string>
-				<string>https://consumer-api.wolt.com</string>
-				<string>https://woltapi.com</string>
-				<string>https://www.woltapi.com</string>
-				<string>https://consumers-cdn.wolt.com</string>
-				<string>https://api.wolt.com</string>
-				<string>https://api.10bis.co.il</string>
-				<string>https://www.api.10bis.co.il</string>
-				<string>https://10bis.com</string>
-				<string>https://www.10bis.com</string>
-				<string>https://api.mishloha.co.il</string>
-				<string>https://mishloha.com</string>
-				<string>https://tc.yango.com</string>
-				<string>https://yango.yandex.com</string>
-				<string>https://eda.yandex</string>
-				<string>https://order.dominos.co.il</string>
-				<string>https://www.order.dominos.co.il</string>
-				<string>https://api.dominos.com</string>
-				<string>https://api.papajohns.com</string>
-				<string>https://ordering.papajohns.com</string>
-				<string>https://api.mcdonalds.com</string>
-				<string>https://www.mcdonalds.co.il</string>
-				<string>https://api.bk.com</string>
-				<string>https://order.bk.com</string>
-				<string>https://yuligroup.com</string>
-				<string>https://facebook.com</string>
-				<string>https://fb.com</string>
-				<string>https://fb.me</string>
-				<string>https://facebook.net</string>
-				<string>https://fbcdn.net</string>
-				<string>https://fbsbx.com</string>
-				<string>https://messenger.com</string>
-				<string>https://twitter.com</string>
-				<string>https://x.com</string>
-				<string>https://t.co</string>
-				<string>https://twimg.com</string>
-				<string>https://put.io</string>
-				<string>https://yts.mx</string>
-				<string>https://yts.am</string>
-				<string>https://yts.rs</string>
-				<string>https://tribler.org</string>
-				<string>https://soulseekqt.net</string>
-				<string>https://slsknet.org</string>
 				<string>https://haaretz.co.il</string>
-				<string>https://haaretz.com</string>
 				<string>https://www.haaretz.co.il</string>
+				<string>https://haaretz.com</string>
 				<string>https://www.haaretz.com</string>
 				<string>https://mobile.haaretz.co.il</string>
 				<string>https://themarker.com</string>
@@ -351,6 +716,7 @@
 				<string>https://kan11.co.il</string>
 				<string>https://www.kan11.co.il</string>
 				<string>https://kankids.org.il</string>
+				<string>https://www.kankids.org.il</string>
 				<string>https://media.kan.org.il</string>
 				<string>https://player.kan.org.il</string>
 				<string>https://walla.co.il</string>
@@ -384,11 +750,13 @@
 				<string>https://0404.co.il</string>
 				<string>https://www.0404.co.il</string>
 				<string>https://seret.co.il</string>
+				<string>https://www.seret.co.il</string>
 				<string>https://reshet.tv</string>
 				<string>https://www.reshet.tv</string>
 				<string>https://13tv.co.il</string>
 				<string>https://www.13tv.co.il</string>
 				<string>https://channel13.co.il</string>
+				<string>https://www.channel13.co.il</string>
 				<string>https://reuters.com</string>
 				<string>https://www.reuters.com</string>
 				<string>https://cnn.com</string>
@@ -427,9 +795,11 @@
 				<string>https://news.google.com</string>
 				<string>https://news.yahoo.com</string>
 				<string>https://apple.news</string>
+				<string>https://www.apple.news</string>
 				<string>https://msn.com</string>
 				<string>https://www.msn.com</string>
 				<string>https://sky.com</string>
+				<string>https://www.sky.com</string>
 				<string>https://news.sky.com</string>
 				<string>https://independent.co.uk</string>
 				<string>https://www.independent.co.uk</string>
@@ -439,325 +809,764 @@
 				<string>https://www.thetimes.com</string>
 				<string>https://telegraph.co.uk</string>
 				<string>https://www.telegraph.co.uk</string>
-				<string>https://www.mishloha.co.il</string>
-				<string>https://app.mishloha.co.il</string>
-				<string>https://gett.com</string>
-				<string>https://www.gett.com</string>
-				<string>https://gett.co.il</string>
-				<string>https://www.gett.co.il</string>
-				<string>https://ridewithvia.com</string>
-				<string>https://ubereats.com</string>
-				<string>https://www.ubereats.com</string>
-				<string>https://deliveroo.co.il</string>
-				<string>https://www.deliveroo.co.il</string>
-				<string>https://deliveroo.com</string>
-				<string>https://foodora.com</string>
-				<string>https://just-eat.com</string>
-				<string>https://doordash.com</string>
-				<string>https://www.doordash.com</string>
-				<string>https://grubhub.com</string>
-				<string>https://www.grubhub.com</string>
-				<string>https://postmates.com</string>
-				<string>https://pizza-hut.co.il</string>
-				<string>https://pizzahut.co.il</string>
-				<string>https://www.pizzahut.co.il</string>
-				<string>https://pizzahut.com</string>
-				<string>https://kfc.co.il</string>
-				<string>https://www.kfc.co.il</string>
-				<string>https://kfc.com</string>
-				<string>https://wendys.com</string>
-				<string>https://subway.co.il</string>
-				<string>https://www.subway.co.il</string>
-				<string>https://subway.com</string>
-				<string>https://burgerim.co.il</string>
-				<string>https://japanika.co.il</string>
-				<string>https://www.japanika.co.il</string>
-				<string>https://bbb.co.il</string>
-				<string>https://www.bbb.co.il</string>
-				<string>https://cafecafe.co.il</string>
-				<string>https://aroma.co.il</string>
-				<string>https://www.aroma.co.il</string>
-				<string>https://landwer.co.il</string>
-				<string>https://www.landwer.co.il</string>
-				<string>https://shipudim.co.il</string>
-				<string>https://rest.co.il</string>
-				<string>https://www.rest.co.il</string>
-				<string>https://togo.co.il</string>
-				<string>https://www.togo.co.il</string>
+				<string>https://put.io</string>
+				<string>https://www.put.io</string>
+				<string>https://yts.mx</string>
+				<string>https://www.yts.mx</string>
+				<string>https://yts.am</string>
+				<string>https://www.yts.am</string>
+				<string>https://yts.rs</string>
+				<string>https://www.yts.rs</string>
+				<string>https://tribler.org</string>
+				<string>https://www.tribler.org</string>
+				<string>https://soulseekqt.net</string>
+				<string>https://www.soulseekqt.net</string>
+				<string>https://slsknet.org</string>
+				<string>https://www.slsknet.org</string>
+				<string>https://1337x.to</string>
+				<string>https://www.1337x.to</string>
+				<string>https://thepiratebay.org</string>
+				<string>https://www.thepiratebay.org</string>
+				<string>https://rutracker.org</string>
+				<string>https://www.rutracker.org</string>
+				<string>https://nyaa.si</string>
+				<string>https://www.nyaa.si</string>
+				<string>https://proxysite.com</string>
+				<string>https://www.proxysite.com</string>
+				<string>https://croxyproxy.com</string>
+				<string>https://www.croxyproxy.com</string>
+				<string>https://croxyproxy.rocks</string>
+				<string>https://www.croxyproxy.rocks</string>
+				<string>https://blockaway.net</string>
+				<string>https://www.blockaway.net</string>
+				<string>https://proxyium.com</string>
+				<string>https://www.proxyium.com</string>
+				<string>https://kproxy.com</string>
+				<string>https://www.kproxy.com</string>
+				<string>https://4everproxy.com</string>
+				<string>https://www.4everproxy.com</string>
+				<string>https://hide.me</string>
+				<string>https://www.hide.me</string>
+				<string>https://12ft.io</string>
+				<string>https://www.12ft.io</string>
+				<string>https://removepaywall.com</string>
+				<string>https://www.removepaywall.com</string>
+				<string>https://archive.today</string>
+				<string>https://www.archive.today</string>
+				<string>https://archive.ph</string>
+				<string>https://www.archive.ph</string>
+				<string>https://archive.is</string>
+				<string>https://www.archive.is</string>
+				<string>https://archive.li</string>
+				<string>https://www.archive.li</string>
+				<string>https://archive.vn</string>
+				<string>https://www.archive.vn</string>
+				<string>https://archive.md</string>
+				<string>https://www.archive.md</string>
+				<string>https://archive.fo</string>
+				<string>https://www.archive.fo</string>
+				<string>https://web.archive.org</string>
+				<string>https://torproject.org</string>
+				<string>https://www.torproject.org</string>
+				<string>https://protonvpn.com</string>
+				<string>https://www.protonvpn.com</string>
+				<string>https://nordvpn.com</string>
+				<string>https://www.nordvpn.com</string>
+				<string>https://expressvpn.com</string>
+				<string>https://www.expressvpn.com</string>
+				<string>https://surfshark.com</string>
+				<string>https://www.surfshark.com</string>
+				<string>https://windscribe.com</string>
+				<string>https://www.windscribe.com</string>
+				<string>https://mullvad.net</string>
+				<string>https://www.mullvad.net</string>
+				<string>https://tunnelbear.com</string>
+				<string>https://www.tunnelbear.com</string>
+				<string>https://yuligroup.com</string>
+				<string>https://www.yuligroup.com</string>
 				<string>https://softool.co.il</string>
+				<string>https://www.softool.co.il</string>
 				<string>http://metartx.com</string>
+				<string>http://www.metartx.com</string>
 				<string>http://join.metartx.com</string>
 				<string>http://members.metartx.com</string>
 				<string>http://metart.com</string>
+				<string>http://www.metart.com</string>
 				<string>http://metartnetwork.com</string>
+				<string>http://www.metartnetwork.com</string>
 				<string>http://sso.metartnetwork.com</string>
 				<string>http://metart.network</string>
+				<string>http://www.metart.network</string>
 				<string>http://metartmoney.com</string>
+				<string>http://www.metartmoney.com</string>
 				<string>http://mansitegcdn.metartnetwork.com</string>
 				<string>http://cdn.metartx.com</string>
 				<string>http://static.metartx.com</string>
 				<string>http://api.metartx.com</string>
 				<string>http://media.metartx.com</string>
 				<string>http://pornhub.com</string>
+				<string>http://www.pornhub.com</string>
 				<string>http://pornhub.org</string>
+				<string>http://www.pornhub.org</string>
 				<string>http://xvideos.com</string>
+				<string>http://www.xvideos.com</string>
 				<string>http://xnxx.com</string>
+				<string>http://www.xnxx.com</string>
 				<string>http://xhamster.com</string>
+				<string>http://www.xhamster.com</string>
 				<string>http://xhamster.desi</string>
+				<string>http://www.xhamster.desi</string>
 				<string>http://xhamster2.com</string>
+				<string>http://www.xhamster2.com</string>
 				<string>http://redtube.com</string>
+				<string>http://www.redtube.com</string>
 				<string>http://youporn.com</string>
+				<string>http://www.youporn.com</string>
 				<string>http://tube8.com</string>
+				<string>http://www.tube8.com</string>
 				<string>http://spankbang.com</string>
+				<string>http://www.spankbang.com</string>
 				<string>http://eporner.com</string>
+				<string>http://www.eporner.com</string>
 				<string>http://beeg.com</string>
+				<string>http://www.beeg.com</string>
 				<string>http://tnaflix.com</string>
+				<string>http://www.tnaflix.com</string>
 				<string>http://thumbzilla.com</string>
+				<string>http://www.thumbzilla.com</string>
 				<string>http://porntrex.com</string>
+				<string>http://www.porntrex.com</string>
 				<string>http://pornmd.com</string>
+				<string>http://www.pornmd.com</string>
 				<string>http://porndig.com</string>
+				<string>http://www.porndig.com</string>
 				<string>http://hqporner.com</string>
+				<string>http://www.hqporner.com</string>
 				<string>http://txxx.com</string>
+				<string>http://www.txxx.com</string>
 				<string>http://hclips.com</string>
+				<string>http://www.hclips.com</string>
 				<string>http://upornia.com</string>
+				<string>http://www.upornia.com</string>
 				<string>http://vjav.com</string>
+				<string>http://www.vjav.com</string>
 				<string>http://jav.guru</string>
+				<string>http://www.jav.guru</string>
 				<string>http://javmost.com</string>
+				<string>http://www.javmost.com</string>
 				<string>http://javhd.com</string>
+				<string>http://www.javhd.com</string>
 				<string>http://brazzers.com</string>
+				<string>http://www.brazzers.com</string>
 				<string>http://bangbros.com</string>
+				<string>http://www.bangbros.com</string>
 				<string>http://realitykings.com</string>
+				<string>http://www.realitykings.com</string>
 				<string>http://naughtyamerica.com</string>
+				<string>http://www.naughtyamerica.com</string>
 				<string>http://mofos.com</string>
+				<string>http://www.mofos.com</string>
 				<string>http://digitalplayground.com</string>
+				<string>http://www.digitalplayground.com</string>
 				<string>http://twistys.com</string>
+				<string>http://www.twistys.com</string>
 				<string>http://babes.com</string>
+				<string>http://www.babes.com</string>
 				<string>http://chaturbate.com</string>
+				<string>http://www.chaturbate.com</string>
 				<string>http://stripchat.com</string>
+				<string>http://www.stripchat.com</string>
 				<string>http://bongacams.com</string>
+				<string>http://www.bongacams.com</string>
 				<string>http://cam4.com</string>
+				<string>http://www.cam4.com</string>
 				<string>http://livejasmin.com</string>
+				<string>http://www.livejasmin.com</string>
 				<string>http://onlyfans.com</string>
+				<string>http://www.onlyfans.com</string>
 				<string>http://fansly.com</string>
+				<string>http://www.fansly.com</string>
 				<string>http://manyvids.com</string>
+				<string>http://www.manyvids.com</string>
 				<string>http://clips4sale.com</string>
+				<string>http://www.clips4sale.com</string>
 				<string>http://pornpics.com</string>
+				<string>http://www.pornpics.com</string>
 				<string>http://imagefap.com</string>
+				<string>http://www.imagefap.com</string>
 				<string>http://motherless.com</string>
+				<string>http://www.motherless.com</string>
 				<string>http://erome.com</string>
+				<string>http://www.erome.com</string>
 				<string>http://rule34.xxx</string>
+				<string>http://www.rule34.xxx</string>
 				<string>http://rule34video.com</string>
+				<string>http://www.rule34video.com</string>
 				<string>http://e621.net</string>
+				<string>http://www.e621.net</string>
 				<string>http://gelbooru.com</string>
+				<string>http://www.gelbooru.com</string>
 				<string>http://sankakucomplex.com</string>
+				<string>http://www.sankakucomplex.com</string>
 				<string>http://nhentai.net</string>
+				<string>http://www.nhentai.net</string>
 				<string>http://hentaihaven.xxx</string>
+				<string>http://www.hentaihaven.xxx</string>
 				<string>http://hanime.tv</string>
+				<string>http://www.hanime.tv</string>
 				<string>http://fakku.net</string>
+				<string>http://www.fakku.net</string>
 				<string>http://literotica.com</string>
+				<string>http://www.literotica.com</string>
 				<string>http://asstr.org</string>
+				<string>http://www.asstr.org</string>
 				<string>http://sex.com</string>
+				<string>http://www.sex.com</string>
 				<string>http://youjizz.com</string>
+				<string>http://www.youjizz.com</string>
 				<string>http://porn.com</string>
+				<string>http://www.porn.com</string>
 				<string>http://4tube.com</string>
+				<string>http://www.4tube.com</string>
 				<string>http://drtuber.com</string>
+				<string>http://www.drtuber.com</string>
 				<string>http://sunporno.com</string>
+				<string>http://www.sunporno.com</string>
 				<string>http://pornone.com</string>
+				<string>http://www.pornone.com</string>
 				<string>http://fuq.com</string>
+				<string>http://www.fuq.com</string>
 				<string>http://lobstertube.com</string>
+				<string>http://www.lobstertube.com</string>
 				<string>http://ixxx.com</string>
+				<string>http://www.ixxx.com</string>
 				<string>http://porngo.com</string>
+				<string>http://www.porngo.com</string>
 				<string>http://xxxbunker.com</string>
+				<string>http://www.xxxbunker.com</string>
 				<string>http://perfectgirls.net</string>
+				<string>http://www.perfectgirls.net</string>
 				<string>http://pornhat.com</string>
+				<string>http://www.pornhat.com</string>
 				<string>http://anyporn.com</string>
+				<string>http://www.anyporn.com</string>
 				<string>http://gotporn.com</string>
+				<string>http://www.gotporn.com</string>
 				<string>http://fapster.xxx</string>
+				<string>http://www.fapster.xxx</string>
 				<string>http://porn300.com</string>
+				<string>http://www.porn300.com</string>
 				<string>http://pornktube.com</string>
+				<string>http://www.pornktube.com</string>
 				<string>http://pornid.xxx</string>
+				<string>http://www.pornid.xxx</string>
 				<string>http://porn00.org</string>
+				<string>http://www.porn00.org</string>
 				<string>http://pornzog.com</string>
+				<string>http://www.pornzog.com</string>
 				<string>http://pornlib.com</string>
+				<string>http://www.pornlib.com</string>
 				<string>http://pornwhite.com</string>
+				<string>http://www.pornwhite.com</string>
 				<string>http://pornrabbit.com</string>
+				<string>http://www.pornrabbit.com</string>
 				<string>http://pornoxo.com</string>
+				<string>http://www.pornoxo.com</string>
 				<string>http://pornicom.com</string>
+				<string>http://www.pornicom.com</string>
 				<string>http://pornhubpremium.com</string>
+				<string>http://www.pornhubpremium.com</string>
+				<string>http://pornworks.com</string>
+				<string>http://www.pornworks.com</string>
+				<string>http://pornworks.ai</string>
+				<string>http://www.pornworks.ai</string>
+				<string>http://pornmaker.ai</string>
+				<string>http://www.pornmaker.ai</string>
+				<string>http://easyporn.ai</string>
+				<string>http://www.easyporn.ai</string>
+				<string>http://pornjourney.ai</string>
+				<string>http://www.pornjourney.ai</string>
+				<string>http://pornjoy.ai</string>
+				<string>http://www.pornjoy.ai</string>
+				<string>http://pornpen.ai</string>
+				<string>http://www.pornpen.ai</string>
+				<string>http://imakeporn.com</string>
+				<string>http://www.imakeporn.com</string>
+				<string>http://myfreecams.com</string>
+				<string>http://www.myfreecams.com</string>
+				<string>http://camsoda.com</string>
+				<string>http://www.camsoda.com</string>
+				<string>http://flirt4free.com</string>
+				<string>http://www.flirt4free.com</string>
 				<string>http://vidfaceswap.com</string>
+				<string>http://www.vidfaceswap.com</string>
 				<string>http://vidsfaceswap.com</string>
 				<string>http://www.vidsfaceswap.com</string>
-				<string>http://www.vidfaceswap.com</string>
 				<string>http://api.vidsfaceswap.com</string>
 				<string>http://cdn.vidsfaceswap.com</string>
 				<string>http://app.vidsfaceswap.com</string>
 				<string>http://faceswapper.ai</string>
+				<string>http://www.faceswapper.ai</string>
 				<string>http://soulgen.net</string>
+				<string>http://www.soulgen.net</string>
 				<string>http://faceswap.dev</string>
+				<string>http://www.faceswap.dev</string>
 				<string>http://aifaceswap.io</string>
+				<string>http://www.aifaceswap.io</string>
 				<string>http://faceswap.video</string>
+				<string>http://www.faceswap.video</string>
 				<string>http://facefusion.com</string>
+				<string>http://www.facefusion.com</string>
 				<string>http://swapface.org</string>
+				<string>http://www.swapface.org</string>
 				<string>http://deepswap.ai</string>
+				<string>http://www.deepswap.ai</string>
 				<string>http://reface.ai</string>
+				<string>http://www.reface.ai</string>
 				<string>http://mrdeepfake.com</string>
+				<string>http://www.mrdeepfake.com</string>
 				<string>http://deepfakesweb.com</string>
-				<string>http://pornworks.com</string>
+				<string>http://www.deepfakesweb.com</string>
 				<string>http://remaker.ai</string>
+				<string>http://www.remaker.ai</string>
 				<string>http://facehub.ai</string>
+				<string>http://www.facehub.ai</string>
 				<string>http://facemagic.ai</string>
+				<string>http://www.facemagic.ai</string>
 				<string>http://roop.ai</string>
+				<string>http://www.roop.ai</string>
 				<string>http://fakeface.io</string>
+				<string>http://www.fakeface.io</string>
 				<string>http://face-swap.app</string>
+				<string>http://www.face-swap.app</string>
 				<string>http://faceswaplab.com</string>
+				<string>http://www.faceswaplab.com</string>
 				<string>http://deepfakeporn.app</string>
+				<string>http://www.deepfakeporn.app</string>
 				<string>http://deepfake.com</string>
+				<string>http://www.deepfake.com</string>
 				<string>http://undress.app</string>
+				<string>http://www.undress.app</string>
 				<string>http://clothoff.io</string>
+				<string>http://www.clothoff.io</string>
 				<string>http://nudify.online</string>
+				<string>http://www.nudify.online</string>
 				<string>http://deepnude.com</string>
+				<string>http://www.deepnude.com</string>
 				<string>http://undressai.com</string>
+				<string>http://www.undressai.com</string>
 				<string>http://deepnudenow.com</string>
+				<string>http://www.deepnudenow.com</string>
 				<string>http://nudify.site</string>
+				<string>http://www.nudify.site</string>
 				<string>http://dreamgf.ai</string>
+				<string>http://www.dreamgf.ai</string>
 				<string>http://undress.cc</string>
+				<string>http://www.undress.cc</string>
 				<string>http://nudify.vip</string>
+				<string>http://www.nudify.vip</string>
 				<string>http://clothoff.net</string>
+				<string>http://www.clothoff.net</string>
 				<string>http://undressing.io</string>
+				<string>http://www.undressing.io</string>
 				<string>http://nudifier.ai</string>
+				<string>http://www.nudifier.ai</string>
 				<string>http://ainude.ai</string>
+				<string>http://www.ainude.ai</string>
 				<string>http://clothoff.pro</string>
+				<string>http://www.clothoff.pro</string>
 				<string>http://deepnude.to</string>
+				<string>http://www.deepnude.to</string>
 				<string>http://nudify.me</string>
+				<string>http://www.nudify.me</string>
 				<string>http://undressher.app</string>
+				<string>http://www.undressher.app</string>
 				<string>http://clothoff.ai</string>
+				<string>http://www.clothoff.ai</string>
 				<string>http://nudifyai.com</string>
+				<string>http://www.nudifyai.com</string>
 				<string>http://deepnudeai.com</string>
+				<string>http://www.deepnudeai.com</string>
 				<string>http://clothoff.org</string>
+				<string>http://www.clothoff.org</string>
 				<string>http://undresslove.com</string>
+				<string>http://www.undresslove.com</string>
 				<string>http://nudify.net</string>
+				<string>http://www.nudify.net</string>
 				<string>http://deepnude.org</string>
-				<string>http://pornmate.com</string>
-				<string>http://theporndude.com</string>
-				<string>http://theporndude.vip</string>
-				<string>http://thepornlist.net</string>
-				<string>http://thepornguy.org</string>
-				<string>http://mypornbible.com</string>
-				<string>http://indianpornsites.net</string>
-				<string>http://toppornsites.com</string>
-				<string>http://porntubeslist.com</string>
-				<string>http://iwantporn.net</string>
-				<string>http://weknowporn.com</string>
-				<string>http://thepornlinks.com</string>
-				<string>http://tblop.com</string>
-				<string>http://gotblop.com</string>
-				<string>http://pornwhitelist.com</string>
-				<string>http://pornsites.xxx</string>
-				<string>http://bestofporn.com</string>
-				<string>http://thebestfetishsites.com</string>
-				<string>http://theredplayground.com</string>
-				<string>http://porncrash.com</string>
-				<string>http://adultsiteranking.com</string>
-				<string>http://fivestarpornsites.com</string>
-				<string>http://thepornapp.com</string>
-				<string>http://pornsheriff.com</string>
-				<string>http://steezylist.com</string>
-				<string>http://bigpornsiteslist.com</string>
-				<string>http://theporncouch.com</string>
-				<string>http://johnspornsites.com</string>
-				<string>http://tbpsl.com</string>
-				<string>http://linkorama.com</string>
-				<string>http://xxx.xxx</string>
+				<string>http://www.deepnude.org</string>
 				<string>http://undress.vip</string>
+				<string>http://www.undress.vip</string>
 				<string>http://undressly.ai</string>
+				<string>http://www.undressly.ai</string>
 				<string>http://unclothy.ai</string>
+				<string>http://www.unclothy.ai</string>
 				<string>http://undresswithai.com</string>
+				<string>http://www.undresswithai.com</string>
 				<string>http://n8ked.com</string>
+				<string>http://www.n8ked.com</string>
 				<string>http://n8ked.app</string>
+				<string>http://www.n8ked.app</string>
 				<string>http://nudify.plus</string>
+				<string>http://www.nudify.plus</string>
 				<string>http://nudifyplus.com</string>
+				<string>http://www.nudifyplus.com</string>
 				<string>http://nudifyher.com</string>
+				<string>http://www.nudifyher.com</string>
 				<string>http://joyfun.ai</string>
-				<string>http://pornworks.ai</string>
+				<string>http://www.joyfun.ai</string>
 				<string>http://seduced.ai</string>
+				<string>http://www.seduced.ai</string>
 				<string>http://unlucid.ai</string>
+				<string>http://www.unlucid.ai</string>
 				<string>http://promptchan.ai</string>
+				<string>http://www.promptchan.ai</string>
 				<string>http://candy.ai</string>
+				<string>http://www.candy.ai</string>
 				<string>http://ourdream.ai</string>
-				<string>http://pornmaker.ai</string>
+				<string>http://www.ourdream.ai</string>
 				<string>http://nubee.ai</string>
+				<string>http://www.nubee.ai</string>
 				<string>http://gptgirlfriend.online</string>
+				<string>http://www.gptgirlfriend.online</string>
 				<string>http://ainude.best</string>
+				<string>http://www.ainude.best</string>
 				<string>http://ainudez.com</string>
+				<string>http://www.ainudez.com</string>
 				<string>http://aiundress.cc</string>
+				<string>http://www.aiundress.cc</string>
 				<string>http://deepnude.online</string>
+				<string>http://www.deepnude.online</string>
 				<string>http://deepnudes.co</string>
+				<string>http://www.deepnudes.co</string>
 				<string>http://deepnudify.com</string>
+				<string>http://www.deepnudify.com</string>
 				<string>http://xnudes.ai</string>
+				<string>http://www.xnudes.ai</string>
 				<string>http://xnude.ai</string>
+				<string>http://www.xnude.ai</string>
 				<string>http://drawnudes.ai</string>
+				<string>http://www.drawnudes.ai</string>
 				<string>http://getnude.ai</string>
+				<string>http://www.getnude.ai</string>
 				<string>http://nudefusion.com</string>
-				<string>http://easyporn.ai</string>
-				<string>http://pornjourney.ai</string>
-				<string>http://pornjoy.ai</string>
+				<string>http://www.nudefusion.com</string>
 				<string>http://makenude.ai</string>
+				<string>http://www.makenude.ai</string>
 				<string>http://x-pictures.ai</string>
-				<string>http://pornpen.ai</string>
+				<string>http://www.x-pictures.ai</string>
 				<string>http://leakifyhub.com</string>
+				<string>http://www.leakifyhub.com</string>
 				<string>http://swapper.ai</string>
+				<string>http://www.swapper.ai</string>
 				<string>http://dreampaint.net</string>
+				<string>http://www.dreampaint.net</string>
 				<string>http://celebmaker.ai</string>
+				<string>http://www.celebmaker.ai</string>
 				<string>http://freenudifier.com</string>
+				<string>http://www.freenudifier.com</string>
 				<string>http://ai-deep-nude.com</string>
+				<string>http://www.ai-deep-nude.com</string>
 				<string>http://deep-nudes.com</string>
-				<string>http://imakeporn.com</string>
+				<string>http://www.deep-nudes.com</string>
 				<string>http://ppnude.com</string>
+				<string>http://www.ppnude.com</string>
 				<string>http://nudey.app</string>
+				<string>http://www.nudey.app</string>
 				<string>http://ai-nudes.com</string>
+				<string>http://www.ai-nudes.com</string>
 				<string>http://ndfy.ai</string>
+				<string>http://www.ndfy.ai</string>
 				<string>http://deepstrip.ai</string>
+				<string>http://www.deepstrip.ai</string>
 				<string>http://clothesremover.ai</string>
+				<string>http://www.clothesremover.ai</string>
 				<string>http://nakedly.ai</string>
+				<string>http://www.nakedly.ai</string>
 				<string>http://aipose.com</string>
+				<string>http://www.aipose.com</string>
 				<string>http://ainsfwtools.com</string>
+				<string>http://www.ainsfwtools.com</string>
+				<string>http://facefusion.io</string>
+				<string>http://www.facefusion.io</string>
+				<string>http://faceswaponline.com</string>
+				<string>http://www.faceswaponline.com</string>
+				<string>http://ai-face-swap.com</string>
+				<string>http://www.ai-face-swap.com</string>
+				<string>http://mirage.app</string>
+				<string>http://www.mirage.app</string>
+				<string>http://akool.com</string>
+				<string>http://www.akool.com</string>
+				<string>http://media.io</string>
+				<string>http://www.media.io</string>
+				<string>http://deepnude.cc</string>
+				<string>http://www.deepnude.cc</string>
+				<string>http://soulgen.ai</string>
+				<string>http://www.soulgen.ai</string>
+				<string>http://civitai.com</string>
+				<string>http://www.civitai.com</string>
+				<string>http://seaart.ai</string>
+				<string>http://www.seaart.ai</string>
+				<string>http://pixai.art</string>
+				<string>http://www.pixai.art</string>
+				<string>http://perchance.org</string>
+				<string>http://www.perchance.org</string>
+				<string>http://grok.com</string>
+				<string>http://www.grok.com</string>
+				<string>http://janitorai.com</string>
+				<string>http://www.janitorai.com</string>
+				<string>http://spicychat.ai</string>
+				<string>http://www.spicychat.ai</string>
+				<string>http://crushon.ai</string>
+				<string>http://www.crushon.ai</string>
+				<string>http://muah.ai</string>
+				<string>http://www.muah.ai</string>
+				<string>http://chub.ai</string>
+				<string>http://www.chub.ai</string>
+				<string>http://pornmate.com</string>
+				<string>http://www.pornmate.com</string>
+				<string>http://theporndude.com</string>
+				<string>http://www.theporndude.com</string>
+				<string>http://theporndude.vip</string>
+				<string>http://www.theporndude.vip</string>
+				<string>http://thepornlist.net</string>
+				<string>http://www.thepornlist.net</string>
+				<string>http://thepornguy.org</string>
+				<string>http://www.thepornguy.org</string>
+				<string>http://mypornbible.com</string>
+				<string>http://www.mypornbible.com</string>
+				<string>http://indianpornsites.net</string>
+				<string>http://www.indianpornsites.net</string>
+				<string>http://toppornsites.com</string>
+				<string>http://www.toppornsites.com</string>
+				<string>http://porntubeslist.com</string>
+				<string>http://www.porntubeslist.com</string>
+				<string>http://iwantporn.net</string>
+				<string>http://www.iwantporn.net</string>
+				<string>http://weknowporn.com</string>
+				<string>http://www.weknowporn.com</string>
+				<string>http://thepornlinks.com</string>
+				<string>http://www.thepornlinks.com</string>
+				<string>http://tblop.com</string>
+				<string>http://www.tblop.com</string>
+				<string>http://gotblop.com</string>
+				<string>http://www.gotblop.com</string>
+				<string>http://pornwhitelist.com</string>
+				<string>http://www.pornwhitelist.com</string>
+				<string>http://pornsites.xxx</string>
+				<string>http://www.pornsites.xxx</string>
+				<string>http://bestofporn.com</string>
+				<string>http://www.bestofporn.com</string>
+				<string>http://thebestfetishsites.com</string>
+				<string>http://www.thebestfetishsites.com</string>
+				<string>http://theredplayground.com</string>
+				<string>http://www.theredplayground.com</string>
+				<string>http://porncrash.com</string>
+				<string>http://www.porncrash.com</string>
+				<string>http://adultsiteranking.com</string>
+				<string>http://www.adultsiteranking.com</string>
+				<string>http://fivestarpornsites.com</string>
+				<string>http://www.fivestarpornsites.com</string>
+				<string>http://thepornapp.com</string>
+				<string>http://www.thepornapp.com</string>
+				<string>http://pornsheriff.com</string>
+				<string>http://www.pornsheriff.com</string>
+				<string>http://steezylist.com</string>
+				<string>http://www.steezylist.com</string>
+				<string>http://bigpornsiteslist.com</string>
+				<string>http://www.bigpornsiteslist.com</string>
+				<string>http://theporncouch.com</string>
+				<string>http://www.theporncouch.com</string>
+				<string>http://johnspornsites.com</string>
+				<string>http://www.johnspornsites.com</string>
+				<string>http://tbpsl.com</string>
+				<string>http://www.tbpsl.com</string>
+				<string>http://linkorama.com</string>
+				<string>http://www.linkorama.com</string>
+				<string>http://xxx.xxx</string>
+				<string>http://www.xxx.xxx</string>
 				<string>http://wolt.com</string>
+				<string>http://www.wolt.com</string>
 				<string>http://wolt.co.il</string>
+				<string>http://www.wolt.co.il</string>
 				<string>http://tenbis.co.il</string>
+				<string>http://www.tenbis.co.il</string>
 				<string>http://10bis.co.il</string>
+				<string>http://www.10bis.co.il</string>
 				<string>http://mishloha.co.il</string>
+				<string>http://www.mishloha.co.il</string>
 				<string>http://pluxee.co.il</string>
+				<string>http://www.pluxee.co.il</string>
 				<string>http://cibus.pluxee.co.il</string>
 				<string>http://consumers.pluxee.co.il</string>
-				<string>http://facefusion.io</string>
-				<string>http://faceswaponline.com</string>
-				<string>http://ai-face-swap.com</string>
-				<string>http://mirage.app</string>
-				<string>http://akool.com</string>
-				<string>http://media.io</string>
 				<string>http://yango.com</string>
+				<string>http://www.yango.com</string>
 				<string>http://deli.yango.com</string>
 				<string>http://yango.co.il</string>
+				<string>http://www.yango.co.il</string>
 				<string>http://dominos.co.il</string>
+				<string>http://www.dominos.co.il</string>
 				<string>http://dominos.com</string>
+				<string>http://www.dominos.com</string>
 				<string>http://order.dominos.com</string>
 				<string>http://papajohns.co.il</string>
+				<string>http://www.papajohns.co.il</string>
 				<string>http://papajohns.com</string>
+				<string>http://www.papajohns.com</string>
 				<string>http://mcdonalds.co.il</string>
+				<string>http://www.mcdonalds.co.il</string>
 				<string>http://mcdonalds.com</string>
+				<string>http://www.mcdonalds.com</string>
 				<string>http://burgerking.co.il</string>
+				<string>http://www.burgerking.co.il</string>
 				<string>http://burgerking.com</string>
+				<string>http://www.burgerking.com</string>
 				<string>http://bk.com</string>
+				<string>http://www.bk.com</string>
+				<string>http://restaurant-api.wolt.com</string>
+				<string>http://consumer-api.wolt.com</string>
+				<string>http://woltapi.com</string>
+				<string>http://www.woltapi.com</string>
+				<string>http://consumers-cdn.wolt.com</string>
+				<string>http://api.wolt.com</string>
+				<string>http://api.10bis.co.il</string>
+				<string>http://www.api.10bis.co.il</string>
+				<string>http://10bis.com</string>
+				<string>http://www.10bis.com</string>
+				<string>http://api.mishloha.co.il</string>
+				<string>http://mishloha.com</string>
+				<string>http://www.mishloha.com</string>
+				<string>http://tc.yango.com</string>
+				<string>http://yango.yandex.com</string>
+				<string>http://eda.yandex</string>
+				<string>http://www.eda.yandex</string>
+				<string>http://order.dominos.co.il</string>
+				<string>http://www.order.dominos.co.il</string>
+				<string>http://api.dominos.com</string>
+				<string>http://api.papajohns.com</string>
+				<string>http://ordering.papajohns.com</string>
+				<string>http://api.mcdonalds.com</string>
+				<string>http://api.bk.com</string>
+				<string>http://order.bk.com</string>
+				<string>http://app.mishloha.co.il</string>
+				<string>http://gett.com</string>
+				<string>http://www.gett.com</string>
+				<string>http://gett.co.il</string>
+				<string>http://www.gett.co.il</string>
+				<string>http://ridewithvia.com</string>
+				<string>http://www.ridewithvia.com</string>
+				<string>http://ubereats.com</string>
+				<string>http://www.ubereats.com</string>
+				<string>http://deliveroo.co.il</string>
+				<string>http://www.deliveroo.co.il</string>
+				<string>http://deliveroo.com</string>
+				<string>http://www.deliveroo.com</string>
+				<string>http://foodora.com</string>
+				<string>http://www.foodora.com</string>
+				<string>http://just-eat.com</string>
+				<string>http://www.just-eat.com</string>
+				<string>http://doordash.com</string>
+				<string>http://www.doordash.com</string>
+				<string>http://grubhub.com</string>
+				<string>http://www.grubhub.com</string>
+				<string>http://postmates.com</string>
+				<string>http://www.postmates.com</string>
+				<string>http://pizza-hut.co.il</string>
+				<string>http://www.pizza-hut.co.il</string>
+				<string>http://pizzahut.co.il</string>
+				<string>http://www.pizzahut.co.il</string>
+				<string>http://pizzahut.com</string>
+				<string>http://www.pizzahut.com</string>
+				<string>http://kfc.co.il</string>
+				<string>http://www.kfc.co.il</string>
+				<string>http://kfc.com</string>
+				<string>http://www.kfc.com</string>
+				<string>http://wendys.com</string>
+				<string>http://www.wendys.com</string>
+				<string>http://subway.co.il</string>
+				<string>http://www.subway.co.il</string>
+				<string>http://subway.com</string>
+				<string>http://www.subway.com</string>
+				<string>http://burgerim.co.il</string>
+				<string>http://www.burgerim.co.il</string>
+				<string>http://japanika.co.il</string>
+				<string>http://www.japanika.co.il</string>
+				<string>http://bbb.co.il</string>
+				<string>http://www.bbb.co.il</string>
+				<string>http://cafecafe.co.il</string>
+				<string>http://www.cafecafe.co.il</string>
+				<string>http://aroma.co.il</string>
+				<string>http://www.aroma.co.il</string>
+				<string>http://landwer.co.il</string>
+				<string>http://www.landwer.co.il</string>
+				<string>http://shipudim.co.il</string>
+				<string>http://www.shipudim.co.il</string>
+				<string>http://rest.co.il</string>
+				<string>http://www.rest.co.il</string>
+				<string>http://togo.co.il</string>
+				<string>http://www.togo.co.il</string>
+				<string>http://authentication.wolt.com</string>
+				<string>http://credentials.wolt.com</string>
+				<string>http://blob.wolt.com</string>
+				<string>http://images.wolt.com</string>
 				<string>http://instagram.com</string>
+				<string>http://www.instagram.com</string>
 				<string>http://i.instagram.com</string>
 				<string>http://graph.instagram.com</string>
 				<string>http://cdninstagram.com</string>
+				<string>http://www.cdninstagram.com</string>
 				<string>http://scontent.cdninstagram.com</string>
 				<string>http://accountscenter.instagram.com</string>
 				<string>http://b.i.instagram.com</string>
 				<string>http://api.instagram.com</string>
+				<string>http://facebook.com</string>
+				<string>http://www.facebook.com</string>
+				<string>http://fb.com</string>
+				<string>http://www.fb.com</string>
+				<string>http://fb.me</string>
+				<string>http://www.fb.me</string>
+				<string>http://facebook.net</string>
+				<string>http://www.facebook.net</string>
+				<string>http://fbcdn.net</string>
+				<string>http://www.fbcdn.net</string>
+				<string>http://fbsbx.com</string>
+				<string>http://www.fbsbx.com</string>
+				<string>http://messenger.com</string>
+				<string>http://www.messenger.com</string>
+				<string>http://twitter.com</string>
+				<string>http://www.twitter.com</string>
+				<string>http://x.com</string>
+				<string>http://www.x.com</string>
+				<string>http://t.co</string>
+				<string>http://www.t.co</string>
+				<string>http://twimg.com</string>
+				<string>http://www.twimg.com</string>
+				<string>http://reddit.com</string>
+				<string>http://www.reddit.com</string>
+				<string>http://old.reddit.com</string>
+				<string>http://redd.it</string>
+				<string>http://www.redd.it</string>
+				<string>http://i.redd.it</string>
+				<string>http://v.redd.it</string>
+				<string>http://preview.redd.it</string>
+				<string>http://redditmedia.com</string>
+				<string>http://www.redditmedia.com</string>
+				<string>http://redditstatic.com</string>
+				<string>http://www.redditstatic.com</string>
+				<string>http://threads.net</string>
+				<string>http://www.threads.net</string>
+				<string>http://threads.com</string>
+				<string>http://www.threads.com</string>
+				<string>http://m.facebook.com</string>
+				<string>http://mbasic.facebook.com</string>
+				<string>http://web.facebook.com</string>
+				<string>http://l.facebook.com</string>
+				<string>http://touch.facebook.com</string>
+				<string>http://mobile.twitter.com</string>
 				<string>http://n12.co.il</string>
+				<string>http://www.n12.co.il</string>
 				<string>http://ynet.co.il</string>
+				<string>http://www.ynet.co.il</string>
 				<string>http://m.ynet.co.il</string>
 				<string>http://mako.co.il</string>
 				<string>http://www.mako.co.il</string>
@@ -772,52 +1581,9 @@
 				<string>http://ynet-pic1.yit.co.il</string>
 				<string>http://z.ynet.co.il</string>
 				<string>http://www.m.ynet.co.il</string>
-				<string>http://restaurant-api.wolt.com</string>
-				<string>http://consumer-api.wolt.com</string>
-				<string>http://woltapi.com</string>
-				<string>http://www.woltapi.com</string>
-				<string>http://consumers-cdn.wolt.com</string>
-				<string>http://api.wolt.com</string>
-				<string>http://api.10bis.co.il</string>
-				<string>http://www.api.10bis.co.il</string>
-				<string>http://10bis.com</string>
-				<string>http://www.10bis.com</string>
-				<string>http://api.mishloha.co.il</string>
-				<string>http://mishloha.com</string>
-				<string>http://tc.yango.com</string>
-				<string>http://yango.yandex.com</string>
-				<string>http://eda.yandex</string>
-				<string>http://order.dominos.co.il</string>
-				<string>http://www.order.dominos.co.il</string>
-				<string>http://api.dominos.com</string>
-				<string>http://api.papajohns.com</string>
-				<string>http://ordering.papajohns.com</string>
-				<string>http://api.mcdonalds.com</string>
-				<string>http://www.mcdonalds.co.il</string>
-				<string>http://api.bk.com</string>
-				<string>http://order.bk.com</string>
-				<string>http://yuligroup.com</string>
-				<string>http://facebook.com</string>
-				<string>http://fb.com</string>
-				<string>http://fb.me</string>
-				<string>http://facebook.net</string>
-				<string>http://fbcdn.net</string>
-				<string>http://fbsbx.com</string>
-				<string>http://messenger.com</string>
-				<string>http://twitter.com</string>
-				<string>http://x.com</string>
-				<string>http://t.co</string>
-				<string>http://twimg.com</string>
-				<string>http://put.io</string>
-				<string>http://yts.mx</string>
-				<string>http://yts.am</string>
-				<string>http://yts.rs</string>
-				<string>http://tribler.org</string>
-				<string>http://soulseekqt.net</string>
-				<string>http://slsknet.org</string>
 				<string>http://haaretz.co.il</string>
-				<string>http://haaretz.com</string>
 				<string>http://www.haaretz.co.il</string>
+				<string>http://haaretz.com</string>
 				<string>http://www.haaretz.com</string>
 				<string>http://mobile.haaretz.co.il</string>
 				<string>http://themarker.com</string>
@@ -827,6 +1593,7 @@
 				<string>http://kan11.co.il</string>
 				<string>http://www.kan11.co.il</string>
 				<string>http://kankids.org.il</string>
+				<string>http://www.kankids.org.il</string>
 				<string>http://media.kan.org.il</string>
 				<string>http://player.kan.org.il</string>
 				<string>http://walla.co.il</string>
@@ -860,11 +1627,13 @@
 				<string>http://0404.co.il</string>
 				<string>http://www.0404.co.il</string>
 				<string>http://seret.co.il</string>
+				<string>http://www.seret.co.il</string>
 				<string>http://reshet.tv</string>
 				<string>http://www.reshet.tv</string>
 				<string>http://13tv.co.il</string>
 				<string>http://www.13tv.co.il</string>
 				<string>http://channel13.co.il</string>
+				<string>http://www.channel13.co.il</string>
 				<string>http://reuters.com</string>
 				<string>http://www.reuters.com</string>
 				<string>http://cnn.com</string>
@@ -903,9 +1672,11 @@
 				<string>http://news.google.com</string>
 				<string>http://news.yahoo.com</string>
 				<string>http://apple.news</string>
+				<string>http://www.apple.news</string>
 				<string>http://msn.com</string>
 				<string>http://www.msn.com</string>
 				<string>http://sky.com</string>
+				<string>http://www.sky.com</string>
 				<string>http://news.sky.com</string>
 				<string>http://independent.co.uk</string>
 				<string>http://www.independent.co.uk</string>
@@ -915,52 +1686,83 @@
 				<string>http://www.thetimes.com</string>
 				<string>http://telegraph.co.uk</string>
 				<string>http://www.telegraph.co.uk</string>
-				<string>http://www.mishloha.co.il</string>
-				<string>http://app.mishloha.co.il</string>
-				<string>http://gett.com</string>
-				<string>http://www.gett.com</string>
-				<string>http://gett.co.il</string>
-				<string>http://www.gett.co.il</string>
-				<string>http://ridewithvia.com</string>
-				<string>http://ubereats.com</string>
-				<string>http://www.ubereats.com</string>
-				<string>http://deliveroo.co.il</string>
-				<string>http://www.deliveroo.co.il</string>
-				<string>http://deliveroo.com</string>
-				<string>http://foodora.com</string>
-				<string>http://just-eat.com</string>
-				<string>http://doordash.com</string>
-				<string>http://www.doordash.com</string>
-				<string>http://grubhub.com</string>
-				<string>http://www.grubhub.com</string>
-				<string>http://postmates.com</string>
-				<string>http://pizza-hut.co.il</string>
-				<string>http://pizzahut.co.il</string>
-				<string>http://www.pizzahut.co.il</string>
-				<string>http://pizzahut.com</string>
-				<string>http://kfc.co.il</string>
-				<string>http://www.kfc.co.il</string>
-				<string>http://kfc.com</string>
-				<string>http://wendys.com</string>
-				<string>http://subway.co.il</string>
-				<string>http://www.subway.co.il</string>
-				<string>http://subway.com</string>
-				<string>http://burgerim.co.il</string>
-				<string>http://japanika.co.il</string>
-				<string>http://www.japanika.co.il</string>
-				<string>http://bbb.co.il</string>
-				<string>http://www.bbb.co.il</string>
-				<string>http://cafecafe.co.il</string>
-				<string>http://aroma.co.il</string>
-				<string>http://www.aroma.co.il</string>
-				<string>http://landwer.co.il</string>
-				<string>http://www.landwer.co.il</string>
-				<string>http://shipudim.co.il</string>
-				<string>http://rest.co.il</string>
-				<string>http://www.rest.co.il</string>
-				<string>http://togo.co.il</string>
-				<string>http://www.togo.co.il</string>
+				<string>http://put.io</string>
+				<string>http://www.put.io</string>
+				<string>http://yts.mx</string>
+				<string>http://www.yts.mx</string>
+				<string>http://yts.am</string>
+				<string>http://www.yts.am</string>
+				<string>http://yts.rs</string>
+				<string>http://www.yts.rs</string>
+				<string>http://tribler.org</string>
+				<string>http://www.tribler.org</string>
+				<string>http://soulseekqt.net</string>
+				<string>http://www.soulseekqt.net</string>
+				<string>http://slsknet.org</string>
+				<string>http://www.slsknet.org</string>
+				<string>http://1337x.to</string>
+				<string>http://www.1337x.to</string>
+				<string>http://thepiratebay.org</string>
+				<string>http://www.thepiratebay.org</string>
+				<string>http://rutracker.org</string>
+				<string>http://www.rutracker.org</string>
+				<string>http://nyaa.si</string>
+				<string>http://www.nyaa.si</string>
+				<string>http://proxysite.com</string>
+				<string>http://www.proxysite.com</string>
+				<string>http://croxyproxy.com</string>
+				<string>http://www.croxyproxy.com</string>
+				<string>http://croxyproxy.rocks</string>
+				<string>http://www.croxyproxy.rocks</string>
+				<string>http://blockaway.net</string>
+				<string>http://www.blockaway.net</string>
+				<string>http://proxyium.com</string>
+				<string>http://www.proxyium.com</string>
+				<string>http://kproxy.com</string>
+				<string>http://www.kproxy.com</string>
+				<string>http://4everproxy.com</string>
+				<string>http://www.4everproxy.com</string>
+				<string>http://hide.me</string>
+				<string>http://www.hide.me</string>
+				<string>http://12ft.io</string>
+				<string>http://www.12ft.io</string>
+				<string>http://removepaywall.com</string>
+				<string>http://www.removepaywall.com</string>
+				<string>http://archive.today</string>
+				<string>http://www.archive.today</string>
+				<string>http://archive.ph</string>
+				<string>http://www.archive.ph</string>
+				<string>http://archive.is</string>
+				<string>http://www.archive.is</string>
+				<string>http://archive.li</string>
+				<string>http://www.archive.li</string>
+				<string>http://archive.vn</string>
+				<string>http://www.archive.vn</string>
+				<string>http://archive.md</string>
+				<string>http://www.archive.md</string>
+				<string>http://archive.fo</string>
+				<string>http://www.archive.fo</string>
+				<string>http://web.archive.org</string>
+				<string>http://torproject.org</string>
+				<string>http://www.torproject.org</string>
+				<string>http://protonvpn.com</string>
+				<string>http://www.protonvpn.com</string>
+				<string>http://nordvpn.com</string>
+				<string>http://www.nordvpn.com</string>
+				<string>http://expressvpn.com</string>
+				<string>http://www.expressvpn.com</string>
+				<string>http://surfshark.com</string>
+				<string>http://www.surfshark.com</string>
+				<string>http://windscribe.com</string>
+				<string>http://www.windscribe.com</string>
+				<string>http://mullvad.net</string>
+				<string>http://www.mullvad.net</string>
+				<string>http://tunnelbear.com</string>
+				<string>http://www.tunnelbear.com</string>
+				<string>http://yuligroup.com</string>
+				<string>http://www.yuligroup.com</string>
 				<string>http://softool.co.il</string>
+				<string>http://www.softool.co.il</string>
 			</array>
 			<key>FilterType</key>
 			<string>BuiltIn</string>
@@ -1002,10 +1804,42 @@
 			<string>97F3A4A7-782E-4548-A749-B942FE136957</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
+			<key>ProhibitDisablement</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>Restrictions</string>
+			<key>PayloadIdentifier</key>
+			<string>com.yoav.fullblock.restrictions.96E35992-1DF6-5470-AFC8-9C3D10E5784F</string>
+			<key>PayloadOrganization</key>
+			<string>Yoav Protection</string>
+			<key>PayloadType</key>
+			<string>com.apple.applicationaccess</string>
+			<key>PayloadUUID</key>
+			<string>96E35992-1DF6-5470-AFC8-9C3D10E5784F</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>allowEraseContentAndSettings</key>
+			<false/>
+			<key>allowUIConfigurationProfileInstallation</key>
+			<false/>
+			<key>allowVPNCreation</key>
+			<false/>
+			<key>blockedAppBundleIDs</key>
+			<array>
+				<string>com.burbn.instagram</string>
+				<string>com.facebook.Facebook</string>
+				<string>com.facebook.Messenger</string>
+				<string>com.atebits.Tweetie2</string>
+				<string>com.reddit.Reddit</string>
+				<string>com.wolt.wolt</string>
+				<string>com.ubercab.UberEats</string>
+			</array>
 		</dict>
 	</array>
 	<key>PayloadDescription</key>
-	<string>Blocks adult content, news sites, and food-delivery apps/sites. Install on iPhone via Settings → Profile Downloaded.</string>
+	<string>Blocks adult content, deepfake/nudify tools, news sites, social media and food-delivery apps/sites. Locks family DNS, blocks VPNs, manual profile installs and device erase (supervised device required for restrictions). Install via Apple Configurator.</string>
 	<key>PayloadDisplayName</key>
 	<string>Full Content Block</string>
 	<key>PayloadIdentifier</key>
@@ -1013,12 +1847,12 @@
 	<key>PayloadOrganization</key>
 	<string>Yoav Protection</string>
 	<key>PayloadRemovalDisallowed</key>
-	<false/>
+	<true/>
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
 	<string>1639FFE0-558C-47E0-95F6-8E8B71E2281A</string>
 	<key>PayloadVersion</key>
-	<integer>1</integer>
+	<integer>2</integer>
 </dict>
 </plist>

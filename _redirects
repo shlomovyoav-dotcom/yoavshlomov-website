@@ -11,9 +11,10 @@
 /hoopoe/*             /404.html 404
 
 # Blocker project files are private — never serve them (2026-08-07).
-# The old rules only covered two stale filenames; the current profiles were
-# still publicly downloadable. To install a profile on a device, use Apple
-# Configurator locally (see dns/README.md) instead of re-exposing a URL.
+# NOTE: redirects cannot shadow files that exist as static assets, so the
+# authoritative block is functions/_middleware.js; these rules are kept as
+# defense-in-depth and for stale paths. To install a profile on a device,
+# use Apple Configurator locally (see dns/README.md), never a public URL.
 /dns                  /404.html 404
 /dns/                 /404.html 404
 /dns/*                /404.html 404

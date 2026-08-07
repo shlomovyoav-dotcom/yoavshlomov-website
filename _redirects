@@ -10,6 +10,16 @@
 /hoopoe/              /404.html 404
 /hoopoe/*             /404.html 404
 
-# Removed temporary iPhone config profiles (2026-07-21)
-/dns/family.mobileconfig      /404.html 404
-/dns/ig-block.mobileconfig     /404.html 404
+# Blocker project files are private — never serve them (2026-08-07).
+# The old rules only covered two stale filenames; the current profiles were
+# still publicly downloadable. To install a profile on a device, use Apple
+# Configurator locally (see dns/README.md) instead of re-exposing a URL.
+/dns                  /404.html 404
+/dns/                 /404.html 404
+/dns/*                /404.html 404
+
+# Internal docs and agent instructions are not site content.
+/docs                 /404.html 404
+/docs/                /404.html 404
+/docs/*               /404.html 404
+/AGENTS.md            /404.html 404

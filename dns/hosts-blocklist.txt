@@ -511,10 +511,6 @@
 0.0.0.0 www.10bis.co.il
 0.0.0.0 mishloha.co.il
 0.0.0.0 www.mishloha.co.il
-0.0.0.0 pluxee.co.il
-0.0.0.0 www.pluxee.co.il
-0.0.0.0 cibus.pluxee.co.il
-0.0.0.0 consumers.pluxee.co.il
 0.0.0.0 yango.com
 0.0.0.0 www.yango.com
 0.0.0.0 deli.yango.com

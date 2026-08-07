@@ -47,7 +47,6 @@ BLOCKED_APP_BUNDLE_IDS = [
     "com.woltapp.wolt",               # Wolt
     "tenbis",                         # 10bis (תן ביס)
     "mishloha.MishlohaApp",           # Mishloha (משלוחה)
-    "com.cibussodexo.app",            # Cibus Pluxee
     "com.ubercab.UberEats",           # Uber Eats
     "doordash.DoorDashConsumer",      # DoorDash
     "com.inmanage.iMcdonalds",        # McDonald's Israel

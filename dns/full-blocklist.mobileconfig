@@ -518,10 +518,6 @@
 				<string>https://www.10bis.co.il</string>
 				<string>https://mishloha.co.il</string>
 				<string>https://www.mishloha.co.il</string>
-				<string>https://pluxee.co.il</string>
-				<string>https://www.pluxee.co.il</string>
-				<string>https://cibus.pluxee.co.il</string>
-				<string>https://consumers.pluxee.co.il</string>
 				<string>https://yango.com</string>
 				<string>https://www.yango.com</string>
 				<string>https://deli.yango.com</string>
@@ -1395,10 +1391,6 @@
 				<string>http://www.10bis.co.il</string>
 				<string>http://mishloha.co.il</string>
 				<string>http://www.mishloha.co.il</string>
-				<string>http://pluxee.co.il</string>
-				<string>http://www.pluxee.co.il</string>
-				<string>http://cibus.pluxee.co.il</string>
-				<string>http://consumers.pluxee.co.il</string>
 				<string>http://yango.com</string>
 				<string>http://www.yango.com</string>
 				<string>http://deli.yango.com</string>
@@ -1837,7 +1829,6 @@
 				<string>com.woltapp.wolt</string>
 				<string>tenbis</string>
 				<string>mishloha.MishlohaApp</string>
-				<string>com.cibussodexo.app</string>
 				<string>com.ubercab.UberEats</string>
 				<string>doordash.DoorDashConsumer</string>
 				<string>com.inmanage.iMcdonalds</string>

@@ -295,9 +295,8 @@ wolt.co.il
 tenbis.co.il
 10bis.co.il
 mishloha.co.il
-pluxee.co.il
-cibus.pluxee.co.il
-consumers.pluxee.co.il
+# Cibus/Pluxee deliberately NOT blocked (2026-08-07, per Yoav): employer meal
+# benefit — needed when starting a new job.
 yango.com
 deli.yango.com
 yango.co.il

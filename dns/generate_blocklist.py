@@ -33,15 +33,41 @@ RESTRICTIONS_UUID = str(
 ).upper()
 
 # App Store apps blocked outright on the supervised iPhone (even if installed).
-# Find more bundle IDs in Apple Configurator: select device -> Apps -> Get Info.
+# All IDs verified against the iTunes Search API (IL storefront) on 2026-08-07.
+# Deliberately NOT blocked: WhatsApp (communication), Gett/Via (transportation).
 BLOCKED_APP_BUNDLE_IDS = [
-    "com.burbn.instagram",       # Instagram
-    "com.facebook.Facebook",     # Facebook
-    "com.facebook.Messenger",    # Messenger
-    "com.atebits.Tweetie2",      # X / Twitter
-    "com.reddit.Reddit",         # Reddit
-    "com.wolt.wolt",             # Wolt
-    "com.ubercab.UberEats",      # Uber Eats
+    # Social
+    "com.burbn.instagram",            # Instagram
+    "com.burbn.barcelona",            # Threads
+    "com.facebook.Facebook",          # Facebook
+    "com.facebook.Messenger",         # Messenger
+    "com.atebits.Tweetie2",           # X / Twitter
+    "com.reddit.Reddit",              # Reddit
+    # Food delivery / fast food
+    "com.woltapp.wolt",               # Wolt
+    "tenbis",                         # 10bis (תן ביס)
+    "mishloha.MishlohaApp",           # Mishloha (משלוחה)
+    "com.cibussodexo.app",            # Cibus Pluxee
+    "com.ubercab.UberEats",           # Uber Eats
+    "doordash.DoorDashConsumer",      # DoorDash
+    "com.inmanage.iMcdonalds",        # McDonald's Israel
+    "il.co.dominos.iDominos",         # Domino's Pizza IL
+    "com.applaces.burgerkingisrael",  # Burger King Israel
+    "app.tabit.il-prd-wl-kfcn",       # KFC Israel (Tabit)
+    "il.co.iPlanet.PizzaHutApp",      # Pizza Hut IL
+    # News
+    "com.apple.news",                 # Apple News (system app)
+    "com.ynet-internet.ynet",         # ynet
+    "com.yit.ynetnews",               # ynet Global
+    "com.gillyApps.Channel2",         # N12 news
+    "com.keshet.mako",                # Mako
+    "com.keshet.makoVODiphone",       # 12+ (Keshet live/VOD)
+    "il.co.mintmark.walla.walla",     # Walla
+    "com.haaretz.hebrew.iphone",      # Haaretz (Hebrew)
+    "com.haaretz.english.iphone",     # Haaretz (English)
+    "com.haaretz.TheMarker",          # TheMarker
+    "com.applicaster.il.ch1",         # Kan
+    "com.yourcompany.iReshet",        # Reshet 13+
 ]
 
 # TLDs where the registrable domain has three labels (example.co.il).

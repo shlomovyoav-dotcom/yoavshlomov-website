@@ -151,7 +151,8 @@ iCloud Notes, or in a password manager Yoav can open.
       newly-registered-domain blocking applies everywhere.
 - [ ] MDM (Mosyle free) for Mac Recovery Lock, and possibly for the iPhone so
       profile updates stop requiring a USB cable.
-- [ ] Add remaining app bundle IDs (10bis, Mishloha, McDonald's IL…) to
-      `BLOCKED_APP_BUNDLE_IDS` — read them from Configurator → device → Apps.
+- [x] App bundle IDs verified against the App Store (IL) and added for social,
+      food-delivery and news apps (2026-08-07). If a new app needs blocking,
+      look it up: `itunes.apple.com/search?term=NAME&country=il&entity=software`.
 - [ ] Consider Screen Time app-category limits as a softer layer for anything
       new that slips through.

@@ -1829,12 +1829,34 @@
 			<key>blockedAppBundleIDs</key>
 			<array>
 				<string>com.burbn.instagram</string>
+				<string>com.burbn.barcelona</string>
 				<string>com.facebook.Facebook</string>
 				<string>com.facebook.Messenger</string>
 				<string>com.atebits.Tweetie2</string>
 				<string>com.reddit.Reddit</string>
-				<string>com.wolt.wolt</string>
+				<string>com.woltapp.wolt</string>
+				<string>tenbis</string>
+				<string>mishloha.MishlohaApp</string>
+				<string>com.cibussodexo.app</string>
 				<string>com.ubercab.UberEats</string>
+				<string>doordash.DoorDashConsumer</string>
+				<string>com.inmanage.iMcdonalds</string>
+				<string>il.co.dominos.iDominos</string>
+				<string>com.applaces.burgerkingisrael</string>
+				<string>app.tabit.il-prd-wl-kfcn</string>
+				<string>il.co.iPlanet.PizzaHutApp</string>
+				<string>com.apple.news</string>
+				<string>com.ynet-internet.ynet</string>
+				<string>com.yit.ynetnews</string>
+				<string>com.gillyApps.Channel2</string>
+				<string>com.keshet.mako</string>
+				<string>com.keshet.makoVODiphone</string>
+				<string>il.co.mintmark.walla.walla</string>
+				<string>com.haaretz.hebrew.iphone</string>
+				<string>com.haaretz.english.iphone</string>
+				<string>com.haaretz.TheMarker</string>
+				<string>com.applicaster.il.ch1</string>
+				<string>com.yourcompany.iReshet</string>
 			</array>
 		</dict>
 	</array>

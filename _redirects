@@ -10,6 +10,12 @@
 /hoopoe/              /404.html 404
 /hoopoe/*             /404.html 404
 
+# Private working documents — never serve (2026-08-08)
+/drafts               /404.html 404
+/drafts/              /404.html 404
+/drafts/*             /404.html 404
+/VERIFICATION.md      /404.html 404
+
 # Removed temporary iPhone config profiles (2026-07-21)
 /dns/family.mobileconfig      /404.html 404
 /dns/ig-block.mobileconfig     /404.html 404

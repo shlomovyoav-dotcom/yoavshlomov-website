@@ -44,3 +44,12 @@ in a physical safe — he is the accountability contact for lock changes.
   adding or removing pages.
 - Hidden-from-live content is parked in `_preview/` (e.g. the Shop section).
 - No frameworks, no dependencies; keep it that way unless Yoav asks.
+
+## Memory lives in the private knowledge repo
+
+This public repo must never hold `MEMORY.md`, recovered chats, CVs, or
+Hoopoe/Revolut drafts from `yoav-knowledge`. After a wipe, clone
+`github.com/shlomovyoav-dotcom/yoav-knowledge` and check out
+`cursor/knowledge-continuation-ae5a`. New chats: read `MEMORY.md` there.
+This website continuation branch is `cursor/website-continuation-ae5a`.
+

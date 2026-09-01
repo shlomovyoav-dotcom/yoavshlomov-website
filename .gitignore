@@ -12,3 +12,6 @@ npm-debug.log*
 _preview/
 brand/
 images/hero-pardes.*
+
+# Personal documents — never publish
+מכתב-*

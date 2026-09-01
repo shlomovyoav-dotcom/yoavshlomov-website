@@ -6,6 +6,8 @@ const PRIVATE_PATTERNS = [
   /^\/dns(\/|$)/i,
   /^\/docs(\/|$)/i,
   /^\/agents\.md$/i,
+  /^\/drafts(\/|$)/i,
+  /^\/verification\.md$/i,
 ];
 
 export async function onRequest({ request, next, env }) {

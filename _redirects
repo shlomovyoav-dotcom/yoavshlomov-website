@@ -24,3 +24,9 @@
 /docs/                /404.html 404
 /docs/*               /404.html 404
 /AGENTS.md            /404.html 404
+
+# Private working documents — never serve (2026-08-08)
+/drafts               /404.html 404
+/drafts/              /404.html 404
+/drafts/*             /404.html 404
+/VERIFICATION.md      /404.html 404

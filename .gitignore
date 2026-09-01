@@ -8,6 +8,10 @@
 node_modules/
 npm-debug.log*
 
+# Python smoke tests
+__pycache__/
+*.py[cod]
+
 # Internal working files / brand source art (not served)
 _preview/
 brand/

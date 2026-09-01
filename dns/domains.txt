@@ -433,11 +433,9 @@ haaretz.co.il
 haaretz.com
 mobile.haaretz.co.il
 themarker.com
-kan.org.il
-kan11.co.il
-kankids.org.il
-media.kan.org.il
-player.kan.org.il
+# Kan 11 deliberately NOT blocked (2026-09-01, per Yoav allowlist in the
+# knowledge base): public-broadcaster site must keep working. Other Israeli
+# news domains in this section stay blocked.
 walla.co.il
 news.walla.co.il
 e.walla.co.il

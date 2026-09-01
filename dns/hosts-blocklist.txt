@@ -700,14 +700,6 @@
 0.0.0.0 mobile.haaretz.co.il
 0.0.0.0 themarker.com
 0.0.0.0 www.themarker.com
-0.0.0.0 kan.org.il
-0.0.0.0 www.kan.org.il
-0.0.0.0 kan11.co.il
-0.0.0.0 www.kan11.co.il
-0.0.0.0 kankids.org.il
-0.0.0.0 www.kankids.org.il
-0.0.0.0 media.kan.org.il
-0.0.0.0 player.kan.org.il
 0.0.0.0 walla.co.il
 0.0.0.0 www.walla.co.il
 0.0.0.0 news.walla.co.il

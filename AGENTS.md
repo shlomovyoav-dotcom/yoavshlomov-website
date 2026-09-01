@@ -12,9 +12,11 @@ served publicly at yoavshlomov.com immediately** unless `_redirects` returns
 - Never commit personal documents, letters, IDs, passwords, or anything from
   the `Personal`/`Admin` folders on Yoav's Mac. Those belong in separate
   private repos, never in this one.
-- `dns/` (personal blocklist project) and `docs/` are blocked from serving in
-  `_redirects`. If you add private folders/files, add matching 404 rules in
-  the same commit.
+- `dns/` (personal blocklist project), `docs/`, `drafts/`, `AGENTS.md`, and
+  `VERIFICATION.md` are blocked from serving. If you add private folders or
+  files, add matching 404 rules in `_redirects` **and** a pattern in
+  `functions/_middleware.js` in the same commit. The Function is authoritative
+  because redirects cannot shadow files that exist as static assets.
 - Never write real passwords or unlock codes into this repo or into chat —
   see the password protocol in `dns/README.md`.
 - Unlisted-but-served content (reference letters) lives under `/l/<token>/`

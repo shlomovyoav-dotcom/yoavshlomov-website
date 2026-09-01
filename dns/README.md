@@ -35,6 +35,16 @@ cloud agent can read them — never merge them into this website repo.
 | `adult-filter.mobileconfig` | Separate porn-only profile for her Mac (legacy, hand-made) |
 | `family-safe-browsing.mobileconfig` | Temporary family profile (legacy, hand-made) |
 
+## Allowlist (must stay unblocked)
+
+These are Yoav's explicit exceptions. Do not put them back into `domains.txt`
+or `BLOCKED_APP_BUNDLE_IDS`. Other food-delivery and news entries stay blocked.
+
+| Service | Why | What was removed |
+|---|---|---|
+| Cibus / Pluxee | Employer meal benefit for a new job (2026-08-07) | `pluxee.co.il`, `cibus.pluxee.co.il`, `consumers.pluxee.co.il` |
+| Kan 11 | Public broadcaster allowlist (2026-09-01) | `kan.org.il`, `kan11.co.il`, `kankids.org.il`, `media.kan.org.il`, `player.kan.org.il`, and iPhone app `com.applicaster.il.ch1` |
+
 ## Updating the blocklist
 
 1. Edit `domains.txt` (bare domains; `www.` + `http/https` variants are added
@@ -135,6 +145,8 @@ iCloud Notes, or in a password manager Yoav can open.
 | Instagram app icon | app itself blocked (supervised) |
 | `instagram.com`, `www.instagram.com` | blocked |
 | `ynet.co.il`, `news.google.com`, `reddit.com` | blocked |
+| `kan.org.il` / Kan 11 app | **loads** (allowlist) |
+| `pluxee.co.il` / Cibus | **loads** (allowlist) |
 | `croxyproxy.com` or another proxy | blocked |
 | Settings → General → Transfer or Reset | Erase option absent/gated |
 | Settings → VPN → Add VPN Configuration | not possible |

@@ -707,14 +707,6 @@
 				<string>https://mobile.haaretz.co.il</string>
 				<string>https://themarker.com</string>
 				<string>https://www.themarker.com</string>
-				<string>https://kan.org.il</string>
-				<string>https://www.kan.org.il</string>
-				<string>https://kan11.co.il</string>
-				<string>https://www.kan11.co.il</string>
-				<string>https://kankids.org.il</string>
-				<string>https://www.kankids.org.il</string>
-				<string>https://media.kan.org.il</string>
-				<string>https://player.kan.org.il</string>
 				<string>https://walla.co.il</string>
 				<string>https://www.walla.co.il</string>
 				<string>https://news.walla.co.il</string>
@@ -1580,14 +1572,6 @@
 				<string>http://mobile.haaretz.co.il</string>
 				<string>http://themarker.com</string>
 				<string>http://www.themarker.com</string>
-				<string>http://kan.org.il</string>
-				<string>http://www.kan.org.il</string>
-				<string>http://kan11.co.il</string>
-				<string>http://www.kan11.co.il</string>
-				<string>http://kankids.org.il</string>
-				<string>http://www.kankids.org.il</string>
-				<string>http://media.kan.org.il</string>
-				<string>http://player.kan.org.il</string>
 				<string>http://walla.co.il</string>
 				<string>http://www.walla.co.il</string>
 				<string>http://news.walla.co.il</string>
@@ -1846,7 +1830,6 @@
 				<string>com.haaretz.hebrew.iphone</string>
 				<string>com.haaretz.english.iphone</string>
 				<string>com.haaretz.TheMarker</string>
-				<string>com.applicaster.il.ch1</string>
 				<string>com.yourcompany.iReshet</string>
 			</array>
 		</dict>

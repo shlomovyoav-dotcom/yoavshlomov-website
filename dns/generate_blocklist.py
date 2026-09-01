@@ -65,7 +65,8 @@ BLOCKED_APP_BUNDLE_IDS = [
     "com.haaretz.hebrew.iphone",      # Haaretz (Hebrew)
     "com.haaretz.english.iphone",     # Haaretz (English)
     "com.haaretz.TheMarker",          # TheMarker
-    "com.applicaster.il.ch1",         # Kan
+    # Kan 11 app deliberately NOT blocked (2026-09-01, same allowlist as
+    # kan.org.il). Other news apps in this list stay blocked.
     "com.yourcompany.iReshet",        # Reshet 13+
 ]
 

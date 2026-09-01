@@ -56,15 +56,12 @@ From the system map in `dns/README.md` (branch `cursor/blocker-hardening-388b`):
 | **Router** | DNS filtering (NextDNS recommended: denylist import, category blocks, block-bypass-methods, newly-registered-domains) | Father (router admin + NextDNS account) |
 | **Cloud** | This repo's `dns/` folder = source of truth (`domains.txt`) + generator producing the three artifacts | — |
 
-**The allowlist correction:** commit `c326d74` ("dns: unblock Cibus/Pluxee
-(employer meal benefit, needed for new job)", 2026-08-07) — the two services
-that must be UNBLOCKED are **Cibus** and **Pluxee**. Concretely the commit
-removed three domain entries from `domains.txt` and all generated artifacts:
-`pluxee.co.il`, `cibus.pluxee.co.il`, and `consumers.pluxee.co.il`, replacing
-them with the comment "Cibus/Pluxee deliberately NOT blocked (2026-08-07,
-per Yoav): employer meal benefit — needed when starting a new job." (The
-question says "two domains"; the repo shows two services / one registrable
-domain plus two subdomains — three entries total.)
+**The allowlist correction:** two services must stay unblocked.
+
+1. **Cibus / Pluxee** — commit `c326d74` (2026-08-07). Removed `pluxee.co.il`, `cibus.pluxee.co.il`, and `consumers.pluxee.co.il` from `domains.txt` (employer meal benefit).
+2. **Kan 11** — 2026-09-01. Removed `kan.org.il`, `kan11.co.il`, `kankids.org.il`, `media.kan.org.il`, `player.kan.org.il` from `domains.txt` and `com.applicaster.il.ch1` from the iPhone app block list. Other news domains and apps stay blocked.
+
+See `dns/README.md` § Allowlist. Other food-delivery and news entries stay blocked.
 
 ## 3. The standing global rules
 

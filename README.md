@@ -20,6 +20,13 @@ npm run dev     # serve at http://127.0.0.1:8788
 ```
 
 `npm run start` is the same server bound to `0.0.0.0` for remote/dev environments.
+`npm test` runs the allowlist and private-path smoke tests (stdlib Python).
+
+Wrangler is pinned to `--compatibility-date=2026-08-06` so local `workerd` can boot.
+Production Pages still uses the Function in `functions/_middleware.js` as the
+authoritative 404 for `/dns`, `/docs`, `/drafts`, `AGENTS.md`, and `VERIFICATION.md`.
+`_redirects` 404 rules are defense-in-depth on Pages; Wrangler local does not
+accept 404 as a redirect status.
 
 ## Deploy to Cloudflare Pages (free)
 

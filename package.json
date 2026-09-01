@@ -4,8 +4,8 @@
   "private": true,
   "description": "Static website for Yoav Shlomov — jazz guitarist & producer. Hosted on Cloudflare Pages.",
   "scripts": {
-    "dev": "wrangler pages dev . --ip 127.0.0.1 --port 8788",
-    "start": "wrangler pages dev . --ip 0.0.0.0 --port 8788",
+    "dev": "wrangler pages dev . --ip 127.0.0.1 --port 8788 --compatibility-date=2026-08-06",
+    "start": "wrangler pages dev . --ip 0.0.0.0 --port 8788 --compatibility-date=2026-08-06",
     "test": "python3 dns/test_generate_blocklist.py && python3 functions/test_private_paths.py"
   },
   "repository": {

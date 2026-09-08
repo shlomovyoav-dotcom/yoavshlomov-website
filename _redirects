@@ -6,6 +6,11 @@
 /references/music/    /404.html 404
 /references/*         /404.html 404
 /l                    /404.html 404
+/link                 /links/ 302
+/link/                /links/ 302
+/profile              /links/ 302
+/profile/             /links/ 302
+
 /hoopoe               /404.html 404
 /hoopoe/              /404.html 404
 /hoopoe/*             /404.html 404

@@ -198,7 +198,14 @@ textarea:focus-visible {
   font-size: clamp(0.9rem, 1.5vw, 1.1rem);
   color: var(--muted);
   letter-spacing: 0.04em;
+  margin-bottom: 0.55rem;
+}
+.hero-line {
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+  color: var(--ink);
   margin-bottom: 2rem;
+  opacity: 0.82;
 }
 .hero-socials {
   display: flex;

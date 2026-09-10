@@ -808,13 +808,11 @@ input:focus, textarea:focus { border-bottom-color: var(--ink); }
 .shop-note { font-size: 0.85rem; color: var(--muted); }
 
 
-/* Live credits list — replaces the empty "no upcoming shows" state */
-.live-list { list-style: none; margin: 0 0 1.4rem; padding: 0; }
-.live-list li {
-  display: flex; flex-wrap: wrap; gap: .35rem 1rem; align-items: baseline;
-  padding: .75rem 0; border-bottom: 1px solid rgba(0,0,0,.09);
-}
-.live-list li:last-child { border-bottom: 0; }
-.live-venue { font-weight: 600; }
-.live-where { opacity: .68; font-size: .93em; }
-@media (max-width: 520px) { .live-list li { flex-direction: column; gap: .15rem; } }
+
+
+/* New music — auto-updating Spotify artist embed */
+.new-music { margin: 0 0 3rem; }
+.new-music-title { font-size: 1.35rem; margin: 0 0 .3rem; }
+.new-music-sub { opacity: .62; font-size: .93rem; margin: 0 0 1.1rem; }
+.new-music iframe { border-radius: 12px; display: block; }
+.releases-sub { margin-top: 0; }

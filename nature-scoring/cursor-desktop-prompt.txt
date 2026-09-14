@@ -1,0 +1,24 @@
+פרומפט להדבקה בקרסור דסקטופ על המק (בתוך הריפו של האתר)
+
+
+פתח טיוטת מייל אצלי ותמצא משרות.
+
+1. הרץ: bash nature-scoring/make-mail-draft.sh
+   זה פותח את nature-scoring/email-draft.txt כטיוטה לא שלוחה באפל מייל. אם אני משתמש בג׳ימייל בדפדפן במקום, פתח בכרום את
+   https://mail.google.com/mail/?view=cm&fs=1&to=shlomovyoav@gmail.com&su=<הנושא מהשורה השנייה בקובץ>
+   והדבק את גוף הקובץ משורה 3 והלאה בתיבת ההודעה. לא לשלוח.
+
+2. חפש משרות פרילנס פתוחות, מרחוק, להלחנה או עיצוב סאונד לסרטי טבע, חיות בר ותעודה. פתח בכרום ובדוק שכל מודעה עדיין פתוחה:
+   - https://www.twine.net/jobs/film-composers
+   - https://www.twine.net/jobs/sound-designers
+   - https://www.mandy.com (חיפוש: composer, documentary)
+   - https://www.productionhub.com/jobs
+   - https://genero.com/creators
+   - לינקדאין Jobs: "documentary composer" remote, "wildlife" "sound design"
+   - אם אני כבר חבר: לוח המשרות בקולקטיב ג׳קסון ויילד https://jacksonwildcollective.org ובנייצ׳רסטורי https://naturestory.org
+   דלג על משרות סגורות, על משרות במשרד בלבד, ועל מודעות שדורשות מנוי כדי להגיש.
+
+3. הוסף את מה שמצאת לסעיף 5 בקובץ nature-scoring/email-draft.txt, בעברית, בפורמט הקיים: שם, מה, איפה, סטטוס, קישור, שורה אחת למה זה מתאים או לא.
+   עדכן גם את xplace/jobs-nature.txt.
+
+4. כתוב לי בעברית בלבד. לא לשלוח מיילים, לא להגיש מועמדות, לא להירשם לשירות בתשלום.

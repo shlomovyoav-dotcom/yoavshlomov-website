@@ -10,11 +10,13 @@
   --ink:      #17251d;  /* deep jungle green-black — text/headings */
   --paper:    #f4efe3;  /* warm cream */
   --cream:    #e8e1d0;  /* deeper cream */
-  --accent:   #c65a2a;  /* burnt orange — interactive */
-  --teal:     #2b8f83;  /* pond teal — secondary accent */
+  --accent:   #b25126;  /* burnt orange — fills, borders, hover states (white text on it passes AA) */
+  --accent-text: #9e4822; /* deeper burnt orange — running text on cream/paper (passes AA) */
+  --teal:     #227269;  /* pond teal — secondary accent, readable on light backgrounds */
+  --teal-light: #7fcbc0; /* pond teal for text on dark sections */
   --jungle:   #10241f;  /* deep jungle — dark sections */
   --pond:     #123b38;  /* pond backdrop for hero art */
-  --muted:    #6c7268;  /* warm gray-green */
+  --muted:    #61675e;  /* warm gray-green */
   --rule:     #d8d0be;
   --white:    #fbf9f2;
 
@@ -26,7 +28,12 @@
   --gap:      clamp(1.5rem, 4vw, 3rem);
 }
 
-html { scroll-behavior: smooth; font-size: 16px; }
+html {
+  scroll-behavior: smooth;
+  /* keep anchor targets clear of the fixed nav */
+  scroll-padding-top: var(--nav-h);
+  font-size: 16px;
+}
 
 body {
   font-family: var(--ff-sans);
@@ -67,6 +74,19 @@ textarea:focus-visible {
 .newsletter input:focus-visible {
   outline-color: var(--paper);
 }
+/* sections are focus targets for the skip link / anchor navigation — no ring needed */
+[tabindex="-1"]:focus { outline: none; }
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
 
 /* ---- SCROLL REVEAL ---- */
 .reveal {
@@ -97,14 +117,15 @@ textarea:focus-visible {
   justify-content: space-between;
   padding: 0 clamp(1rem, 4vw, 2.5rem);
   background: transparent;
-  color: var(--white);
-  transition: background 0.35s, color 0.35s, border-bottom 0.35s;
+  /* the hero's top band is cream on every viewport, so the nav must be dark at rest */
+  color: var(--ink);
+  transition: background 0.35s, border-bottom-color 0.35s;
 }
 .nav.scrolled {
-  background: rgba(245, 244, 240, 0.96);
+  background: rgba(244, 239, 227, 0.94);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--rule);
-  color: var(--ink);
 }
 .nav-logo {
   font-family: var(--ff-serif);
@@ -123,7 +144,7 @@ textarea:focus-visible {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: currentColor;
-  opacity: 0.75;
+  opacity: 0.8;
   transition: opacity 0.2s;
 }
 .nav-links a:hover { opacity: 1; }
@@ -131,19 +152,28 @@ textarea:focus-visible {
 .nav-toggle {
   display: none;
   flex-direction: column;
+  justify-content: center;
   gap: 5px;
+  width: 44px;
+  height: 44px;
+  align-items: center;
   background: none;
   border: none;
+  color: inherit;
   cursor: pointer;
-  padding: 4px;
+  padding: 0;
 }
 .nav-toggle span {
   display: block;
   width: 22px;
   height: 1.5px;
   background: currentColor;
-  transition: transform 0.2s;
+  transition: transform 0.25s, opacity 0.25s;
 }
+/* hamburger → X when the menu is open */
+.nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
 
 /* ---- HERO ---- */
 .hero {
@@ -230,8 +260,8 @@ textarea:focus-visible {
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--accent);
-  border-bottom: 1.5px solid var(--accent);
+  color: var(--accent-text);
+  border-bottom: 1.5px solid var(--accent-text);
   padding-bottom: 2px;
   width: fit-content;
   transition: opacity 0.2s;
@@ -363,77 +393,16 @@ blockquote cite {
 .bio-text .section-title { margin-bottom: 1.5rem; }
 .bio-text p {
   margin-bottom: 1.25rem;
-  color: var(--accent);
+  color: var(--accent-text);
   font-size: 1rem;
   line-height: 1.85;
 }
 .bio-text .btn-outline { margin-top: 1.5rem; }
 
-/* ---- CONCERTS ---- */
-.concerts { background: var(--paper); }
-.concert-list {
-  border-top: 1px solid var(--rule);
-  margin-bottom: 2rem;
-}
-.concert-item {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 2rem;
-  align-items: center;
-  padding: 1.75rem 0;
-  border-bottom: 1px solid var(--rule);
-}
-.concert-date {
-  display: flex;
-  flex-direction: column;
-}
-.concert-day {
-  font-family: var(--ff-serif);
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1;
-}
-.concert-month {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--muted);
-}
-.concert-info h3 {
-  font-family: var(--ff-serif);
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 0.25rem;
-}
-.concert-info p {
-  font-size: 0.9rem;
-  color: var(--muted);
-  margin-bottom: 0.4rem;
-}
-.concert-time {
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
-  font-weight: 500;
-  border: 1px solid var(--rule);
-  padding: 0.15rem 0.5rem;
-}
-.concerts-empty {
-  font-size: 1rem;
-  color: var(--muted);
-  margin-bottom: 1.25rem;
-}
-.concerts-note {
-  font-size: 0.875rem;
-  color: var(--muted);
-}
-.concerts-note a {
-  border-bottom: 1px solid currentColor;
-}
-
 /* ---- PRESS ---- */
 .press { background: var(--ink); color: var(--paper); }
 .press .section-title { color: var(--paper); }
-.press-inner {}
+.press .section-sub { color: var(--teal-light); }
 .press-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -444,7 +413,7 @@ blockquote cite {
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(245, 244, 240, 0.5);
+  color: rgba(245, 244, 240, 0.6);
   margin-bottom: 0.9rem;
 }
 .press-block p, .press-block li {
@@ -504,7 +473,7 @@ blockquote cite {
   font-size: 0.78rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: rgba(245, 244, 240, 0.5);
+  color: rgba(245, 244, 240, 0.6);
 }
 .epk-facts dd {
   margin: 0;
@@ -523,11 +492,11 @@ blockquote cite {
   padding: 0.35rem 0;
   border-bottom: 1px solid rgba(245, 244, 240, 0.1);
 }
-.epk-disco span { color: rgba(245, 244, 240, 0.45); font-size: 0.85rem; }
+.epk-disco span { color: rgba(245, 244, 240, 0.6); font-size: 0.85rem; }
 .epk-credit {
   margin-top: 1rem;
   font-size: 0.78rem !important;
-  color: rgba(245, 244, 240, 0.5) !important;
+  color: rgba(245, 244, 240, 0.65) !important;
 }
 
 /* ---- CONTACT ---- */
@@ -567,6 +536,14 @@ input, textarea {
 }
 input:focus, textarea:focus { border-bottom-color: var(--ink); }
 .contact-form .btn-primary { margin-top: 0.5rem; }
+/* FormSubmit honeypot — bots fill it, humans never see it */
+.hp-field {
+  position: absolute !important;
+  left: -9999px;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
 
 /* ---- NEWSLETTER ---- */
 .newsletter {
@@ -584,7 +561,7 @@ input:focus, textarea:focus { border-bottom-color: var(--ink); }
   font-weight: 500;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.62);
   margin-bottom: 1.1rem;
 }
 .newsletter-title {
@@ -597,7 +574,7 @@ input:focus, textarea:focus { border-bottom-color: var(--ink); }
 }
 .newsletter-sub {
   font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
   margin-bottom: 2.5rem;
 }
 .newsletter-form {
@@ -623,7 +600,7 @@ input:focus, textarea:focus { border-bottom-color: var(--ink); }
   min-width: 0;
 }
 .newsletter-form input[type="email"]::placeholder {
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.5);
 }
 .newsletter-form button {
   font-family: var(--ff-sans);
@@ -713,24 +690,24 @@ input:focus, textarea:focus { border-bottom-color: var(--ink); }
     position: absolute;
     top: var(--nav-h);
     left: 0; right: 0;
-    background: rgba(245, 244, 240, 0.97);
+    background: rgba(244, 239, 227, 0.98);
     color: var(--ink);
     flex-direction: column;
     gap: 0;
     border-bottom: 1px solid var(--rule);
+    box-shadow: 0 16px 32px rgba(16, 36, 31, 0.08);
   }
   .nav-links.open { display: flex; }
   .nav-links a {
     color: var(--ink);
-    opacity: 0.75;
+    opacity: 0.85;
     padding: 1rem 1.5rem;
     border-bottom: 1px solid var(--rule);
     font-size: 0.9rem;
   }
   .nav-toggle { display: flex; }
-
-  .concert-item { grid-template-columns: 80px 1fr; gap: 1rem; }
-  .concert-day { font-size: 1.75rem; }
+  /* solid nav behind the open menu so it never floats over the hero */
+  .nav.menu-open { background: rgba(244, 239, 227, 0.98); }
 
   .form-row { grid-template-columns: 1fr; }
 

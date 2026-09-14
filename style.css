@@ -690,7 +690,7 @@ input:focus, textarea:focus { border-bottom-color: var(--ink); }
     position: absolute;
     top: var(--nav-h);
     left: 0; right: 0;
-    background: rgba(244, 239, 227, 0.98);
+    background: var(--paper);
     color: var(--ink);
     flex-direction: column;
     gap: 0;
@@ -707,7 +707,7 @@ input:focus, textarea:focus { border-bottom-color: var(--ink); }
   }
   .nav-toggle { display: flex; }
   /* solid nav behind the open menu so it never floats over the hero */
-  .nav.menu-open { background: rgba(244, 239, 227, 0.98); }
+  .nav.menu-open { background: var(--paper); }
 
   .form-row { grid-template-columns: 1fr; }
 

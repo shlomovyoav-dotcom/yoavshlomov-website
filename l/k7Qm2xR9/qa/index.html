@@ -7,75 +7,229 @@
   <meta name="referrer" content="no-referrer" />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta name="theme-color" content="#10241f" />
-  <title>Yoav Shlomov — Recommendation Letters (QA &amp; Tech)</title>
+  <title>Yoav Shlomov — QA Portfolio &amp; Recommendation Letters (Hi-Tech)</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../refs.css?v=20260914" />
+  <link rel="stylesheet" href="../refs.css?v=20260914b" />
 </head>
 <body class="theme-qa">
-  <main class="sheet">
+  <main class="sheet sheet-wide">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="../">← Portfolio</a></nav>
-    <p class="eyebrow">Yoav Shlomov · Private</p>
-    <h1>Recommendation Letters</h1>
-    <p class="subtitle">QA · Automation · Technical roles</p>
-    <p class="stats">
-      <span><strong>3</strong> letters on file</span>
-      <span><strong>3</strong> signed</span>
-      <span>Updated July 2026</span>
-    </p>
+    <p class="eyebrow">Yoav Shlomov · Private · Hi-Tech</p>
+    <h1>QA Portfolio &amp; Recommendation Letters</h1>
+    <p class="subtitle">QA engineering · Test automation · AI-assisted tooling</p>
     <p class="intro">
-      Letters from managers and colleagues at Artlist and Waves Audio.
-      Each opens as a PDF. For verification contacts:
+      QA engineer with a technical-support background, most recently owning quality for the subscription,
+      billing and upgrade funnels of Artlist's Growth team. Below: what I built there, then signed letters from
+      the people I built it with. Verification contacts:
       <a href="mailto:shlomovyoav@gmail.com">shlomovyoav@gmail.com</a>
     </p>
+    <nav class="page-nav" aria-label="On this page">
+      <a href="#portfolio">Portfolio</a>
+      <a href="#stack">Stack</a>
+      <a href="#path">Career path</a>
+      <a href="#letters">Letters</a>
+    </nav>
 
-    <ul class="letters">
+    <!-- ============ PORTFOLIO ============ -->
+    <section class="section" id="portfolio">
+      <h2>What I built at Artlist</h2>
+      <p class="lede">
+        Artlist is a high-traffic subscription platform. I owned QA for the R&amp;D Growth team — the
+        visitor, free-trial and upgrade journeys where the money paths live — combining dependable manual
+        coverage with automation and tooling that made the whole team faster. Each item below is described
+        in one of the signed letters further down.
+      </p>
 
-      <li class="letter" id="yuval-bazilevich">
-        <h2>Yuval Bazilevich</h2>
-        <p class="role">Growth Team Lead, Artlist</p>
-        <span class="badge signed">Signed · Adobe Sign · Jun 2026</span>
-        <p class="note">Growth, billing funnels, Playwright automation, AI tooling, Mixpanel alerts.</p>
-        <div class="actions">
-          <a class="btn btn-primary" href="../files/qa/yuval-bazilevich-artlist.pdf" target="_blank" rel="noopener">View PDF<span class="visually-hidden"> — Yuval Bazilevich (opens in new tab)</span></a>
-          <a class="btn" href="../files/qa/yuval-bazilevich-artlist.pdf" download="Yoav-Shlomov-Recommendation-Yuval-Bazilevich-Artlist.pdf">Download<span class="visually-hidden"> Yuval Bazilevich letter</span></a>
-          <a class="btn" href="../files/qa/yuval-letterhead" target="_blank" rel="noopener">Letterhead version<span class="visually-hidden"> — Yuval Bazilevich (opens in new tab)</span></a>
-          <a class="alt" href="https://drive.google.com/file/d/1eSB5CH7yot5i55HaXkUo0I3Ulu8CErFg/view" target="_blank" rel="noopener noreferrer">Copy on Google Drive ↗</a>
+      <ul class="cases">
+        <li class="case">
+          <span class="kind">Billing safety net</span>
+          <h3>Subscription pricing validation tool</h3>
+          <p><strong>Problem:</strong> pricing and plan misconfigurations in a subscription billing system are expensive and easy to miss by eye.</p>
+          <p><strong>What I built:</strong> a tool that verifies subscription pricing against expected values across plans and rules, so a wrong price is caught as a failing check rather than by a customer.</p>
+          <p><strong>Result:</strong> billing misconfigurations caught before they reached production.</p>
+          <p class="src">Described in <a href="#yuval-bazilevich">Yuval Bazilevich's letter</a> (Growth Team Lead).</p>
+        </li>
+
+        <li class="case">
+          <span class="kind">Automation</span>
+          <h3>Playwright + CI end-to-end test infrastructure</h3>
+          <p><strong>Scope:</strong> the user states the Growth team owned — visitor/guest, free-trial and upgrade flows.</p>
+          <p><strong>What I did:</strong> maintained, extended and improved the Playwright end-to-end suites and their CI integration, so regressions are caught at the gate rather than after release.</p>
+          <p><strong>Result:</strong> dependable automated coverage of the most business-critical funnels.</p>
+          <p class="src">Described in <a href="#yuval-bazilevich">Yuval Bazilevich's</a> and <a href="#vili-medina">Vili Medina's</a> letters.</p>
+        </li>
+
+        <li class="case">
+          <span class="kind">Test data</span>
+          <h3>On-demand test-account generation</h3>
+          <p><strong>Problem:</strong> subscription bugs depend on account state — trial, expired, upgraded, specific plan — which is slow to reproduce by hand.</p>
+          <p><strong>What I built:</strong> automated generation of test accounts in the exact subscription state a scenario needs, on demand.</p>
+          <p><strong>Result:</strong> subscription-specific scenarios reproducible on demand instead of by hand.</p>
+          <p class="src">Described in <a href="#yuval-bazilevich">Yuval Bazilevich's letter</a>.</p>
+        </li>
+
+        <li class="case">
+          <span class="kind">Observability</span>
+          <h3>Conversion-funnel dashboards with automated alerts</h3>
+          <p><strong>Problem:</strong> a broken step in the funnel shows up as a drop in conversion long before anyone files a bug.</p>
+          <p><strong>What I built:</strong> analytics dashboards (Mixpanel) with automated alerts on drops in the conversion funnel, so production behaviour becomes a QA signal.</p>
+          <p><strong>Result:</strong> funnel regressions surface as alerts instead of surprises.</p>
+          <p class="src">Described in <a href="#yuval-bazilevich">Yuval Bazilevich's letter</a>.</p>
+        </li>
+
+        <li class="case">
+          <span class="kind">AI-assisted QA</span>
+          <h3>Library of AI-assisted test-design tools</h3>
+          <p><strong>Problem:</strong> writing and prioritising test cases from specs and tickets is slow, repetitive work.</p>
+          <p><strong>What I built:</strong> a library of AI-assisted tools — including a Claude-based QA skill — that turns specs and tickets into structured, prioritised test cases, and taught colleagues to use the workflow.</p>
+          <p><strong>Result:</strong> faster test design across the team, in line with the organisation's move to AI-native workflows.</p>
+          <p class="src">Described in <a href="#yuval-bazilevich">Yuval Bazilevich's</a> and <a href="#vili-medina">Vili Medina's</a> letters.</p>
+        </li>
+
+        <li class="case">
+          <span class="kind">Manual coverage</span>
+          <h3>Ownership of the money paths</h3>
+          <p><strong>Scope:</strong> thorough, dependable manual coverage of the subscription, billing and upgrade funnels — plans, credits, wallets, checkout and pricing rules.</p>
+          <p><strong>Why it mattered:</strong> product knowledge earned first in Tier-2 support, then in QA, meant test cases started from how users actually break things.</p>
+          <p class="src">Described in <a href="#yuval-bazilevich">Yuval Bazilevich's letter</a>.</p>
+        </li>
+      </ul>
+
+      <p class="intro aside-note">Code samples, test plans and a walkthrough of any of the above are available on request.</p>
+    </section>
+
+    <!-- ============ STACK ============ -->
+    <section class="section" id="stack">
+      <h2>Stack &amp; practices</h2>
+      <dl class="facts">
+        <div>
+          <dt>Automation</dt>
+          <dd>Playwright end-to-end · Page Object Model · CI integration and quality gates</dd>
         </div>
-      </li>
-
-      <li class="letter" id="vili-medina">
-        <h2>Vili Medina</h2>
-        <p class="role">Head of R&amp;D, Growth, Artlist</p>
-        <span class="badge signed">Signed · Jul 2026</span>
-        <p class="note">R&amp;D Growth QA, test automation, AI-assisted tooling adoption.</p>
-        <div class="actions">
-          <a class="btn btn-primary" href="../files/qa/vili-medina-artlist.pdf" target="_blank" rel="noopener">View PDF<span class="visually-hidden"> — Vili Medina (opens in new tab)</span></a>
-          <a class="btn" href="../files/qa/vili-medina-artlist.pdf" download="Yoav-Shlomov-Recommendation-Vili-Medina-Artlist.pdf">Download<span class="visually-hidden"> Vili Medina letter</span></a>
-          <a class="btn" href="../files/qa/vili-letterhead" target="_blank" rel="noopener">Letterhead version<span class="visually-hidden"> — Vili Medina (opens in new tab)</span></a>
-          <a class="alt" href="https://drive.google.com/file/d/1TDoSKUVw2fOY1Lo6NeKDrDj-OnaN7xHe/view" target="_blank" rel="noopener noreferrer">Copy on Google Drive ↗</a>
+        <div>
+          <dt>Test design</dt>
+          <dd>Risk-based manual coverage · BDD / Gherkin standards · AI-assisted test-case generation and prioritisation</dd>
         </div>
-      </li>
-
-      <li class="letter" id="nir-sobol">
-        <h2>Nir Sobol</h2>
-        <p class="role">Technical Support Manager, Waves Audio</p>
-        <span class="badge signed">Signed · Jun 2023</span>
-        <p class="note">Pro-audio software &amp; hardware support, global English-language customers.</p>
-        <div class="actions">
-          <a class="btn btn-primary" href="../files/qa/nir-sobol-waves.pdf" target="_blank" rel="noopener">View PDF<span class="visually-hidden"> — Nir Sobol (opens in new tab)</span></a>
-          <a class="btn" href="../files/qa/nir-sobol-waves.pdf" download="Yoav-Shlomov-Recommendation-Nir-Sobol-Waves.pdf">Download<span class="visually-hidden"> Nir Sobol letter</span></a>
-          <a class="alt" href="https://drive.google.com/file/d/1jV3cgUwQpd9n6VqaE0D9vzoe0Xv6o4p4/view" target="_blank" rel="noopener noreferrer">Copy on Google Drive ↗</a>
+        <div>
+          <dt>Domain</dt>
+          <dd>Subscription billing and growth funnels: plans, credits, wallets, checkout, upgrade flows, pricing rules</dd>
         </div>
-      </li>
+        <div>
+          <dt>Data &amp; monitoring</dt>
+          <dd>Mixpanel dashboards and automated funnel alerts · automated test-account generation</dd>
+        </div>
+        <div>
+          <dt>AI tooling</dt>
+          <dd>Claude and Cursor in day-to-day automation work · custom Claude-based QA skill · team enablement</dd>
+        </div>
+        <div>
+          <dt>Support toolchain</dt>
+          <dd>Tier-2 troubleshooting and root-cause analysis · Email, CRM, Teams, TeamViewer, phone · English and Hebrew</dd>
+        </div>
+      </dl>
+    </section>
 
-    </ul>
+    <!-- ============ PATH ============ -->
+    <section class="section" id="path">
+      <h2>Career path</h2>
+      <p class="lede">Support first, then QA — so testing starts from real user pain points.</p>
+      <ol class="timeline">
+        <li>
+          <span class="when">Artlist · R&amp;D Growth</span>
+          <h3>QA Engineer, Growth team</h3>
+          <p>Owned QA for the subscription, billing and upgrade funnels; Playwright/CI automation; pricing validation, test-account generation, funnel alerts and AI-assisted tooling.</p>
+        </li>
+        <li>
+          <span class="when">Artlist · Support</span>
+          <h3>Tier-2 Technical Support</h3>
+          <p>Troubleshooting and root-cause analysis, clear communication with customers and internal teams, deep product knowledge — the foundation for the move into QA.</p>
+        </li>
+        <li>
+          <span class="when">Waves Audio · Oct 2022 – Jun 2023</span>
+          <h3>Technical Support Representative</h3>
+          <p>Support in English for customers worldwide across complex pro-audio software and hardware, in real time and under pressure (email, CRM, Teams, TeamViewer, phone).</p>
+        </li>
+      </ol>
+      <p class="sub-h">Also</p>
+      <p class="intro tight">
+        Independent QA consulting under <a href="../tuned-qa/">Tuned QA</a> — AI-augmented testing for teams that cut QA but still ship.
+        Composer, guitarist and producer; see the <a href="../music/">music &amp; film scoring page</a>.
+      </p>
+    </section>
+
+    <!-- ============ LETTERS ============ -->
+    <section class="section" id="letters">
+      <h2>Recommendation Letters</h2>
+      <p class="stats">
+        <span><strong>3</strong> letters on file</span>
+        <span><strong>3</strong> signed</span>
+        <span>Updated July 2026</span>
+      </p>
+      <p class="lede">
+        Letters from managers and colleagues at Artlist and Waves Audio. Each opens as a PDF.
+      </p>
+
+      <ul class="letters">
+
+        <li class="letter" id="yuval-bazilevich">
+          <h3>Yuval Bazilevich</h3>
+          <p class="role">Growth Team Lead, Artlist</p>
+          <span class="badge signed">Signed · Adobe Sign · Jun 2026</span>
+          <p class="note">Growth, billing funnels, Playwright automation, AI tooling, Mixpanel alerts.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="../files/qa/yuval-bazilevich-artlist.pdf" target="_blank" rel="noopener">View PDF<span class="visually-hidden"> — Yuval Bazilevich (opens in new tab)</span></a>
+            <a class="btn" href="../files/qa/yuval-bazilevich-artlist.pdf" download="Yoav-Shlomov-Recommendation-Yuval-Bazilevich-Artlist.pdf">Download<span class="visually-hidden"> Yuval Bazilevich letter</span></a>
+            <a class="btn" href="../files/qa/yuval-letterhead" target="_blank" rel="noopener">Letterhead version<span class="visually-hidden"> — Yuval Bazilevich (opens in new tab)</span></a>
+            <a class="alt" href="https://drive.google.com/file/d/1eSB5CH7yot5i55HaXkUo0I3Ulu8CErFg/view" target="_blank" rel="noopener noreferrer">Copy on Google Drive ↗</a>
+          </div>
+        </li>
+
+        <li class="letter" id="vili-medina">
+          <h3>Vili Medina</h3>
+          <p class="role">Head of R&amp;D, Growth, Artlist</p>
+          <span class="badge signed">Signed · Jul 2026</span>
+          <p class="note">R&amp;D Growth QA, test automation, AI-assisted tooling adoption.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="../files/qa/vili-medina-artlist.pdf" target="_blank" rel="noopener">View PDF<span class="visually-hidden"> — Vili Medina (opens in new tab)</span></a>
+            <a class="btn" href="../files/qa/vili-medina-artlist.pdf" download="Yoav-Shlomov-Recommendation-Vili-Medina-Artlist.pdf">Download<span class="visually-hidden"> Vili Medina letter</span></a>
+            <a class="btn" href="../files/qa/vili-letterhead" target="_blank" rel="noopener">Letterhead version<span class="visually-hidden"> — Vili Medina (opens in new tab)</span></a>
+            <a class="alt" href="https://drive.google.com/file/d/1TDoSKUVw2fOY1Lo6NeKDrDj-OnaN7xHe/view" target="_blank" rel="noopener noreferrer">Copy on Google Drive ↗</a>
+          </div>
+        </li>
+
+        <li class="letter" id="nir-sobol">
+          <h3>Nir Sobol</h3>
+          <p class="role">Technical Support Manager, Waves Audio</p>
+          <span class="badge signed">Signed · Jun 2023</span>
+          <p class="note">Pro-audio software &amp; hardware support, global English-language customers.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="../files/qa/nir-sobol-waves.pdf" target="_blank" rel="noopener">View PDF<span class="visually-hidden"> — Nir Sobol (opens in new tab)</span></a>
+            <a class="btn" href="../files/qa/nir-sobol-waves.pdf" download="Yoav-Shlomov-Recommendation-Nir-Sobol-Waves.pdf">Download<span class="visually-hidden"> Nir Sobol letter</span></a>
+            <a class="alt" href="https://drive.google.com/file/d/1jV3cgUwQpd9n6VqaE0D9vzoe0Xv6o4p4/view" target="_blank" rel="noopener noreferrer">Copy on Google Drive ↗</a>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <div class="cta-band">
+      <div>
+        <h2>Hiring for QA or automation?</h2>
+        <p>Happy to walk through any of the work above on a call, and to share code samples and test plans.</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" href="mailto:shlomovyoav@gmail.com?subject=QA%20role%20%E2%80%94%20Yoav%20Shlomov">Email me</a>
+        <a class="btn" href="https://www.linkedin.com/in/yoavshlomov" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      </div>
+    </div>
 
     <footer class="foot">
-      <a href="https://drive.google.com/drive/folders/1v7wDpjEYi-z4Fjx7G0GcrY0Kwbu3kJ5j" target="_blank" rel="noopener noreferrer">Open all in Google Drive ↗</a>
+      <a href="https://drive.google.com/drive/folders/1v7wDpjEYi-z4Fjx7G0GcrY0Kwbu3kJ5j" target="_blank" rel="noopener noreferrer">All QA letters on Google Drive ↗</a>
       · <a href="../">Portfolio</a>
+      · <a href="../tuned-qa/">Tuned QA</a>
       · <a href="/" rel="noopener">yoavshlomov.com</a>
       <p class="privacy">Unlisted page — shared via resume only. Not indexed by search engines.</p>
     </footer>

@@ -52,5 +52,11 @@ press/         — plain-text bio for download
 _headers       — Cloudflare security + cache headers
 _redirects     — retired paths that should 404
 robots.txt, sitemap.xml
-l/             — unlisted, noindex reference pages (shared by direct link only)
+l/             — unlisted, noindex pages (shared by direct link only):
+                 l/<token>/          hub with three cards
+                 l/<token>/qa/       Hi-Tech: QA portfolio + letters
+                 l/<token>/music/    Music & film scoring: portfolio + letters
+                 l/<token>/tuned-qa/ Tuned QA consulting page
+                 l/<token>/files/    the letter PDFs; l/<token>/media/posters/ reel poster frames
+                 (reel videos stream from yoav-scoring.pages.dev; unsigned drafts in files/qa are intentionally unlinked)
 ```

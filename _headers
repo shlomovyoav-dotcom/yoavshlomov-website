@@ -4,6 +4,13 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
 
+# Hero animation is referenced with a ?v= cache-buster in index.html — bump it when the file changes.
+/images/hero-anim.mp4
+  Cache-Control: public, max-age=31536000, immutable
+
+/images/hero-anim.webm
+  Cache-Control: public, max-age=31536000, immutable
+
 /l/*
   X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
   Referrer-Policy: no-referrer

@@ -154,7 +154,7 @@ h1 {
 .privacy {
   margin-top: 0.75rem;
   font-size: 0.76rem;
-  color: #888;
+  color: var(--muted);
 }
 
 @media (max-width: 640px) {
@@ -192,7 +192,9 @@ h1 {
   border: 1px solid rgba(120,120,120,.28); border-radius: 14px; padding: 1.2rem 1.3rem;
   transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
 }
-.hub-card:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0,0,0,.10); border-color: rgba(120,120,120,.5); }
+.hub-card:hover,
+.hub-card:focus-visible { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0,0,0,.10); border-color: rgba(120,120,120,.5); }
+.hub-card:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
 .hub-tag { font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; opacity: .6; }
 .hub-card h2 { margin: .1rem 0 .2rem; font-size: 1.15rem; }
 .hub-card p { font-size: .87rem; opacity: .75; margin: 0; line-height: 1.55; }

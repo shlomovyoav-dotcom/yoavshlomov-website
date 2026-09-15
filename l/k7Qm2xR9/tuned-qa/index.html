@@ -6,26 +6,53 @@
   <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
   <meta name="referrer" content="no-referrer" />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta name="theme-color" content="#10241f" />
+  <meta name="theme-color" content="#17150F" />
   <title>Tuned QA — Quality, kept in tune · Yoav Shlomov</title>
   <meta name="description" content="AI-augmented QA for teams that cut their testing but still ship. Strategy, automation, and the CI gates that keep a product in tune." />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../refs.css?v=20260914b" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=DM+Sans:wght@300;400;500&amp;family=Spline+Sans+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../refs.css?v=20260914c" />
 </head>
 <body class="theme-tuned">
   <main class="sheet sheet-wide">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="../">← Portfolio</a></nav>
-    <p class="eyebrow">Tuned QA · AI-augmented QA · Tel Aviv</p>
-    <h1>Your QA team got cut. Your bugs didn't.</h1>
-    <p class="subtitle">Quality, kept in tune.</p>
-    <p class="intro">
-      I build the AI-augmented testing that keeps a product in tune after the team is gone — risk strategy,
-      automation that scales, and the CI gates that hold the line.
-      Full site: <a href="https://tuned-qa.pages.dev/" target="_blank" rel="noopener">tuned-qa.pages.dev ↗</a>
+    <p class="brand-mark">
+      <svg width="22" height="22" viewBox="0 0 32 32" aria-hidden="true">
+        <g stroke="#7d5f16" stroke-width="2.2" fill="none" stroke-linecap="round">
+          <path d="M11 7v10a5 5 0 0 0 10 0V7"/><path d="M16 22v4.5"/>
+        </g>
+        <circle cx="16" cy="28" r="1.7" fill="#24602c"/>
+      </svg>
+      Tuned<span class="qa">QA</span>
     </p>
+    <p class="eyebrow">AI-augmented QA · Tel Aviv</p>
+
+    <div class="tuned-hero">
+      <div>
+        <h1>Your QA team got cut. <span class="em">Your bugs didn't.</span></h1>
+        <p class="subtitle">Quality, kept in tune.</p>
+        <p class="intro">
+          I build the AI-augmented testing that keeps a product in tune after the team is gone — risk strategy,
+          automation that scales, and the CI gates that hold the line.
+          Full site: <a href="https://tuned-qa.pages.dev/" target="_blank" rel="noopener">tuned-qa.pages.dev ↗</a>
+        </p>
+      </div>
+      <figure class="tuner-card" aria-label="A quality tuner settled to in-tune — the checks pass.">
+        <svg viewBox="0 0 400 240" aria-hidden="true">
+          <path d="M48 188 A152 152 0 0 1 352 188" fill="none" stroke="#2A251A" stroke-width="10" stroke-linecap="round"/>
+          <path d="M160 52 A152 152 0 0 1 240 52" fill="none" stroke="#7CC47F" stroke-width="6" stroke-linecap="round"/>
+          <line x1="200" y1="188" x2="200" y2="56" stroke="#C9A24B" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="200" cy="188" r="8" fill="#C9A24B"/>
+          <circle cx="200" cy="188" r="3.4" fill="#17150F"/>
+          <text x="200" y="128" text-anchor="middle" fill="#ECE6D6" font-size="32" font-family="Bricolage Grotesque, DM Sans, sans-serif" font-weight="700">A</text>
+          <text x="200" y="150" text-anchor="middle" fill="#7CC47F" font-size="11" font-family="Spline Sans Mono, ui-monospace, monospace">0¢ · in tune</text>
+        </svg>
+        <figcaption>Status: <b>in tune</b> — 5/5 checks green</figcaption>
+      </figure>
+    </div>
+
     <nav class="page-nav" aria-label="On this page">
       <a href="#method">Method</a>
       <a href="#who">Who this is for</a>
@@ -42,7 +69,7 @@
       </p>
       <ol class="stages">
         <li class="stage">
-          <span class="kind">Set the reference</span>
+          <span class="kind">Set the pitch</span>
           <h3>Audit &amp; risk strategy</h3>
           <p>I map where quality actually breaks in your product — for me that's usually the money paths: plans, credits, checkout, subscription logic. We define the risk model and decide, honestly, what's worth automating and what isn't.</p>
         </li>
@@ -78,13 +105,25 @@
     <section class="section" id="bring">
       <h2>What I bring</h2>
       <p class="lede">Everything here is real and I'll walk you through any of it on a call. No borrowed logos.</p>
-      <ul class="plain">
-        <li>~3 years across technical support and QA, most recently in a high-traffic billing &amp; growth product.</li>
-        <li>Built Playwright E2E suites, a Claude-based QA skill, and a pricing-validation bot for a subscription billing system.</li>
-        <li>Fluent in the money paths — plans, credits, wallets, checkout, Chargebee-style pricing rules.</li>
-        <li>Taught colleagues to use AI-assisted QA, so the workflow outlives any one person.</li>
-        <li>Hebrew &amp; English · Tel Aviv-based · works remotely.</li>
-      </ul>
+      <div class="receipts">
+        <ul class="plain">
+          <li>~3 years across technical support and QA, most recently in a high-traffic billing &amp; growth product.</li>
+          <li>Built Playwright E2E suites, a Claude-based QA skill, and a pricing-validation bot for a subscription billing system.</li>
+          <li>Fluent in the money paths — plans, credits, wallets, checkout, Chargebee-style pricing rules.</li>
+          <li>Taught colleagues to use AI-assisted QA, so the workflow outlives any one person.</li>
+          <li>Hebrew &amp; English · Tel Aviv-based · works remotely.</li>
+        </ul>
+        <div class="panel" aria-hidden="true">
+          <span class="ln"><span class="k">$</span> tunedqa <span class="v">--check billing</span></span>
+          <span class="ln">› plans ............. <span class="ok">in tune</span></span>
+          <span class="ln">› credits &amp; wallet .. <span class="ok">in tune</span></span>
+          <span class="ln">› checkout flow ..... <span class="ok">in tune</span></span>
+          <span class="ln">› pricing rules ..... <span class="ok">in tune</span></span>
+          <span class="ln">› regression gate ... <span class="ok">passing</span></span>
+          <span class="ln">&nbsp;</span>
+          <span class="ln"><span class="v">5/5 checks green — ship it.</span></span>
+        </div>
+      </div>
     </section>
 
     <!-- ============ PROOF ============ -->
@@ -109,8 +148,8 @@
 
     <div class="cta-band">
       <div>
-        <h2>Book a tuning call</h2>
-        <p>Tell me what you ship, what broke last, and where QA used to sit. Based in Tel Aviv · working remotely · Hebrew &amp; English.</p>
+        <h2>Let's get your product in tune.</h2>
+        <p>Tell me what you're shipping and where it feels shaky. First call is a free 30-minute tuning check — we find the loudest risk and a plan to quiet it. Based in Tel Aviv · working remotely · Hebrew &amp; English.</p>
       </div>
       <div class="actions">
         <a class="btn btn-primary" href="mailto:shlomovyoav@gmail.com?subject=Tuning%20call">Email me</a>

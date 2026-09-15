@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../refs.css?v=20260914b" />
+  <link rel="stylesheet" href="../refs.css?v=20260914c" />
 </head>
 <body class="theme-qa">
   <main class="sheet sheet-wide">
@@ -37,11 +37,26 @@
     <section class="section" id="portfolio">
       <h2>What I built at Artlist</h2>
       <p class="lede">
-        Artlist is a high-traffic subscription platform. I owned QA for the R&amp;D Growth team — the
-        visitor, free-trial and upgrade journeys where the money paths live — combining dependable manual
-        coverage with automation and tooling that made the whole team faster. Each item below is described
-        in one of the signed letters further down.
+        I owned QA for Artlist's Growth team — the subscription, billing and upgrade funnels Yuval
+        Bazilevich calls the team's most business-critical areas — combining dependable manual coverage
+        with automation and tooling that made the whole team faster. Each item below is described
+        in a signed letter further down.
       </p>
+
+      <ul class="pullquotes">
+        <li>
+          <blockquote class="quote">
+            “Yoav owned QA across our most business-critical areas — the subscription, billing, and upgrade funnels.”
+            <cite>— Yuval Bazilevich, Growth Team Lead, Artlist</cite>
+          </blockquote>
+        </li>
+        <li>
+          <blockquote class="quote">
+            “He brings strong product knowledge across our platforms and a constructive, adaptable working approach.”
+            <cite>— Vili Medina, Head of R&amp;D, Growth, Artlist</cite>
+          </blockquote>
+        </li>
+      </ul>
 
       <ul class="cases">
         <li class="case">
@@ -56,7 +71,7 @@
         <li class="case">
           <span class="kind">Automation</span>
           <h3>Playwright + CI end-to-end test infrastructure</h3>
-          <p><strong>Scope:</strong> the user states the Growth team owned — visitor/guest, free-trial and upgrade flows.</p>
+          <p><strong>Scope:</strong> visitor/guest, free-trial and upgrade flows — the user states the Growth team owned.</p>
           <p><strong>What I did:</strong> maintained, extended and improved the Playwright end-to-end suites and their CI integration, so regressions are caught at the gate rather than after release.</p>
           <p><strong>Result:</strong> dependable automated coverage of the most business-critical funnels.</p>
           <p class="src">Described in <a href="#yuval-bazilevich">Yuval Bazilevich's</a> and <a href="#vili-medina">Vili Medina's</a> letters.</p>
@@ -75,7 +90,7 @@
           <span class="kind">Observability</span>
           <h3>Conversion-funnel dashboards with automated alerts</h3>
           <p><strong>Problem:</strong> a broken step in the funnel shows up as a drop in conversion long before anyone files a bug.</p>
-          <p><strong>What I built:</strong> analytics dashboards (Mixpanel) with automated alerts on drops in the conversion funnel, so production behaviour becomes a QA signal.</p>
+          <p><strong>What I built:</strong> analytics dashboards with automated alerts on drops in the conversion funnel, so production behaviour becomes a QA signal.</p>
           <p><strong>Result:</strong> funnel regressions surface as alerts instead of surprises.</p>
           <p class="src">Described in <a href="#yuval-bazilevich">Yuval Bazilevich's letter</a>.</p>
         </li>
@@ -84,21 +99,21 @@
           <span class="kind">AI-assisted QA</span>
           <h3>Library of AI-assisted test-design tools</h3>
           <p><strong>Problem:</strong> writing and prioritising test cases from specs and tickets is slow, repetitive work.</p>
-          <p><strong>What I built:</strong> a library of AI-assisted tools — including a Claude-based QA skill — that turns specs and tickets into structured, prioritised test cases, and taught colleagues to use the workflow.</p>
-          <p><strong>Result:</strong> faster test design across the team, in line with the organisation's move to AI-native workflows.</p>
+          <p><strong>What I built:</strong> a library of AI-assisted tools that streamlined how the team writes and prioritises test cases.</p>
+          <p><strong>Result:</strong> faster test design, in line with the organisation's direction on AI-assisted tooling.</p>
           <p class="src">Described in <a href="#yuval-bazilevich">Yuval Bazilevich's</a> and <a href="#vili-medina">Vili Medina's</a> letters.</p>
         </li>
 
         <li class="case">
           <span class="kind">Manual coverage</span>
           <h3>Ownership of the money paths</h3>
-          <p><strong>Scope:</strong> thorough, dependable manual coverage of the subscription, billing and upgrade funnels — plans, credits, wallets, checkout and pricing rules.</p>
-          <p><strong>Why it mattered:</strong> product knowledge earned first in Tier-2 support, then in QA, meant test cases started from how users actually break things.</p>
+          <p><strong>Scope:</strong> thorough, dependable manual coverage of the subscription, billing and upgrade funnels.</p>
+          <p><strong>Why it mattered:</strong> thorough, dependable coverage of the money paths — so a wrong price or a broken upgrade is caught before a customer hits it.</p>
           <p class="src">Described in <a href="#yuval-bazilevich">Yuval Bazilevich's letter</a>.</p>
         </li>
       </ul>
 
-      <p class="intro aside-note">Code samples, test plans and a walkthrough of any of the above are available on request.</p>
+      <p class="intro aside-note">Happy to walk through any of the above on a call.</p>
     </section>
 
     <!-- ============ STACK ============ -->
@@ -107,27 +122,27 @@
       <dl class="facts">
         <div>
           <dt>Automation</dt>
-          <dd>Playwright end-to-end · Page Object Model · CI integration and quality gates</dd>
+          <dd>Playwright end-to-end · CI integration across visitor/guest, free-trial and upgrade flows</dd>
         </div>
         <div>
           <dt>Test design</dt>
-          <dd>Risk-based manual coverage · BDD / Gherkin standards · AI-assisted test-case generation and prioritisation</dd>
+          <dd>Thorough, dependable manual coverage · AI-assisted writing and prioritisation of test cases</dd>
         </div>
         <div>
           <dt>Domain</dt>
-          <dd>Subscription billing and growth funnels: plans, credits, wallets, checkout, upgrade flows, pricing rules</dd>
+          <dd>Growth and billing: subscription, billing and upgrade funnels</dd>
         </div>
         <div>
           <dt>Data &amp; monitoring</dt>
-          <dd>Mixpanel dashboards and automated funnel alerts · automated test-account generation</dd>
+          <dd>Analytics dashboards with automated funnel alerts · automated test-account generation</dd>
         </div>
         <div>
           <dt>AI tooling</dt>
-          <dd>Claude and Cursor in day-to-day automation work · custom Claude-based QA skill · team enablement</dd>
+          <dd>Library of AI-assisted tools for test design · initiative adopting automation and AI-assisted tooling</dd>
         </div>
         <div>
           <dt>Support toolchain</dt>
-          <dd>Tier-2 troubleshooting and root-cause analysis · Email, CRM, Teams, TeamViewer, phone · English and Hebrew</dd>
+          <dd>English-language support worldwide · Email, CRM, Teams, TeamViewer, phone (Waves Audio)</dd>
         </div>
       </dl>
     </section>
@@ -144,8 +159,8 @@
         </li>
         <li>
           <span class="when">Artlist · Support</span>
-          <h3>Tier-2 Technical Support</h3>
-          <p>Troubleshooting and root-cause analysis, clear communication with customers and internal teams, deep product knowledge — the foundation for the move into QA.</p>
+          <h3>Technical Support</h3>
+          <p>Product knowledge across Artlist's platforms — the foundation for the move into Growth QA.</p>
         </li>
         <li>
           <span class="when">Waves Audio · Oct 2022 – Jun 2023</span>
@@ -178,7 +193,8 @@
           <h3>Yuval Bazilevich</h3>
           <p class="role">Growth Team Lead, Artlist</p>
           <span class="badge signed">Signed · Adobe Sign · Jun 2026</span>
-          <p class="note">Growth, billing funnels, Playwright automation, AI tooling, Mixpanel alerts.</p>
+          <p class="excerpt">“He delivered thorough, dependable manual coverage and took real initiative on automation… Beyond testing, he made the whole team faster.”</p>
+          <p class="note">Growth and billing funnels, Playwright + CI, pricing validation, test-account generation, funnel alerts, AI-assisted test design.</p>
           <div class="actions">
             <a class="btn btn-primary" href="../files/qa/yuval-bazilevich-artlist.pdf" target="_blank" rel="noopener">View PDF<span class="visually-hidden"> — Yuval Bazilevich (opens in new tab)</span></a>
             <a class="btn" href="../files/qa/yuval-bazilevich-artlist.pdf" download="Yoav-Shlomov-Recommendation-Yuval-Bazilevich-Artlist.pdf">Download<span class="visually-hidden"> Yuval Bazilevich letter</span></a>
@@ -191,7 +207,8 @@
           <h3>Vili Medina</h3>
           <p class="role">Head of R&amp;D, Growth, Artlist</p>
           <span class="badge signed">Signed · Jul 2026</span>
-          <p class="note">R&amp;D Growth QA, test automation, AI-assisted tooling adoption.</p>
+          <p class="excerpt">“Yoav has shown initiative in adopting automation and AI-assisted tooling in his work, in line with the organization's direction.”</p>
+          <p class="note">R&amp;D Growth QA — visitor, free-trial and upgrade journeys — test automation.</p>
           <div class="actions">
             <a class="btn btn-primary" href="../files/qa/vili-medina-artlist.pdf" target="_blank" rel="noopener">View PDF<span class="visually-hidden"> — Vili Medina (opens in new tab)</span></a>
             <a class="btn" href="../files/qa/vili-medina-artlist.pdf" download="Yoav-Shlomov-Recommendation-Vili-Medina-Artlist.pdf">Download<span class="visually-hidden"> Vili Medina letter</span></a>
@@ -204,7 +221,8 @@
           <h3>Nir Sobol</h3>
           <p class="role">Technical Support Manager, Waves Audio</p>
           <span class="badge signed">Signed · Jun 2023</span>
-          <p class="note">Pro-audio software &amp; hardware support, global English-language customers.</p>
+          <p class="excerpt">“His position required him to learn quickly, get on top of complex software and hardware systems, solving problems with end customers in real time and under pressure.”</p>
+          <p class="note">Technical support representative, Waves Audio, Oct 2022 – Jun 2023. English, worldwide.</p>
           <div class="actions">
             <a class="btn btn-primary" href="../files/qa/nir-sobol-waves.pdf" target="_blank" rel="noopener">View PDF<span class="visually-hidden"> — Nir Sobol (opens in new tab)</span></a>
             <a class="btn" href="../files/qa/nir-sobol-waves.pdf" download="Yoav-Shlomov-Recommendation-Nir-Sobol-Waves.pdf">Download<span class="visually-hidden"> Nir Sobol letter</span></a>
@@ -218,7 +236,7 @@
     <div class="cta-band">
       <div>
         <h2>Hiring for QA or automation?</h2>
-        <p>Happy to walk through any of the work above on a call, and to share code samples and test plans.</p>
+        <p>Happy to walk through any of the work above on a call.</p>
       </div>
       <div class="actions">
         <a class="btn btn-primary" href="mailto:shlomovyoav@gmail.com?subject=QA%20role%20%E2%80%94%20Yoav%20Shlomov">Email me</a>

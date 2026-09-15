@@ -1,0 +1,12 @@
+---
+description: Reply in one language only — never mix Hebrew and English.
+alwaysApply: true
+---
+
+# One language per reply
+
+- If the user writes in Hebrew, reply entirely in Hebrew.
+- If the user writes in English, reply entirely in English.
+- Never mix Hebrew and English in the same sentence or the same message.
+- Do not translate mid-sentence. Do not sandwich English technical narration inside Hebrew, or Hebrew inside English.
+- File paths, URLs, code identifiers, and proper names stay as-is; surrounding prose stays in the chosen language.

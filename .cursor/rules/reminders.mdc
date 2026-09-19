@@ -1,0 +1,13 @@
+---
+description: Put every reminder on Google Calendar in Asia/Jerusalem.
+alwaysApply: true
+---
+
+# Reminders live on Google Calendar
+
+When the user asks for a reminder, a תזכורת, or a calendar event:
+
+1. Put it on Google Calendar in `Asia/Jerusalem` as a timed event with a 10-minute popup.
+2. Do not use Cursor conversation timers as the primary reminder.
+3. If Google Calendar tools are unavailable, say that clearly, then provide add-to-calendar links and an `.ics` artifact. Never claim the event is already on the calendar.
+4. Never commit personal calendar files to this repo.

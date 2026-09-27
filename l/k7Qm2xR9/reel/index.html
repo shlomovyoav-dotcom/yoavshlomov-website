@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yoav Shlomov — Film Scoring & Original Music</title>
+
+  <!-- PRIVATE: not for indexing. Link-only. -->
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="description" content="Private showreel — Yoav Shlomov, composer for film and picture." />
+  <meta name="theme-color" content="#0a0a0b" />
+  <meta name="referrer" content="no-referrer" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ PASSWORD GATE ============ -->
+  <div id="gate" class="gate" aria-hidden="false">
+    <div class="gate-inner">
+      <p class="gate-eyebrow">Private Showreel</p>
+      <h1 class="gate-title">Yoav Shlomov</h1>
+      <p class="gate-sub">Composer for film &amp; picture</p>
+      <form id="gate-form" class="gate-form" autocomplete="off">
+        <input id="gate-input" type="password" placeholder="Enter access code" aria-label="Access code" autocomplete="off" />
+        <button type="submit">Enter</button>
+      </form>
+      <p id="gate-error" class="gate-error" hidden>Incorrect code — try again.</p>
+      <p class="gate-hint">Access by invitation. For a code, contact Yoav directly.</p>
+    </div>
+  </div>
+
+  <!-- ============ SITE ============ -->
+  <div id="site" class="site" hidden>
+
+    <!-- NAV -->
+    <header class="nav" id="nav">
+      <a href="#top" class="nav-logo">Yoav Shlomov</a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#work" onclick="closeMenu()">Film</a>
+        <a href="#commercial" onclick="closeMenu()">Commercial</a>
+        <a href="#listen" onclick="closeMenu()">Listen</a>
+        <a href="#services" onclick="closeMenu()">Services</a>
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Original Score · Sync · Mix &amp; Master</p>
+        <h1 class="hero-title">Music that<br><em>moves the picture.</em></h1>
+        <p class="hero-lede">
+          Tel Aviv-based composer and producer writing original music for film,
+          animation, art and brand work — from first cue to final master.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-gold">Watch the reel</a>
+          <a href="#contact" class="btn btn-ghost">Start a project</a>
+        </div>
+      </div>
+      <a href="#work" class="scroll-cue" aria-label="Scroll to work"><span></span></a>
+    </section>
+
+    <!-- SELECTED WORK — FILM, ANIMATION & ART -->
+    <section class="section work" id="work">
+      <div class="inner">
+        <div class="section-head">
+          <p class="kicker">Selected Work</p>
+          <h2 class="h2">Film, animation &amp; art</h2>
+          <p class="lead">Original music composed, performed and produced by Yoav Shlomov — written with the director or artist and revised against the cut.</p>
+        </div>
+
+        <div class="work-grid">
+
+          <article class="work-card">
+            <div class="video-wrap">
+              <video controls preload="none" playsinline poster="https://yoav-scoring.pages.dev/media/hunan-monkey.jpg">
+                <source src="https://yoav-scoring.pages.dev/media/hunan-monkey.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="work-meta">
+              <span class="tag">Animated Short · NYU Animation</span>
+              <h3>Hunan Monkey</h3>
+              <p>Original score for an NYU Animation student short, composed to picture.</p>
+              <span class="year">2013</span>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="video-wrap">
+              <video controls preload="none" playsinline poster="https://yoav-scoring.pages.dev/media/belleville-solo.jpg">
+                <source src="https://yoav-scoring.pages.dev/media/belleville-solo.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="work-meta">
+              <span class="tag">Guitar to Animation</span>
+              <h3>Belleville — Solo Guitar</h3>
+              <p>Solo guitar arrangement, recorded and cut to hand-drawn animation.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <ul class="credits">
+          <li><span class="c-year">2026</span><span class="c-title">Short film — Sam Spiegel Film &amp; Television School, Jerusalem</span><span class="c-note">Original score, dir. Maya Olamy. In production.</span></li>
+          <li><span class="c-year">2022–23</span><span class="c-title">Installation sound design — Odelia Elhanani</span><span class="c-note">Soundscape and music for a multidisciplinary artist's installation.</span></li>
+          <li><span class="c-year">2014</span><span class="c-title">“Glance” — short film by Lemia Boden</span><span class="c-note">Original score. Screener on request.</span></li>
+          <li><span class="c-year">2013</span><span class="c-title">Scoring studies to picture — The New School</span><span class="c-note">Horror/action, drama and commercial cues, synced to picture.</span></li>
+          <li><span class="c-year">2013</span><span class="c-title">Incidental music — Anat Barzilai College for Drama</span><span class="c-note">Theatre.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- COMMERCIAL, GAMES & LIBRARY -->
+    <section class="section work commercial" id="commercial">
+      <div class="inner">
+        <div class="section-head">
+          <p class="kicker">Commercial &amp; Library</p>
+          <h2 class="h2">Brand, games &amp; catalog</h2>
+          <p class="lead">Commissioned scores to picture-locked cuts, library music delivered to catalog spec, and game-ready cues.</p>
+        </div>
+
+        <div class="work-grid">
+
+          <article class="work-card">
+            <div class="video-wrap">
+              <video controls preload="none" playsinline poster="https://yoav-scoring.pages.dev/media/icl-corporate.jpg">
+                <source src="https://yoav-scoring.pages.dev/media/icl-corporate.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="work-meta">
+              <span class="tag">Corporate Films · via BR Productions</span>
+              <h3>ICL (Israel Chemicals)</h3>
+              <p>Original scores for ICL's corporate films, including the Dead Sea film. Scored picture-locked cuts, revised through final master; delivered final mixes plus speech and SFX versions.</p>
+              <audio class="work-audio" controls preload="none" src="https://yoav-scoring.pages.dev/media/dead-sea-cue.m4a" aria-label="Dead Sea film — cue"></audio>
+              <p class="work-audio-note">Above: a cue from the Dead Sea film.</p>
+              <span class="year">2023–24</span>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-meta">
+              <span class="tag">Library · Artlist Original</span>
+              <h3>“3/4” — catalog buyout</h3>
+              <p>Three tracks (Ein, Richard, Daida). Full mixes and stems delivered to Artlist's catalog spec; final masters approved by Artlist A&amp;R, followed by a new-songs agreement.</p>
+              <span class="year">2025</span>
+            </div>
+            <div class="work-meta">
+              <span class="tag">Games · Demo Set</span>
+              <h3>Music for games</h3>
+              <p>Five game-ready cue styles — funk, swing, electro, more funk, more electronic — plus an 80s-commercial cue. Composed, produced and mixed in Ableton. On request.</p>
+              <span class="year">2022</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTEN -->
+    <section class="section listen" id="listen">
+      <div class="inner">
+        <div class="section-head">
+          <p class="kicker">Releases</p>
+          <h2 class="h2">Listen</h2>
+          <p class="lead">“3/4” — Ein and Richard below — plus 15 releases as leader across modern jazz, lo-fi/jazz-hop, hip-hop/R&amp;B, Hebrew song and electronic.</p>
+        </div>
+        <div class="work-grid listen-video">
+          <article class="work-card">
+            <div class="video-wrap">
+              <video controls preload="none" playsinline poster="https://yoav-scoring.pages.dev/media/i-can-feel-u-now.jpg">
+                <source src="https://yoav-scoring.pages.dev/media/i-can-feel-u-now.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="work-meta">
+              <span class="tag">Original Release</span>
+              <h3>i cAn feel u NoW</h3>
+              <p>Written, performed and produced by Yoav Shlomov.</p>
+              <span class="year">2024</span>
+            </div>
+          </article>
+        </div>
+        <div class="listen-grid">
+          <iframe loading="lazy" title="Ein — Yoav Shlomov"
+            src="https://open.spotify.com/embed/track/4mWJAet3rhJouyp3KuA1pe?theme=0"
+            width="100%" height="152" frameBorder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          <iframe loading="lazy" title="Richard — Yoav Shlomov"
+            src="https://open.spotify.com/embed/track/7IQ9hnICAQLO30ljdCCjXb?theme=0"
+            width="100%" height="152" frameBorder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          <iframe loading="lazy" title="Yoav Shlomov on Spotify"
+            src="https://open.spotify.com/embed/artist/0hO3pziHIvqoQhwTICLgll?theme=0"
+            width="100%" height="152" frameBorder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+        <div class="listen-cta">
+          <a href="https://artlist.io/royalty-free-music/song/daida/137523" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Daida on Artlist</a>
+          <a href="https://open.spotify.com/artist/0hO3pziHIvqoQhwTICLgll" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Full catalog on Spotify</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services" id="services">
+      <div class="inner">
+        <div class="section-head">
+          <p class="kicker">What I Do</p>
+          <h2 class="h2">Services</h2>
+          <p class="lead">From a single cue to a finished, broadcast-ready master.</p>
+        </div>
+        <div class="svc-grid">
+          <div class="svc">
+            <span class="svc-num">01</span>
+            <h3>Original Scoring</h3>
+            <p>Bespoke music written to your picture — film, short, trailer or brand. Themes, cues and full arrangements that serve the edit.</p>
+          </div>
+          <div class="svc">
+            <span class="svc-num">02</span>
+            <h3>Mix &amp; Master</h3>
+            <p>Clean, balanced, release-ready mixes and masters for songs and cues. Vocal cleanup, stems delivery, versions to spec.</p>
+          </div>
+          <div class="svc">
+            <span class="svc-num">03</span>
+            <h3>Library &amp; Sync</h3>
+            <p>Tracks written and delivered to catalog spec — full mixes, stems and alternates — as for the Artlist Original buyout.</p>
+          </div>
+        </div>
+        <p class="svc-note">
+          Rates are project-based and flexible to budget. <a href="#contact">Tell me about the project</a> for a quote.
+        </p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="inner about-inner">
+        <div class="about-text">
+          <p class="kicker">About</p>
+          <h2 class="h2">Composer, guitarist, producer.</h2>
+          <p>Yoav Shlomov is a Tel Aviv-based composer and jazz guitarist. He writes and produces original music for film, animation, art and commercial work, and has 15 releases as leader — among them the EP “3/4”, bought out for the Artlist Original catalog. His single “Geshem” (with Adi Renert) aired on Kan 88FM.</p>
+          <p>He studied at The New School (BFA, New York, merit scholarship) and works across Ableton Live, Pro Tools, Logic, Luna and Sibelius, with the Waves mixing ecosystem he supported professionally at Waves Audio — delivering everything from a single cue to versioned masters, stems and dialogue-friendly mixes.</p>
+          <ul class="about-tools">
+            <li>Ableton Live</li>
+            <li>Pro Tools</li>
+            <li>Logic Pro</li>
+            <li>Sibelius</li>
+            <li>Waves / SoundGrid</li>
+          </ul>
+        </div>
+        <blockquote class="about-quote">
+          <p>“This young man is without doubt an outstanding musician, with great qualities of music perception, music knowledge, music technique, and extended capabilities.”</p>
+          <cite>— Billy Harper</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="inner contact-inner">
+        <div class="section-head">
+          <p class="kicker">Get in touch</p>
+          <h2 class="h2">Start a project</h2>
+          <p class="lead">Tell me about the film, the deadline and the budget — I'll come back with an approach.</p>
+        </div>
+        <form action="https://formsubmit.co/shlomovyoav@gmail.com" method="POST" class="contact-form">
+          <input type="hidden" name="_subject" value="Film scoring inquiry — private reel" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="text" name="_honey" style="display:none" />
+          <div class="cf-row">
+            <div class="cf-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" />
+            </div>
+            <div class="cf-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required autocomplete="email" />
+            </div>
+          </div>
+          <div class="cf-group">
+            <label for="project">Project &amp; budget *</label>
+            <textarea id="project" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold">Send inquiry</button>
+        </form>
+        <div class="contact-direct">
+          <a href="mailto:shlomovyoav@gmail.com">shlomovyoav@gmail.com</a>
+          <a href="tel:+972542322448">+972&nbsp;54&nbsp;232&nbsp;2448</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>Yoav Shlomov · Composer for Film</span>
+      <span class="footer-copy">&copy; <span id="yr"></span> · Private — please do not share without permission</span>
+    </footer>
+
+  </div>
+
+  <script>try { sessionStorage.setItem("ys_reel_ok", "1"); } catch (e) {}</script>
+  <script src="app.js"></script>
+</body>
+</html>

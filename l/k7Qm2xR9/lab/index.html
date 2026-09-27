@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+  <meta name="referrer" content="no-referrer" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta name="theme-color" content="#10241f" />
+  <title>Yoav Shlomov — QA Lab</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../refs.css?v=20260927" />
+  <style>
+    .lab { margin-top: 1rem; padding: 1.1rem 1.2rem 1.2rem; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+    .lab-bar { display: flex; flex-wrap: wrap; gap: 0.6rem 0.75rem; align-items: flex-end; margin: 0 0 1rem; }
+    .lab-bar label { display: flex; flex-direction: column; gap: 0.2rem; font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+    .lab select { font: inherit; font-size: 0.86rem; letter-spacing: 0; text-transform: none; padding: 0.4rem 0.55rem; border: 1px solid var(--line); border-radius: 8px; background: #fff; color: var(--ink); }
+    button.btn { cursor: pointer; font-family: inherit; }
+    button.btn[disabled] { opacity: 0.45; cursor: not-allowed; }
+    .tbl-wrap { overflow-x: auto; }
+    .tbl { width: 100%; border-collapse: collapse; font-size: 0.84rem; }
+    .tbl th { text-align: left; font-size: 0.66rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 500; padding: 0.45rem 0.5rem; border-bottom: 1px solid var(--line); white-space: nowrap; }
+    .tbl td { padding: 0.45rem 0.5rem; border-bottom: 1px solid #eee8da; vertical-align: top; }
+    .tbl .num { font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+    .tbl tr.is-bad td { background: #fdf3f1; }
+    .pill { display: inline-flex; gap: 0.3rem; align-items: center; font-size: 0.74rem; font-weight: 500; padding: 0.1rem 0.55rem; border-radius: 999px; white-space: nowrap; }
+    .pill.ok { background: #e4f1e6; color: #1e5a27; }
+    .pill.bad { background: #fbe4e1; color: #8c1d14; }
+    .pill.ask { background: #fff3e0; color: #8a3b00; }
+    .alert-card { margin-top: 1rem; border: 1px solid var(--line); border-left: 4px solid #b3261e; border-radius: 10px; padding: 0.85rem 1rem; background: #fffdfa; font-size: 0.86rem; }
+    .alert-card.ok { border-left-color: #2e7d32; }
+    .alert-card .ch { display: block; color: var(--muted); font-size: 0.74rem; letter-spacing: 0.04em; margin-bottom: 0.25rem; }
+    .alert-card ul, .alert-card ol { margin: 0.45rem 0 0; padding-left: 1.2rem; }
+    .alert-card li { margin: 0.2rem 0; }
+    pre.code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.76rem; line-height: 1.5; background: #f6f3ea; border-radius: 8px; padding: 0.75rem 0.85rem; overflow-x: auto; margin: 0.6rem 0 0; white-space: pre; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.8em; }
+    .note { font-size: 0.8rem; color: var(--muted); margin: 0.8rem 0 0; }
+    .steps { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1rem; }
+    .steps .btn[aria-pressed="true"] { background: var(--accent); color: var(--sheet); }
+    .ticket { border: 1px dashed var(--line); border-radius: 10px; padding: 0.85rem 1rem; font-size: 0.88rem; background: var(--sheet); }
+    .ticket h3 { margin: 0 0 0.35rem; font-size: 1rem; }
+    .ticket ol { margin: 0.35rem 0 0; padding-left: 1.2rem; }
+    .gaps { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.6rem; }
+    .gaps li { padding: 0.7rem 0.85rem; border: 1px solid var(--line); border-radius: 10px; font-size: 0.86rem; }
+    .gaps li strong { display: block; margin-bottom: 0.15rem; }
+    .chart-title { font-size: 0.9rem; font-weight: 500; margin: 0 0 0.2rem; }
+    .chart-sub { font-size: 0.78rem; color: var(--muted); margin: 0 0 0.5rem; }
+    .chart-box { position: relative; }
+    .chart-box svg { display: block; width: 100%; height: 240px; }
+    .tip { position: absolute; top: 0; left: 0; pointer-events: none; background: var(--ink); color: var(--sheet); font-size: 0.76rem; line-height: 1.4; padding: 0.35rem 0.55rem; border-radius: 6px; white-space: nowrap; opacity: 0; transition: opacity 0.1s; }
+    details.data { margin-top: 0.75rem; font-size: 0.84rem; }
+    details.data summary { cursor: pointer; color: var(--muted); }
+    .checklist { list-style: none; padding: 0 !important; }
+    .fixture .tbl td:first-child { font-weight: 500; }
+    @media (prefers-reduced-motion: reduce) { .tip { transition: none; } }
+  </style>
+</head>
+<body class="theme-qa">
+  <main class="sheet sheet-wide">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="../qa/">← QA Portfolio</a></nav>
+    <p class="eyebrow">Yoav Shlomov · Private · QA Lab</p>
+    <h1>QA Lab</h1>
+    <p class="subtitle">Four working demos of how I test subscription money paths</p>
+    <p class="intro">
+      Each demo is a small, working version of a pattern from my Growth QA work: checking prices against a
+      source of truth, minting test accounts in an exact billing state, turning a ticket into a test plan,
+      and alerting on a funnel drop. They were built from scratch for this page on a fictional product,
+      <strong>Lumen Notes</strong>, with invented plans, prices and data — no employer code, data or pricing.
+      Everything runs in your browser.
+    </p>
+    <nav class="page-nav" aria-label="On this page">
+      <a href="#fixture">The product</a>
+      <a href="#prices">1 · Price check</a>
+      <a href="#accounts">2 · Test accounts</a>
+      <a href="#ticket">3 · Ticket → tests</a>
+      <a href="#funnel">4 · Funnel alert</a>
+    </nav>
+
+    <!-- ============ FIXTURE ============ -->
+    <section class="section fixture" id="fixture">
+      <h2>The fictional product</h2>
+      <p class="lede">Lumen Notes is a made-up note-taking app with three plans, monthly or yearly billing, and four markets. This price book is the source of truth the demos test against.</p>
+      <div class="tbl-wrap">
+        <table class="tbl" id="book-table">
+          <thead><tr><th>Market</th><th>Currency</th><th>VAT</th><th class="num">Plus / month</th><th class="num">Plus / year</th><th class="num">Team / seat / month</th><th class="num">Team / seat / year</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p class="note">Prices are net. Germany, the UK and Israel display VAT-inclusive prices at checkout; the US displays net. Free has no billing.</p>
+    </section>
+
+    <!-- ============ 1 · PRICE CHECK ============ -->
+    <section class="section" id="prices">
+      <h2>1 · Price check</h2>
+      <p class="lede">
+        The pattern behind my pricing-validation agent: read what checkout actually charges, compare every
+        market × plan × cycle with the price book, explain each mismatch, and post the result where people
+        will see it. Build v2.14 has three planted bugs; v2.15 is the fix.
+      </p>
+      <div class="lab">
+        <div class="lab-bar">
+          <label>Checkout build
+            <select id="pc-build">
+              <option value="bugged">v2.14 — three planted bugs</option>
+              <option value="fixed">v2.15 — fixed</option>
+            </select>
+          </label>
+          <button class="btn btn-primary" type="button" id="pc-run">Run price check</button>
+        </div>
+        <div id="pc-out"><p class="note">Pick a build and run the check. It compares 16 prices.</p></div>
+      </div>
+    </section>
+
+    <!-- ============ 2 · TEST ACCOUNTS ============ -->
+    <section class="section" id="accounts">
+      <h2>2 · Test-account factory</h2>
+      <p class="lede">
+        Subscription bugs depend on account state. The factory mints an account in exactly the state a
+        scenario needs — plan, cycle, market and billing state — with dates that make sense for that state.
+        The audit then compares what each test account should be with what billing says it is, so a drifted
+        account never poisons a test run.
+      </p>
+      <div class="lab">
+        <div class="lab-bar">
+          <label>Plan
+            <select id="af-plan"><option value="plus">Plus</option><option value="team">Team</option><option value="free">Free</option></select>
+          </label>
+          <label>Cycle
+            <select id="af-cycle"><option value="month">Monthly</option><option value="year">Yearly</option></select>
+          </label>
+          <label>State
+            <select id="af-state">
+              <option value="trialing">Trialing</option>
+              <option value="active">Active</option>
+              <option value="past_due">Past due</option>
+              <option value="canceling">Cancels at period end</option>
+              <option value="expired">Expired</option>
+            </select>
+          </label>
+          <label>Market
+            <select id="af-region"><option value="US">United States</option><option value="DE">Germany</option><option value="UK">United Kingdom</option><option value="IL">Israel</option></select>
+          </label>
+          <button class="btn btn-primary" type="button" id="af-create">Create account</button>
+          <button class="btn" type="button" id="af-audit">Run drift audit</button>
+        </div>
+        <div class="tbl-wrap">
+          <table class="tbl" id="af-table">
+            <thead><tr><th>ID</th><th>Email</th><th>Plan</th><th>Market</th><th>Expected state</th><th>Billing says</th><th>Audit</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <p class="note" id="af-msg">Six seeded accounts. Create more, then run the audit.</p>
+        <pre class="code" id="af-json" aria-label="Last created account">// The account you create appears here as JSON.</pre>
+      </div>
+    </section>
+
+    <!-- ============ 3 · TICKET → TESTS ============ -->
+    <section class="section" id="ticket">
+      <h2>3 · Ticket → test plan</h2>
+      <p class="lede">
+        How I turn a ticket into tests: read it, find what it doesn't say, write Gherkin for both, and export
+        cases a test-management tool can import. In real work an AI assistant drafts steps 2 and 3 and I
+        review them; here they're scripted so the demo runs offline.
+      </p>
+      <div class="lab">
+        <div class="steps" role="group" aria-label="Pipeline steps">
+          <button class="btn" type="button" data-step="1" aria-pressed="true">1 · Read ticket</button>
+          <button class="btn" type="button" data-step="2" aria-pressed="false">2 · Find gaps</button>
+          <button class="btn" type="button" data-step="3" aria-pressed="false">3 · Write Gherkin</button>
+          <button class="btn" type="button" data-step="4" aria-pressed="false">4 · Export CSV</button>
+        </div>
+        <div id="tk-out" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ============ 4 · FUNNEL ALERT ============ -->
+    <section class="section" id="funnel">
+      <h2>4 · Funnel alert</h2>
+      <p class="lede">
+        Production as a QA signal. The rule: alert when a market's daily checkout → paid rate falls more than
+        20% below its trailing 7-day average. Release v2.14 went out on Sep 11 in this fixture story; switch
+        markets to see which one it broke.
+      </p>
+      <div class="lab">
+        <div class="lab-bar">
+          <label>Market
+            <select id="fn-region"><option value="DE">Germany</option><option value="US">United States</option><option value="UK">United Kingdom</option><option value="IL">Israel</option></select>
+          </label>
+        </div>
+        <p class="chart-title" id="fn-title"></p>
+        <p class="chart-sub">Daily checkout → paid conversion, Sep 1–14 · dashed: trailing 7-day baseline · vertical line: release v2.14</p>
+        <div class="chart-box" id="fn-box">
+          <svg id="fn-svg" role="img" aria-labelledby="fn-title"></svg>
+          <div class="tip" id="fn-tip" role="status"></div>
+        </div>
+        <details class="data">
+          <summary>Show the data as a table</summary>
+          <div class="tbl-wrap"><table class="tbl" id="fn-table"><thead><tr><th>Day</th><th class="num">Checkout → paid</th><th class="num">7-day baseline</th><th>Alert</th></tr></thead><tbody></tbody></table></div>
+        </details>
+        <div id="fn-alert"></div>
+      </div>
+    </section>
+
+    <div class="cta-band">
+      <div>
+        <h2>Want the walkthrough?</h2>
+        <p>I'm happy to go through any demo on a call, and how the real versions ran in production.</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" href="mailto:shlomovyoav@gmail.com?subject=QA%20Lab%20%E2%80%94%20Yoav%20Shlomov">Email me</a>
+        <a class="btn" href="../qa/">QA portfolio</a>
+      </div>
+    </div>
+
+    <footer class="foot">
+      <a href="../qa/">QA portfolio</a>
+      · <a href="../tuned-qa/">Tuned QA</a>
+      · <a href="../">Portfolio</a>
+      <p class="privacy">Unlisted page. Lumen Notes, its prices and all data here are fictional.</p>
+    </footer>
+  </main>
+
+  <script>
+  (() => {
+    'use strict';
+
+    /* ---------- fixture: the fictional price book ---------- */
+    const MARKETS = {
+      US: { name: 'United States', cur: 'USD', sym: '$', vat: 0 },
+      DE: { name: 'Germany', cur: 'EUR', sym: '€', vat: 0.19 },
+      UK: { name: 'United Kingdom', cur: 'GBP', sym: '£', vat: 0.20 },
+      IL: { name: 'Israel', cur: 'ILS', sym: '₪', vat: 0.18 }
+    };
+    const BOOK = { // net, per currency — invented
+      USD: { plus: { month: 8, year: 80 }, team: { month: 14, year: 140 } },
+      EUR: { plus: { month: 7.9, year: 79 }, team: { month: 13, year: 130 } },
+      GBP: { plus: { month: 6.5, year: 65 }, team: { month: 11, year: 110 } },
+      ILS: { plus: { month: 29, year: 290 }, team: { month: 49, year: 490 } }
+    };
+    const PLAN = { free: 'Free', plus: 'Plus', team: 'Team' };
+    const CYCLE = { month: 'monthly', year: 'yearly' };
+    const round2 = n => Math.round((n + Number.EPSILON) * 100) / 100;
+    const money = (m, n) => MARKETS[m].sym + n.toFixed(2);
+    const net = (m, plan, cycle) => BOOK[MARKETS[m].cur][plan][cycle];
+    const gross = (m, plan, cycle) => round2(net(m, plan, cycle) * (1 + MARKETS[m].vat));
+    const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    const $ = id => document.getElementById(id);
+
+    // price book table
+    $('book-table').querySelector('tbody').innerHTML = Object.keys(MARKETS).map(m => {
+      const c = MARKETS[m].cur;
+      return `<tr><td>${MARKETS[m].name}</td><td>${c}</td><td>${Math.round(MARKETS[m].vat * 100)}%</td>` +
+        ['plus', 'team'].flatMap(p => ['month', 'year'].map(cy => `<td class="num">${money(m, BOOK[c][p][cy])}</td>`)).join('') + '</tr>';
+    }).join('');
+
+    /* ---------- 1 · price check ---------- */
+    function checkoutPrices(build) {
+      const out = {};
+      for (const m in MARKETS) for (const p of ['plus', 'team']) for (const cy of ['month', 'year']) {
+        out[`${m}|${p}|${cy}`] = gross(m, p, cy);
+      }
+      if (build === 'bugged') {
+        out['DE|plus|year'] = net('DE', 'plus', 'year');          // VAT dropped
+        out['UK|team|year'] = BOOK.USD.team.month * 12;           // fell back to another currency, no annual price
+        out['IL|plus|month'] = Math.floor(gross('IL', 'plus', 'month') * 10) / 10; // rounded to one decimal
+      }
+      return out;
+    }
+    function diagnose(m, p, cy, got, want) {
+      if (MARKETS[m].vat > 0 && Math.abs(got - net(m, p, cy)) < 0.005) return 'VAT not applied — checkout shows the net price';
+      for (const c in BOOK) {
+        if (c === MARKETS[m].cur) continue;
+        for (const pp in BOOK[c]) {
+          if (Math.abs(got - BOOK[c][pp].month * 12) < 0.005) return `Equals ${c} ${PLAN[pp]} monthly × 12 — wrong currency, and no yearly price`;
+          for (const cc in BOOK[c][pp]) if (Math.abs(got - BOOK[c][pp][cc]) < 0.005) return `Equals the ${c} ${PLAN[pp]} ${CYCLE[cc]} price — wrong currency`;
+        }
+      }
+      const d = round2(got - want);
+      if (Math.abs(d) < 0.1) return `Rounding — off by ${MARKETS[m].sym}${Math.abs(d).toFixed(2)}`;
+      return 'Unexpected value';
+    }
+    $('pc-run').addEventListener('click', () => {
+      const build = $('pc-build').value;
+      const co = checkoutPrices(build);
+      const rows = [], bad = [];
+      for (const m in MARKETS) for (const p of ['plus', 'team']) for (const cy of ['month', 'year']) {
+        const want = gross(m, p, cy), got = co[`${m}|${p}|${cy}`];
+        const ok = Math.abs(got - want) < 0.005;
+        const why = ok ? '' : diagnose(m, p, cy, got, want);
+        if (!ok) bad.push({ m, p, cy, want, got, why });
+        rows.push(`<tr class="${ok ? '' : 'is-bad'}"><td>${MARKETS[m].name}</td><td>${PLAN[p]}</td><td>${CYCLE[cy]}</td>` +
+          `<td class="num">${money(m, want)}</td><td class="num">${money(m, got)}</td>` +
+          `<td>${ok ? '<span class="pill ok">✓ match</span>' : '<span class="pill bad">✕ mismatch</span> ' + esc(why)}</td></tr>`);
+      }
+      const total = rows.length;
+      const card = bad.length
+        ? `<div class="alert-card" role="alert"><span class="ch">#billing-alerts · price-check bot</span>
+             <strong>⚠ ${bad.length} of ${total} checkout prices don't match the price book</strong> (build ${build === 'bugged' ? 'v2.14' : 'v2.15'})
+             <ul>${bad.map(b => `<li>${MARKETS[b.m].name} · ${PLAN[b.p]} · ${CYCLE[b.cy]} — expected ${money(b.m, b.want)}, checkout ${money(b.m, b.got)}. ${esc(b.why)}.</li>`).join('')}</ul></div>`
+        : `<div class="alert-card ok"><span class="ch">#billing-alerts · price-check bot</span><strong>✓ ${total} of ${total} prices match the price book.</strong> No alert sent.</div>`;
+      $('pc-out').innerHTML = `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Market</th><th>Plan</th><th>Cycle</th><th class="num">Price book</th><th class="num">Checkout</th><th>Result</th></tr></thead><tbody>${rows.join('')}</tbody></table></div>${card}`;
+    });
+
+    /* ---------- 2 · test-account factory ---------- */
+    const DAY = 864e5;
+    const iso = d => new Date(d).toISOString().slice(0, 10);
+    let seq = 0;
+    const accounts = [];
+    function makeAccount(plan, cycle, state, region, billingOverride) {
+      seq += 1;
+      const now = Date.now();
+      if (plan === 'free') { cycle = null; state = 'active'; }
+      const id = 'acct_' + String(seq).padStart(4, '0');
+      const email = `qa+${plan}${cycle ? '-' + cycle : ''}-${state.replace('_', '')}-${region.toLowerCase()}-${seq}@example.test`;
+      const sub = { plan, cycle, market: region, currency: MARKETS[region].cur, state };
+      if (plan !== 'free') {
+        const len = cycle === 'year' ? 365 : 30;
+        if (state === 'trialing') { sub.trial_ends = iso(now + 14 * DAY); sub.price_after_trial = gross(region, plan, cycle); }
+        if (state === 'active') { sub.renews_on = iso(now + len * DAY); sub.price = gross(region, plan, cycle); }
+        if (state === 'past_due') { sub.payment_failed_on = iso(now - 2 * DAY); sub.next_retry_on = iso(now + 3 * DAY); }
+        if (state === 'canceling') { sub.access_until = iso(now + Math.round(len * 0.6) * DAY); }
+        if (state === 'expired') { sub.ended_on = iso(now - 10 * DAY); }
+      }
+      const acct = { id, email, created_on: iso(now), subscription: sub, billing: billingOverride || { state, plan } };
+      accounts.push(acct);
+      return acct;
+    }
+    // seeds — two of them have drifted from what the tests expect
+    makeAccount('plus', 'month', 'active', 'US');
+    makeAccount('team', 'year', 'trialing', 'DE');
+    makeAccount('plus', 'year', 'past_due', 'UK', { state: 'active', plan: 'plus' });
+    makeAccount('free', null, 'active', 'IL');
+    makeAccount('team', 'month', 'canceling', 'US', { state: 'canceling', plan: 'plus' });
+    makeAccount('plus', 'month', 'expired', 'DE');
+    let audited = false;
+    function driftOf(a) {
+      const out = [];
+      if (a.billing.state !== a.subscription.state) out.push(`state is “${a.billing.state}”, test expects “${a.subscription.state}”`);
+      if (a.billing.plan !== a.subscription.plan) out.push(`plan is ${PLAN[a.billing.plan]}, test expects ${PLAN[a.subscription.plan]}`);
+      return out;
+    }
+    function renderAccounts() {
+      $('af-table').querySelector('tbody').innerHTML = accounts.map(a => {
+        const d = driftOf(a);
+        const audit = !audited ? '<span class="note" style="margin:0">—</span>'
+          : d.length ? `<span class="pill bad">✕ drift</span> ${esc(d.join('; '))}` : '<span class="pill ok">✓ matches</span>';
+        return `<tr class="${audited && d.length ? 'is-bad' : ''}"><td><code>${a.id}</code></td><td><code>${esc(a.email)}</code></td>` +
+          `<td>${PLAN[a.subscription.plan]}${a.subscription.cycle ? ' · ' + CYCLE[a.subscription.cycle] : ''}</td><td>${a.subscription.market}</td>` +
+          `<td>${a.subscription.state.replace('_', ' ')}</td><td>${a.billing.state.replace('_', ' ')} · ${PLAN[a.billing.plan]}</td><td>${audit}</td></tr>`;
+      }).join('');
+    }
+    function syncFree() {
+      const free = $('af-plan').value === 'free';
+      $('af-cycle').disabled = free; $('af-state').disabled = free;
+    }
+    $('af-plan').addEventListener('change', syncFree);
+    $('af-create').addEventListener('click', () => {
+      const a = makeAccount($('af-plan').value, $('af-cycle').value, $('af-state').value, $('af-region').value);
+      audited = false;
+      renderAccounts();
+      $('af-json').textContent = JSON.stringify(a, null, 2);
+      $('af-msg').textContent = `Created ${a.id} (${a.email}).` + (a.subscription.plan === 'free' ? ' Free accounts have no billing cycle or state.' : '');
+    });
+    $('af-audit').addEventListener('click', () => {
+      audited = true;
+      renderAccounts();
+      const n = accounts.filter(a => driftOf(a).length).length;
+      $('af-msg').textContent = n
+        ? `${n} of ${accounts.length} accounts have drifted. Quarantine them (or re-mint) before the next run — a test on a drifted account fails for the wrong reason.`
+        : `All ${accounts.length} accounts match billing.`;
+    });
+    renderAccounts(); syncFree();
+
+    /* ---------- 3 · ticket → test plan ---------- */
+    const TICKET = {
+      key: 'LUM-142', title: 'Annual billing for the Team plan',
+      body: 'Add a Monthly / Annual toggle to the Team plan on the pricing page. Annual is billed per seat per year and shows a “Save 17%” badge.',
+      ac: ['The pricing page shows a Monthly / Annual toggle for Team.',
+           'Annual shows the per-seat yearly price and a “Save 17%” badge.',
+           'Checkout charges the annual price for the selected number of seats.']
+    };
+    const GAPS = [
+      ['Existing monthly customers', 'Can a monthly Team workspace switch to annual mid-cycle? The ticket doesn’t say how the unused month is credited.'],
+      ['VAT and rounding', 'Germany, the UK and Israel show VAT-inclusive prices. Does “Save 17%” still hold after VAT and rounding in every currency?'],
+      ['Seats on an annual plan', 'What happens when an annual workspace adds a seat in month 5 — charged now, pro-rated, or at renewal?'],
+      ['Cancel and downgrade', 'Does cancelling an annual plan refund anything, or keep access until the period ends?'],
+      ['Toggle to checkout', 'Which option is selected by default, and does the choice survive the trip to checkout and back?'],
+      ['Tracking', 'Is the toggle tracked, so conversion can be compared by billing cycle after launch?']
+    ];
+    const deTeamYear = gross('DE', 'team', 'year');
+    const SCEN = [
+      { name: 'Team pricing shows a Monthly / Annual toggle', obj: 'AC 1', pre: 'Visitor on the pricing page', pri: 'High', labels: 'pricing,team',
+        bdd: 'Given I am a visitor on the pricing page\nWhen I look at the Team plan\nThen I see a Monthly / Annual toggle' },
+      { name: 'Annual Team price and saving badge in each market', obj: 'AC 2 · gap: VAT and rounding', pre: 'Visitor from each market', pri: 'High', labels: 'pricing,team,vat',
+        bdd: 'Scenario Outline: Annual Team price in <market>\n  Given I am a visitor from <market>\n  When I switch the Team plan to Annual\n  Then I see "<annual price> per seat / year"\n  And I see the badge "Save 17%"\n\n  Examples:\n    | market         | annual price |\n' +
+          Object.keys(MARKETS).map(m => `    | ${MARKETS[m].name.padEnd(14)} | ${money(m, gross(m, 'team', 'year')).padEnd(12)} |`).join('\n') },
+      { name: 'Checkout charges the annual price for the selected seats', obj: 'AC 3', pre: 'Signed-in admin of a Free workspace in Germany', pri: 'High', labels: 'checkout,team,vat',
+        bdd: `Given I am the admin of a Free workspace in Germany\nAnd I chose Team, Annual, 5 seats on the pricing page\nWhen I complete checkout\nThen I am charged ${money('DE', round2(deTeamYear * 5))}\nAnd the invoice shows 5 seats × ${money('DE', deTeamYear)}, VAT included` },
+      { name: 'The Annual choice survives the trip to checkout', obj: 'Gap: toggle to checkout', pre: 'Visitor on the pricing page', pri: 'Medium', labels: 'checkout,team',
+        bdd: 'Given I switched the Team plan to Annual\nWhen I go to checkout and come back to the pricing page\nThen Annual is still selected\nAnd checkout shows the annual price' },
+      { name: 'Monthly Team workspace switches to Annual mid-cycle', obj: 'Gap: existing monthly customers', pre: 'Team monthly workspace, 12 days into the cycle', pri: 'Medium', labels: 'billing,team,needs-answer',
+        bdd: 'Given my workspace is on Team monthly, 12 days into the cycle\nWhen I switch to Annual\nThen the unused part of the month is credited as agreed with Product\nAnd my next renewal date is one year from today' },
+      { name: 'Adding a seat to an annual Team plan', obj: 'Gap: seats on an annual plan', pre: 'Team annual workspace, month 5', pri: 'Medium', labels: 'billing,team,needs-answer',
+        bdd: 'Given my workspace is on Team annual with 5 seats, in month 5\nWhen I add 1 seat\nThen I am charged as agreed with Product\nAnd the invoice explains the charge' },
+      { name: 'Cancelling an annual Team plan', obj: 'Gap: cancel and downgrade', pre: 'Team annual workspace', pri: 'Medium', labels: 'billing,team,needs-answer',
+        bdd: 'Given my workspace is on Team annual\nWhen I cancel\nThen I keep access until the end of the paid year\nAnd I am not charged again' },
+      { name: 'The billing-cycle toggle is tracked', obj: 'Gap: tracking', pre: 'Visitor on the pricing page', pri: 'Low', labels: 'analytics,team',
+        bdd: 'Given I am on the pricing page\nWhen I switch the Team plan to Annual\nThen the event "pricing_cycle_toggled" is sent with cycle = "annual"' }
+    ];
+    function csv() {
+      const cell = v => '"' + String(v).replace(/"/g, '""') + '"';
+      const head = ['Name', 'Objective', 'Precondition', 'Test Script (BDD)', 'Priority', 'Labels', 'Ticket'];
+      return [head.map(cell).join(',')].concat(SCEN.map(s => [s.name, s.obj, s.pre, s.bdd, s.pri, s.labels, TICKET.key].map(cell).join(','))).join('\r\n');
+    }
+    const STEPS = {
+      1: () => `<div class="ticket"><h3>${TICKET.key} · ${TICKET.title}</h3><p style="margin:0">${TICKET.body}</p><p style="margin:.6rem 0 0"><strong>Acceptance criteria</strong></p><ol>${TICKET.ac.map(a => `<li>${a}</li>`).join('')}</ol></div>
+             <p class="note">Three acceptance criteria. Now look for what they leave out.</p>`,
+      2: () => `<ul class="gaps">${GAPS.map(g => `<li><strong>${g[0]} <span class="pill ask">? ask Product</span></strong>${g[1]}</li>`).join('')}</ul>
+             <p class="note">${GAPS.length} gaps. Each becomes a question for the product manager and a test tagged <code>needs-answer</code> until it's settled.</p>`,
+      3: () => {
+        const feature = `Feature: ${TICKET.key} ${TICKET.title}\n\n` + SCEN.map(s => {
+          const tag = s.labels.includes('needs-answer') ? '@needs-answer\n' : '';
+          const body = s.bdd.startsWith('Scenario') ? s.bdd : `Scenario: ${s.name}\n` + s.bdd.replace(/^/gm, '  ');
+          return tag + body;
+        }).join('\n\n');
+        return `<pre class="code">${esc(feature)}</pre>
+             <p class="note">${SCEN.length} scenarios: three from the acceptance criteria, five from the gaps. Prices come from the price book, so the outline can't drift from it.</p>`;
+      },
+      4: () => `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Name</th><th>Objective</th><th>Priority</th><th>Labels</th></tr></thead><tbody>${SCEN.map(s => `<tr><td>${esc(s.name)}</td><td>${esc(s.obj)}</td><td>${s.pri}</td><td><code>${s.labels}</code></td></tr>`).join('')}</tbody></table></div>
+             <div class="lab-bar" style="margin:1rem 0 0"><button class="btn btn-primary" type="button" id="tk-dl">Download CSV</button></div>
+             <p class="note">Columns match a typical test-management import (name, objective, precondition, BDD script, priority, labels).</p>`
+    };
+    function showStep(n) {
+      document.querySelectorAll('#ticket [data-step]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.step === String(n))));
+      $('tk-out').innerHTML = STEPS[n]();
+      const dl = $('tk-dl');
+      if (dl) dl.addEventListener('click', () => {
+        const url = URL.createObjectURL(new Blob(['﻿' + csv()], { type: 'text/csv;charset=utf-8' }));
+        const a = document.createElement('a'); a.href = url; a.download = `${TICKET.key}-test-cases.csv`;
+        document.body.appendChild(a); a.click(); a.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+      });
+    }
+    document.querySelectorAll('#ticket [data-step]').forEach(b => b.addEventListener('click', () => showStep(b.dataset.step)));
+    showStep(1);
+
+    /* ---------- 4 · funnel alert ---------- */
+    const DAYS = Array.from({ length: 14 }, (_, i) => `Sep ${i + 1}`);
+    const RATES = { // % checkout → paid, invented
+      US: [66, 65, 67, 66, 64, 66, 67, 65, 66, 65, 66, 67, 65, 66],
+      DE: [63, 64, 62, 63, 65, 62, 63, 64, 63, 62, 41, 40, 42, 39],
+      UK: [60, 61, 59, 60, 62, 60, 59, 61, 60, 61, 60, 59, 61, 60],
+      IL: [58, 57, 59, 58, 57, 58, 59, 57, 58, 58, 57, 58, 59, 58]
+    };
+    const RELEASE = 10; // index of Sep 11
+    const DROP = 0.2;
+    function series(m) {
+      return RATES[m].map((r, i) => {
+        const base = i >= 7 ? RATES[m].slice(i - 7, i).reduce((a, b) => a + b, 0) / 7 : null;
+        return { day: DAYS[i], r, base, alert: base !== null && r < base * (1 - DROP) };
+      });
+    }
+    const NS = 'http://www.w3.org/2000/svg';
+    const el = (tag, attrs, text) => { const n = document.createElementNS(NS, tag); for (const k in attrs) n.setAttribute(k, attrs[k]); if (text != null) n.textContent = text; return n; };
+    const INK = '#17251d', MUTED = '#61675e', GRID = '#ebe5d6', SERIES = '#0d47a1', CRIT = '#b3261e', BASE = '#8a8f86';
+    function drawChart() {
+      const m = $('fn-region').value, data = series(m);
+      const svg = $('fn-svg'), box = $('fn-box'), tip = $('fn-tip');
+      const W = Math.max(280, box.clientWidth), H = 240, L = 40, R = 14, T = 22, B = 28;
+      svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+      svg.innerHTML = '';
+      const x = i => L + i * (W - L - R) / 13, y = v => T + (1 - v / 80) * (H - T - B);
+      const nAlerts = data.filter(d => d.alert).length;
+      $('fn-title').textContent = `Checkout → paid, ${MARKETS[m].name}` + (nAlerts ? ` — ${nAlerts} alert day${nAlerts > 1 ? 's' : ''}` : ' — no alerts');
+      for (const v of [0, 20, 40, 60, 80]) {
+        svg.appendChild(el('line', { x1: L, x2: W - R, y1: y(v), y2: y(v), stroke: GRID, 'stroke-width': 1 }));
+        svg.appendChild(el('text', { x: L - 8, y: y(v) + 4, 'text-anchor': 'end', 'font-size': 11, fill: MUTED }, v + '%'));
+      }
+      const every = W < 480 ? 4 : 2;
+      data.forEach((d, i) => { if (i % every === 0) svg.appendChild(el('text', { x: x(i), y: H - 8, 'text-anchor': 'middle', 'font-size': 11, fill: MUTED }, d.day)); });
+      // release marker
+      svg.appendChild(el('line', { x1: x(RELEASE), x2: x(RELEASE), y1: T - 6, y2: H - B, stroke: MUTED, 'stroke-width': 1, 'stroke-dasharray': '3 3' }));
+      svg.appendChild(el('text', { x: x(RELEASE) - 5, y: T - 9, 'text-anchor': 'end', 'font-size': 11, fill: MUTED }, 'v2.14'));
+      // baseline
+      const bpts = data.map((d, i) => d.base === null ? null : `${x(i)},${y(d.base)}`).filter(Boolean);
+      svg.appendChild(el('polyline', { points: bpts.join(' '), fill: 'none', stroke: BASE, 'stroke-width': 1.5, 'stroke-dasharray': '5 4' }));
+      svg.appendChild(el('text', { x: x(7), y: y(data[7].base) - 8, 'font-size': 11, fill: MUTED }, '7-day baseline'));
+      // series
+      svg.appendChild(el('polyline', { points: data.map((d, i) => `${x(i)},${y(d.r)}`).join(' '), fill: 'none', stroke: SERIES, 'stroke-width': 2, 'stroke-linejoin': 'round' }));
+      data.forEach((d, i) => svg.appendChild(el('circle', { cx: x(i), cy: y(d.r), r: d.alert ? 5 : 4, fill: d.alert ? CRIT : SERIES, stroke: '#fff', 'stroke-width': 2 })));
+      const first = data.findIndex(d => d.alert);
+      if (first >= 0) svg.appendChild(el('text', { x: x(first) + 8, y: y(data[first].r) + 18, 'font-size': 11, 'font-weight': 500, fill: INK }, '⚠ alert'));
+      // hover layer
+      const cross = el('line', { x1: 0, x2: 0, y1: T, y2: H - B, stroke: INK, 'stroke-width': 1, opacity: 0 });
+      svg.appendChild(cross);
+      const step = (W - L - R) / 13;
+      data.forEach((d, i) => {
+        const hit = el('rect', { x: x(i) - step / 2, y: T, width: step, height: H - T - B, fill: 'transparent' });
+        const show = () => {
+          cross.setAttribute('x1', x(i)); cross.setAttribute('x2', x(i)); cross.setAttribute('opacity', 0.25);
+          tip.innerHTML = `<strong>${d.day}</strong> · ${d.r}%` + (d.base !== null ? ` · baseline ${d.base.toFixed(1)}%` : '') + (d.alert ? ' · ⚠ alert' : '') + (i === RELEASE ? ' · v2.14 released' : '');
+          tip.style.opacity = 1;
+          const tw = tip.offsetWidth;
+          const left = Math.min(Math.max(x(i) - tw / 2, 0), W - tw);
+          tip.style.transform = `translate(${left}px, ${Math.max(y(d.r) - 44, 0)}px)`;
+        };
+        hit.addEventListener('mouseenter', show);
+        hit.addEventListener('touchstart', show, { passive: true });
+        hit.addEventListener('mouseleave', () => { tip.style.opacity = 0; cross.setAttribute('opacity', 0); });
+        svg.appendChild(hit);
+      });
+      // table
+      $('fn-table').querySelector('tbody').innerHTML = data.map(d => `<tr><td>${d.day}</td><td class="num">${d.r}%</td><td class="num">${d.base === null ? '—' : d.base.toFixed(1) + '%'}</td><td>${d.alert ? '<span class="pill bad">⚠ alert</span>' : ''}</td></tr>`).join('');
+      // alert + triage
+      if (first >= 0) {
+        const d = data[first], drop = Math.round((1 - d.r / d.base) * 100);
+        const others = Object.keys(MARKETS).filter(k => k !== m && series(k).some(s => s.alert));
+        $('fn-alert').innerHTML = `<div class="alert-card" role="alert"><span class="ch">#growth-alerts · funnel monitor</span>
+          <strong>⚠ Checkout → paid in ${MARKETS[m].name}: ${d.r}% on ${d.day}</strong> — ${drop}% below the 7-day baseline of ${d.base.toFixed(1)}%.
+          <p style="margin:.6rem 0 0"><strong>Triage</strong></p>
+          <ol class="checklist">
+            <li>✓ Release that day? v2.14 shipped on ${DAYS[RELEASE]} — the drop starts the same day.</li>
+            <li>✓ Other markets? ${others.length ? 'Also alerting: ' + others.map(k => MARKETS[k].name).join(', ') : 'Steady — the drop is ' + MARKETS[m].name + '-only. Switch markets above to compare.'}</li>
+            <li>→ Hypothesis: a payment step specific to this market broke in v2.14. Check error tracking for failures on the payment-confirmation step, filtered to ${MARKETS[m].name}.</li>
+            <li>→ Reproduce with a real test account in the exact state: <button class="btn" type="button" id="fn-repro">Mint a ${MARKETS[m].name} Plus account</button></li>
+          </ol>
+          <p class="note" style="margin:.5rem 0 0">Fixture story — the release, the drop and the hypothesis are invented for the demo.</p></div>`;
+        $('fn-repro').addEventListener('click', () => {
+          $('af-plan').value = 'plus'; $('af-cycle').value = 'month'; $('af-state').value = 'active'; $('af-region').value = m; syncFree();
+          $('af-create').click();
+          $('accounts').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      } else {
+        $('fn-alert').innerHTML = `<div class="alert-card ok"><span class="ch">#growth-alerts · funnel monitor</span><strong>✓ No alerts for ${MARKETS[m].name}.</strong> Every day from Sep 8 on is within 20% of its 7-day baseline, including after v2.14.</div>`;
+      }
+    }
+    $('fn-region').addEventListener('change', drawChart);
+    let rt; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(drawChart, 120); });
+    drawChart();
+  })();
+  </script>
+</body>
+</html>

@@ -624,6 +624,7 @@ h1 {
   margin: 2rem 0 2.5rem;
 }
 .hub-grid-3 { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.hub-grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .hub-card {
   display: flex; flex-direction: column; gap: .4rem;
   text-decoration: none; color: inherit;
@@ -659,6 +660,7 @@ h1 {
   .cases, .media-grid, .facts, .pullquotes, .receipts, .tuned-hero { grid-template-columns: 1fr; }
   .metrics { grid-template-columns: repeat(2, 1fr); }
   .facts.two { grid-template-columns: 1fr; }
+  .hub-grid-4 { grid-template-columns: 1fr; }
   .stage { grid-template-columns: 2rem 1fr; }
 }
 

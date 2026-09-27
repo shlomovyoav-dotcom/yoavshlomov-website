@@ -56,7 +56,9 @@ l/             — unlisted, noindex pages (shared by direct link only):
                  l/<token>/          hub with three cards
                  l/<token>/qa/       Hi-Tech: QA portfolio + letters
                  l/<token>/music/    Music & film scoring: portfolio + letters
-                 l/<token>/tuned-qa/ Tuned QA consulting page
+                 l/<token>/lab/      QA Lab: four interactive demos on a fictional product (no employer data)
+                 l/<token>/reel/     scoring showreel (media streams from yoav-scoring.pages.dev)
+                 l/<token>/tuned-qa/ Tuned QA consulting page (+ site/: the full brand site)
                  l/<token>/files/    the letter PDFs; l/<token>/media/posters/ reel poster frames
                  (reel videos stream from yoav-scoring.pages.dev; unsigned drafts in files/qa are intentionally unlinked)
 ```

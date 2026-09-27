@@ -117,6 +117,7 @@ a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-rad
   border-radius: 12px;
   background: #fff;
 }
+.facts.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .facts dt {
   font-size: 0.68rem;
   letter-spacing: 0.12em;
@@ -161,6 +162,36 @@ a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-rad
   color: var(--muted);
 }
 .case .src a { color: var(--muted); }
+
+/* at-a-glance numbers */
+.metrics {
+  list-style: none;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.75rem;
+}
+.metrics li {
+  padding: 0.8rem 0.95rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: var(--muted);
+}
+.metrics strong {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: 1.55rem;
+  line-height: 1.1;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+}
+.case .chips { margin-top: 0.15rem; }
+.case .chips li { font-size: 0.7rem; padding: 0.2rem 0.55rem; }
+.media-card audio.extra { padding: 0.5rem 0 0; }
 
 /* tag chips (stack / tools) */
 .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0; padding: 0; list-style: none; }
@@ -626,6 +657,8 @@ h1 {
   h1 { font-size: 1.7rem; }
   .btn { padding: 0.5rem 0.9rem; }
   .cases, .media-grid, .facts, .pullquotes, .receipts, .tuned-hero { grid-template-columns: 1fr; }
+  .metrics { grid-template-columns: repeat(2, 1fr); }
+  .facts.two { grid-template-columns: 1fr; }
   .stage { grid-template-columns: 2rem 1fr; }
 }
 
@@ -638,5 +671,5 @@ h1 {
   body { background: #fff; }
   .sheet { box-shadow: none; margin: 0; max-width: none; padding: 0; background: #fff; }
   .crumbs, .actions, .bundle, .privacy, .page-nav, .cta-band, .media-card video, .media-card audio, .embed { display: none; }
-  .letter, .case, .media-card, .stage, .pullquotes .quote, .tuner-card { break-inside: avoid; }
+  .letter, .case, .media-card, .stage, .pullquotes .quote, .tuner-card, .metrics li { break-inside: avoid; }
 }

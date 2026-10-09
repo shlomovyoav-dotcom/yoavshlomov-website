@@ -13,3 +13,15 @@
 # Removed temporary iPhone config profiles (2026-07-21)
 /dns/family.mobileconfig      /404.html 404
 /dns/ig-block.mobileconfig     /404.html 404
+
+# Blocker + internal docs — never serve (defense-in-depth; Functions are authoritative)
+/dns                  /404.html 404
+/dns/                 /404.html 404
+/dns/*                /404.html 404
+/docs                 /404.html 404
+/docs/                /404.html 404
+/docs/*               /404.html 404
+/AGENTS.md            /404.html 404
+/drafts               /404.html 404
+/drafts/              /404.html 404
+/drafts/*             /404.html 404

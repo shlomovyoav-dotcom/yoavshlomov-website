@@ -1,8 +1,9 @@
 # Archive stale cloud chats
 
-Cursor Cloud MCP cannot archive chats for you. Use
-[cursor.com/agents](https://cursor.com/agents) (or the Cloud Agents API
-`POST /v1/agents/{id}/archive`).
+Preferred: run `docs/EXECUTE-CONSOLIDATION.sh` with `CURSOR_API_KEY` set
+(archives the list below via `POST /v1/agents/{id}/archive`).
+
+Manual fallback: [cursor.com/agents](https://cursor.com/agents).
 
 **Policy:** keep only active subject threads. Archive ERROR one-shots,
 finished walkthroughs, and housekeeping from September onward that are not

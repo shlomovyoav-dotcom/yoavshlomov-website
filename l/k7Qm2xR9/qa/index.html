@@ -12,34 +12,33 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../refs.css?v=20260927" />
+  <link rel="stylesheet" href="../refs.css?v=20261017" />
 </head>
 <body class="theme-qa">
   <main class="sheet sheet-wide">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="../">← Portfolio</a></nav>
     <p class="eyebrow">Yoav Shlomov · Private · Hi-Tech</p>
     <h1>QA Portfolio &amp; Recommendation Letters</h1>
-    <p class="subtitle">QA Engineer — manual &amp; automation · AI product quality · Growth &amp; billing</p>
+    <p class="subtitle">QA Engineer — manual &amp; automation · Growth &amp; billing · AI product quality</p>
     <p class="intro">
-      QA engineer with a technical-support background. Most recently QA owner for the Growth domain at
-      Artlist — pricing, checkout, plan changes, credit wallets and trial-to-paid journeys on a creative
-      platform used by 30M+ creators. Before that, about two years of technical support at Artlist (Tier 2)
-      and Waves Audio, so I test from the customer's side of the screen. Below: the work, the support
-      operations behind it, independent projects, then signed letters. Verification contacts:
-      <a href="mailto:shlomovyoav@gmail.com">shlomovyoav@gmail.com</a>
+      I was the QA engineer for the Growth team at Artlist for a year: pricing, checkout, plan changes,
+      credits and the trial-to-paid journey, on a creative platform used by 30M+ creators. Before that,
+      two years of technical support — Tier 2 at Artlist and Waves Audio — so I test from the customer's
+      side of the screen. Everything below is work I did myself, with the people who can confirm it.
+      Contact: <a href="mailto:shlomovyoav@gmail.com">shlomovyoav@gmail.com</a>
     </p>
 
     <ul class="metrics" aria-label="At a glance">
       <li><strong>44</strong>test plans &amp; coverage matrices for Growth launches</li>
       <li><strong>240</strong>QA accounts kept mapped to plans and subscription states</li>
-      <li><strong>49</strong>agent skills in the team's QA monorepo</li>
-      <li><strong>3</strong>signed letters — Artlist Growth lead, Head of R&amp;D Growth, Waves</li>
+      <li><strong>8</strong>currencies checked against Chargebee every night by a tool I built</li>
+      <li><strong>3</strong>signed letters — Growth Team Lead, Head of R&amp;D Growth, Waves</li>
     </ul>
 
     <div class="bundle">
       <p>
         <strong>Try it: QA Lab</strong>
-        <span class="meta">Four working demos — price check, test-account factory, ticket → Gherkin → CSV, funnel alert — on a fictional product.</span>
+        <span class="meta">Four working demos of the same patterns — price check, test-account factory, ticket → Gherkin → CSV, funnel alert — on a fictional product.</span>
       </p>
       <a class="btn btn-primary" href="../lab/">Open the lab →</a>
     </div>
@@ -55,11 +54,12 @@
 
     <!-- ============ PORTFOLIO ============ -->
     <section class="section" id="portfolio">
-      <h2>QA at Artlist — Growth domain</h2>
+      <h2>QA at Artlist — Growth team</h2>
       <p class="lede">
-        July 2025 – July 2026. I owned QA for the Growth domain — the subscription, billing and upgrade
-        funnels Yuval Bazilevich calls the team's most business-critical areas — in a QA team, combining
-        dependable manual coverage with automation and tooling that made the whole team faster.
+        July 2025 – July 2026, in the R&amp;D Growth group, as part of a QA team led by a QA Lead.
+        The Growth team owns the money paths: the pricing page, the plan modal, checkout, upgrades,
+        the credits wallet, and the free-trial and guest journeys into a paid plan. My job was to make
+        sure none of that broke — and to build the tooling that made checking it faster.
       </p>
 
       <ul class="pullquotes">
@@ -71,85 +71,100 @@
         </li>
         <li>
           <blockquote class="quote">
-            “He brings strong product knowledge across our platforms and a constructive, adaptable working approach.”
+            “Providing QA for the Growth team — covering visitor, free-trial, and upgrade journeys — and maintaining and extending our test automation.”
             <cite>— Vili Medina, Head of R&amp;D, Growth, Artlist</cite>
           </blockquote>
         </li>
       </ul>
 
+      <p class="sub-h">Day to day</p>
+      <ul class="plain">
+        <li>Tested every Growth release before it shipped: pricing pages, plan modal, checkout, plan changes, credits wallet and trial-to-paid, on desktop and mobile web, across currencies and VAT.</li>
+        <li>Turned Jira tickets and specs into test plans — Gherkin cases in CSV, imported into Zephyr Scale — and flagged gaps in the spec before development started.</li>
+        <li>Kept the Playwright end-to-end suites green in GitLab CI, and wrote new journey specs and page objects when a plan or flow was added.</li>
+        <li>Created and maintained the team's QA accounts in the exact subscription state a scenario needed.</li>
+        <li>Watched production — Datadog monitors, Mixpanel funnel alerts, Sentry — triaged conversion drops and owned incidents to closure.</li>
+        <li>Reproduced customer issues escalated from support, and filed bugs engineers could reproduce first time: account state, steps, console and network evidence.</li>
+        <li>Tested the AI features in my area — a generative prompt assistant in the product, and the third-party AI agent answering support — for accuracy and edge cases.</li>
+        <li>Wrote the team's Claude and Cursor skills and published plugins to the internal skills marketplace, so the same checks ran the same way for everyone.</li>
+      </ul>
+
+      <p class="sub-h">Things I built</p>
       <ul class="cases">
         <li class="case">
           <span class="kind">Billing safety net</span>
-          <h3>Pricing-validation agent</h3>
-          <p><strong>Problem:</strong> a wrong price in a subscription billing system is expensive and hard to see by eye. It usually surfaces when a customer pays it.</p>
-          <p><strong>What I built:</strong> an autonomous agent, written in TypeScript, that checks live pricing against the billing system across plans and rules and posts any discrepancy to Slack.</p>
-          <p><strong>Result:</strong> caught 2 billing misconfigurations before they reached production.</p>
-          <ul class="chips"><li>TypeScript</li><li>Chargebee</li><li>Slack alerts</li></ul>
-          <p class="src">Described in <a href="#yuval-bazilevich">Yuval Bazilevich's letter</a> (Growth Team Lead).</p>
+          <h3>Nightly pricing check against Chargebee</h3>
+          <p><strong>Problem:</strong> a wrong price on the pricing page is expensive and easy to miss by eye — it usually surfaces when a customer pays it.</p>
+          <p><strong>What I built:</strong> a tool, written in TypeScript and scheduled in GitLab CI, that reads the live pricing page every night and compares it with the Chargebee catalog across 8 currencies, VAT-inclusive and exclusive, monthly and yearly, and posts every mismatch to Slack. I also packaged the same check as a read-only agent tool the team could ask for any plan's current price.</p>
+          <p><strong>Result:</strong> caught 2 billing misconfigurations before they reached customers — one of them an ILS plan off by ₪7.38 from the source of truth.</p>
+          <ul class="chips"><li>TypeScript</li><li>Chargebee API</li><li>GitLab CI</li><li>Slack</li></ul>
+          <p class="src">Described in <a href="#yuval-bazilevich">Yuval Bazilevich's letter</a>.</p>
         </li>
 
         <li class="case">
-          <span class="kind">AI product quality</span>
-          <h3>Testing AI agents in production</h3>
-          <p><strong>Scope:</strong> two production AI agents — a generative prompt assistant inside the product, and a third-party AI support agent answering customers.</p>
-          <p><strong>What I did:</strong> tested both for accuracy, behaviour and edge cases, with billing questions and user identification as the hard cases. Ran the support agent against real tickets, labeled the answers it got wrong, compared it side by side with a general-purpose LLM on the same tickets, and drove fixes with the vendor.</p>
-          <p><strong>Why it matters:</strong> an AI agent fails politely. A confident wrong answer about a refund looks like a success in the logs.</p>
-          <ul class="chips"><li>LLM output evaluation</li><li>Labeled failure set</li><li>Vendor bug reports</li></ul>
+          <span class="kind">Test data</span>
+          <h3>Entity Builder — test accounts on demand</h3>
+          <p><strong>Problem:</strong> subscription bugs depend on account state — guest, trial, expired, upgraded, a specific plan and credit tier — and setting that up by hand is slow and error-prone.</p>
+          <p><strong>What I built:</strong> a Playwright/TypeScript tool that creates test users through the Chargebee API in any of 12+ subscription types (AI Suite, Max Pro, Music &amp; SFX, Teams, Voiceover and more), plus an audit-and-fix run that finds accounts that drifted from their intended state and repairs them. Kept the canonical list of <strong>240 QA accounts</strong> mapped to plan and state.</p>
+          <p><strong>Result:</strong> any subscription scenario reproducible in minutes, by anyone on the team.</p>
+          <ul class="chips"><li>Playwright</li><li>TypeScript</li><li>Chargebee API</li></ul>
+          <p class="src">Described in <a href="#yuval-bazilevich">Yuval Bazilevich's letter</a>.</p>
         </li>
 
         <li class="case">
           <span class="kind">Automation</span>
-          <h3>Playwright + CI end-to-end suites</h3>
-          <p><strong>Scope:</strong> the user states the Growth team owned: visitor/guest, free-trial and upgrade journeys.</p>
-          <p><strong>What I did:</strong> maintained, extended and improved the Playwright end-to-end suites and their GitLab CI integration. Page Object Model, specs for orchestration and page objects for the details, so regressions fail at the gate instead of after release.</p>
-          <p><strong>Result:</strong> dependable automated coverage of the most business-critical funnels.</p>
+          <h3>Playwright journeys in CI</h3>
+          <p><strong>Scope:</strong> the user states the Growth team owned — guest, free trial, upgrade — across the AI Toolkit and the main site.</p>
+          <p><strong>What I did:</strong> maintained and extended the existing Playwright suites and their GitLab CI runs. Wrote the Toolkit journey specs (guest → trial → each paid plan), the page objects behind them (home, top bar, warning panel, Toolkit page), upgrade and payment specs across credit tiers, and component specs for the new plan modal and unlimited pricing. Specs orchestrate; page objects hold the detail; a regression fails at the gate, not after release.</p>
+          <p><strong>Result:</strong> dependable automated coverage of the funnels that make the money.</p>
           <ul class="chips"><li>Playwright</li><li>TypeScript</li><li>Page Object Model</li><li>GitLab CI</li></ul>
           <p class="src">Described in <a href="#yuval-bazilevich">Yuval Bazilevich's</a> and <a href="#vili-medina">Vili Medina's</a> letters.</p>
         </li>
 
         <li class="case">
           <span class="kind">Test design</span>
-          <h3>From ticket to test plan</h3>
-          <p><strong>Problem:</strong> a new plan launch multiplies cases fast — every plan × model × checkout path × pricing-page tab — and gaps hide in the spec, not the code.</p>
-          <p><strong>What I did:</strong> set up a pipeline from Jira ticket, to gap analysis against the spec, to Gherkin cases in CSV, imported into Zephyr Scale — and wrote <strong>44 test plans and coverage matrices</strong> (700+ rows): a new AI-generation plan launch, studio onboarding and credits UI, checkout and upgrade flows, exploratory charters.</p>
-          <p><strong>Result:</strong> test cases written and prioritised faster, in one consistent format.</p>
+          <h3>Ticket → gap analysis → Gherkin → Zephyr</h3>
+          <p><strong>Problem:</strong> a plan launch multiplies cases fast — every plan × model × checkout path × pricing-page tab — and the gaps hide in the spec, not the code.</p>
+          <p><strong>What I did:</strong> set up a pipeline from a Jira ticket to a gap analysis against the spec, to Gherkin cases in CSV, imported into Zephyr Scale. Used it to write <strong>44 test plans and coverage matrices</strong> (700+ rows): the Unlimited Generations launch, AI-agent pricing and user matrices, Studio onboarding and credits UI, checkout and upgrade flows, exploratory charters.</p>
+          <p><strong>Result:</strong> cases written and prioritised faster, in one format the whole team could run.</p>
           <ul class="chips"><li>BDD / Gherkin</li><li>Jira</li><li>Zephyr Scale</li></ul>
-          <p class="src">The AI-assisted test-design tooling is described in <a href="#yuval-bazilevich">Yuval Bazilevich's letter</a>.</p>
-        </li>
-
-        <li class="case">
-          <span class="kind">Test data</span>
-          <h3>On-demand test accounts</h3>
-          <p><strong>Problem:</strong> subscription bugs depend on account state — trial, expired, upgraded, a specific plan — which is slow to reproduce by hand.</p>
-          <p><strong>What I built:</strong> automated generation of test accounts in the exact subscription state a scenario needs, plus a maintained list of <strong>240 QA accounts</strong> mapped to plans and states.</p>
-          <p><strong>Result:</strong> subscription-specific scenarios reproducible on demand instead of by hand.</p>
           <p class="src">Described in <a href="#yuval-bazilevich">Yuval Bazilevich's letter</a>.</p>
         </li>
 
         <li class="case">
           <span class="kind">Observability</span>
-          <h3>Funnel monitoring, alerts &amp; triage</h3>
-          <p><strong>Problem:</strong> a broken step in the funnel shows up as a drop in conversion long before anyone files a bug.</p>
-          <p><strong>What I built:</strong> analytics dashboards with automated Slack alerts on conversion-funnel drops, and runbooks that cross-reference Mixpanel, Datadog and Sentry to find the cause.</p>
-          <p><strong>Result:</strong> production behaviour became a QA signal; incidents owned through to closure.</p>
-          <ul class="chips"><li>Mixpanel</li><li>Datadog</li><li>Sentry</li><li>Slack</li></ul>
+          <h3>Funnel alerts and triage runbooks</h3>
+          <p><strong>Problem:</strong> a broken step in the funnel shows up as a conversion drop long before anyone files a bug.</p>
+          <p><strong>What I built:</strong> Mixpanel reports with nightly Slack alerts when conversion breached its threshold, Datadog monitors for the Growth funnel, and triage runbooks that cross-reference Mixpanel, Datadog, Sentry and backend logs to find the cause.</p>
+          <p><strong>Result:</strong> production became a QA signal. I owned the incidents I caught through to closure.</p>
+          <ul class="chips"><li>Mixpanel</li><li>Datadog</li><li>Sentry</li><li>Coralogix</li><li>Slack</li></ul>
           <p class="src">Described in <a href="#yuval-bazilevich">Yuval Bazilevich's letter</a>.</p>
         </li>
 
         <li class="case">
           <span class="kind">AI-assisted QA</span>
-          <h3>A skills library the QA team ran on</h3>
-          <p><strong>Problem:</strong> knowledge of <em>how</em> to test a given flow stayed in people's heads, and writing cases from specs was slow, repetitive work.</p>
-          <p><strong>What I built:</strong> <strong>49 agent skills</strong> in a dedicated QA monorepo — each a written procedure an AI assistant runs the same way every time — and an internal plugin the QA team adopted. The Growth cluster encodes the money paths: <code>growth-add-plan</code>, <code>growth-add-country-vat</code>, <code>growth-validate</code>, <code>growth-debug-journey</code>, <code>toolkit-journey-coverage</code>. Alongside them, review skills (<code>review-code</code>, <code>validate-pr</code>, <code>audit</code>) and planning skills that turn a ticket into a test plan.</p>
-          <p><strong>Result:</strong> a recurring bug class became a repeatable procedure instead of tribal knowledge.</p>
+          <h3>A skills library the team ran on</h3>
+          <p><strong>Problem:</strong> how to test a given flow lived in people's heads, and writing cases from specs was slow, repetitive work.</p>
+          <p><strong>What I built:</strong> <strong>49 agent skills</strong> in the QA monorepo — each a written procedure an AI assistant runs the same way every time — and plugins published to the internal skills marketplace: <code>universal-qa</code> (requirements → Gherkin → Zephyr), <code>entity-builder</code>, <code>check-plan-prices</code>, <code>zephyr</code> and <code>file-jira-bug</code>, which files a bug with the console and network evidence Playwright captured. The Growth cluster covers the money paths: <code>growth-add-plan</code>, <code>growth-add-country-vat</code>, <code>growth-validate</code>, <code>growth-debug-journey</code>, <code>toolkit-journey-coverage</code>.</p>
+          <p><strong>Result:</strong> a recurring bug class became a repeatable procedure instead of tribal knowledge. The QA team adopted it.</p>
+          <ul class="chips"><li>Claude Code</li><li>Cursor</li><li>Zephyr Scale API</li></ul>
           <p class="src">Described in <a href="#yuval-bazilevich">Yuval Bazilevich's</a> and <a href="#vili-medina">Vili Medina's</a> letters.</p>
         </li>
 
         <li class="case">
+          <span class="kind">AI product quality</span>
+          <h3>Testing AI agents in production</h3>
+          <p><strong>Scope:</strong> a generative prompt assistant inside the product, and the third-party AI agent answering customers in support.</p>
+          <p><strong>What I did:</strong> tested both for accuracy, behaviour and edge cases, with billing questions and user identification as the hard cases. Ran the support agent against real tickets, labeled the answers it got wrong, compared it side by side with a general-purpose model on the same tickets, and drove fixes with the vendor.</p>
+          <p><strong>Why it matters:</strong> an AI agent fails politely. A confident wrong answer about a refund looks like a success in the logs.</p>
+          <ul class="chips"><li>LLM output evaluation</li><li>Labeled failure set</li><li>Vendor bug reports</li></ul>
+        </li>
+
+        <li class="case">
           <span class="kind">Manual &amp; exploratory</span>
-          <h3>Ownership of the money paths</h3>
-          <p><strong>Scope:</strong> pricing, checkout, plan changes, credit wallets and trial-to-paid, on web and mobile.</p>
-          <p><strong>How:</strong> risk-first manual and exploratory testing, log and network analysis in the browser, API checks, and bug reports with the account state, steps and evidence to reproduce them first time.</p>
+          <h3>The money paths, by hand</h3>
+          <p><strong>Scope:</strong> pricing, plan modal, checkout, plan changes, credits wallet and trial-to-paid, on web and mobile web.</p>
+          <p><strong>How:</strong> risk-first manual and exploratory testing, browser log and network analysis, API checks, and bug reports with the account state, steps and evidence to reproduce them first time. Credits-display eligibility bugs were a recurring class I documented as a playbook.</p>
           <p><strong>Why it mattered:</strong> a wrong price or a broken upgrade gets caught before a customer hits it.</p>
           <p class="src">Described in <a href="#yuval-bazilevich">Yuval Bazilevich's letter</a>.</p>
         </li>
@@ -160,18 +175,18 @@
     <section class="section" id="support">
       <h2>Before QA: Tier 2 support operations</h2>
       <p class="lede">
-        Artlist, April 2024 – June 2025. Escalation point for the support floor across subscriptions, payments
-        and technical faults on web, mobile, plugins and AI products; root cause first, then a reproducible
-        report for engineering. Along the way I pushed for changes to how the floor itself worked.
+        Artlist, April 2024 – June 2025. Escalation point for the support floor — subscriptions, payments
+        and technical faults on web, mobile, plugins and AI products. Root cause first, then a report
+        engineering could reproduce. Along the way I changed how the floor itself worked.
       </p>
 
       <ul class="cases">
         <li class="case">
           <span class="kind">Routing</span>
           <h3>Subject routing for a ~1,000-ticket day</h3>
-          <p><strong>Problem:</strong> after new AI products launched, volume reached about a thousand tickets a day on one or two shared inboxes. Tickets bounced between agents, and billing cases were reassigned by hand.</p>
-          <p><strong>What I did:</strong> pushed for a split by subject — the bot asks the customer for a subject, a tag attaches, the ticket lands in the matching inbox. Tier 1 kept the simple tickets; specialists stayed in theirs. Asked for agents to take a ticket before replying and own it A to Z. A long-waiting queue came later on top.</p>
-          <p><strong>Result:</strong> better answers and faster resolution. The SLA target went from 10 hours to 8 in that period.</p>
+          <p><strong>Problem:</strong> after the AI products launched — Voiceover among them — volume reached about a thousand tickets a day on one or two shared inboxes. Agents picked at random, billing cases were reassigned by hand, and Zendesk dropped the assignee after a reply, so the next agent picked up a thread mid-way.</p>
+          <p><strong>What I did:</strong> initiated a split by subject — the bot asks the customer for a subject, a tag attaches, the ticket lands in the matching inbox. Tier 1 kept the simple tickets; specialists stayed in theirs. Asked the team lead for the rule that you cannot reply without assigning to yourself, and pushed agents to own a ticket A to Z. A long-waiting queue came later on top.</p>
+          <p><strong>Result:</strong> better answers, faster resolution, and agents proud of their specialty. The SLA target went from 10 hours to 8 in that period.</p>
           <ul class="chips"><li>Zendesk triggers &amp; views</li><li>Bot flows</li><li>Tags</li></ul>
         </li>
 
@@ -188,14 +203,14 @@
           <span class="kind">Voice of the user</span>
           <h3>Feature requests into Jira</h3>
           <p><strong>Problem:</strong> feature requests died in the support queue as tickets to close.</p>
-          <p><strong>What I did:</strong> helped promote an extension that captured user ideas and feature requests so agents could open them as Jira tickets, and presented the user's voice to stakeholders.</p>
+          <p><strong>What I did:</strong> helped promote an extension that captured user ideas and feature requests so agents could open them as Jira tickets, and presented the user's voice and the needed improvements to stakeholders.</p>
           <p><strong>Result:</strong> Product saw the request instead of a closed ticket.</p>
         </li>
 
         <li class="case">
           <span class="kind">Content &amp; training</span>
-          <h3>Macros, Help Center, bot answers</h3>
-          <p><strong>What I did:</strong> organised the macros, Help Center articles and the classic bot's answer flow; trained Tier 1 agents; ran support content and training for Motion Array.</p>
+          <h3>Macros, Help Center, bot answers, training</h3>
+          <p><strong>What I did:</strong> owned the content layer — macros for agents, Help Center articles for self-service, and the classic Zendesk bot's answers flow. Trained Tier 1 agents, including the remote team. Ran support content and training for Motion Array. Was on the team that tested the third-party AI agent when it replaced the classic bot.</p>
           <p><strong>Result:</strong> Motion Array's Trustpilot rating went from 3.8 to 4.0 while I ran it.</p>
           <ul class="chips"><li>Zendesk</li><li>Salesforce</li><li>Help Center</li></ul>
         </li>
@@ -233,8 +248,6 @@
           <p>A local practice instance that behaves like Zendesk Support and Admin Center, seeded with realistic breakage: a trigger that clears the assignee after a reply, tags nothing routes, no shared views. Five tasks fix it: routing, views, stay-assigned, a long-wait automation, and a war-room API call. It has its own automated tests.</p>
           <ul class="chips"><li>Triggers &amp; automations</li><li>Ticket API</li><li>Automated tests</li></ul>
         </li>
-
-
       </ul>
     </section>
 
@@ -244,27 +257,27 @@
       <dl class="facts">
         <div>
           <dt>Automation</dt>
-          <dd>Playwright end-to-end (TypeScript; also Python) · Page Object Model · GitLab CI</dd>
+          <dd>Playwright end-to-end (TypeScript; also Python) · Page Object Model · GitLab CI · JUnit artifacts</dd>
         </div>
         <div>
           <dt>Test design</dt>
-          <dd>Manual, exploratory and mobile QA · BDD / Gherkin · Jira · Zephyr Scale · risk-based prioritisation</dd>
+          <dd>Manual, exploratory and mobile-web QA · BDD / Gherkin · Jira · Zephyr Scale (UI and API) · risk-based prioritisation</dd>
         </div>
         <div>
           <dt>Monitoring &amp; data</dt>
-          <dd>Mixpanel · Datadog · Sentry · automated funnel alerts · working SQL from Mixpanel and Zendesk analysis</dd>
+          <dd>Mixpanel · Datadog · Sentry · Coralogix · automated funnel alerts · working SQL from Mixpanel and Zendesk analysis</dd>
         </div>
         <div>
           <dt>AI quality</dt>
-          <dd>Testing conversational AI agents · evaluating AI output · Claude / Cursor skills · MCP</dd>
+          <dd>Testing conversational AI agents · evaluating AI output · Claude Code / Cursor skills and plugins · MCP</dd>
         </div>
         <div>
           <dt>Billing &amp; support systems</dt>
-          <dd>Chargebee · Zendesk (triggers, views, macros, Help Center, bot flows) · Salesforce</dd>
+          <dd>Chargebee (catalog, subscriptions, API) · Zendesk (triggers, views, macros, Help Center, bot flows, Explore) · Salesforce</dd>
         </div>
         <div>
           <dt>Also</dt>
-          <dd>REST APIs · log and network analysis · Google Apps Script · Slack · Figma · English and Hebrew, both native level</dd>
+          <dd>REST APIs · browser log and network analysis · Google Apps Script · Slack · Figma · English and Hebrew, both native level</dd>
         </div>
       </dl>
     </section>
@@ -276,8 +289,8 @@
       <ol class="timeline">
         <li>
           <span class="when">Artlist · Jul 2025 – Jul 2026</span>
-          <h3>QA Engineer — Growth domain owner</h3>
-          <p>Pricing, checkout, plan changes, credit wallets and trial-to-paid. Pricing-validation agent, Playwright/CI, test-account generation, funnel alerts, AI-agent testing and a 49-skill library the team adopted.</p>
+          <h3>QA Engineer — Growth team</h3>
+          <p>Pricing, checkout, plan changes, credits wallet and trial-to-paid. Nightly pricing check, Entity Builder, Playwright journeys in CI, Jira → Zephyr test plans, funnel alerts, AI-agent testing and a 49-skill library the team adopted. Role ended in the July 2026 reorg.</p>
         </li>
         <li>
           <span class="when">Artlist · Apr 2024 – Jun 2025</span>
@@ -310,7 +323,7 @@
         <span>Updated July 2026</span>
       </p>
       <p class="lede">
-        Letters from managers and colleagues at Artlist and Waves Audio. Each opens as a PDF.
+        Letters from managers at Artlist and Waves Audio. Each opens as a PDF.
       </p>
 
       <ul class="letters">

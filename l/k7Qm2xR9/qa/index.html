@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../refs.css?v=20261017" />
+  <link rel="stylesheet" href="../refs.css?v=20261017b" />
 </head>
 <body class="theme-qa">
   <main class="sheet sheet-wide">
@@ -37,6 +37,13 @@
 
     <div class="bundle">
       <p>
+        <strong>Public proof: Playwright suite</strong>
+        <span class="meta">Original POM + CI against Sauce Demo and DummyJSON — catalog vs storefront, checkout math, API tests, sample bug report, Gherkin, SQL, Postman. No employer code.</span>
+      </p>
+      <a class="btn btn-primary" href="playwright/">Open the suite →</a>
+    </div>
+    <div class="bundle">
+      <p>
         <strong>Try it: QA Lab</strong>
         <span class="meta">Four working demos of the same patterns — price check, test-account factory, ticket → Gherkin → CSV, funnel alert — on a fictional product.</span>
       </p>
@@ -47,6 +54,7 @@
       <a href="#portfolio">QA at Artlist</a>
       <a href="#support">Support operations</a>
       <a href="#projects">Independent projects</a>
+      <a href="#proof">Public proof</a>
       <a href="#stack">Stack</a>
       <a href="#path">Career path</a>
       <a href="#letters">Letters</a>
@@ -84,7 +92,8 @@
         <li>Kept the Playwright end-to-end suites green in GitLab CI, and wrote new journey specs and page objects when a plan or flow was added.</li>
         <li>Created and maintained the team's QA accounts in the exact subscription state a scenario needed.</li>
         <li>Watched production — Datadog monitors, Mixpanel funnel alerts, Sentry — triaged conversion drops and owned incidents to closure.</li>
-        <li>Reproduced customer issues escalated from support, and filed bugs engineers could reproduce first time: account state, steps, console and network evidence.</li>
+        <li>Reproduced customer issues escalated from support, and filed bugs engineers could reproduce first time: account state, steps, Chrome DevTools (Console and Network) evidence.</li>
+        <li>Checked billing and Zephyr APIs in Postman when the UI was not enough, and ran basic SQL on Mixpanel and Zendesk extracts.</li>
         <li>Tested the AI features in my area — a generative prompt assistant in the product, and the third-party AI agent answering support — for accuracy and edge cases.</li>
         <li>Wrote the team's Claude and Cursor skills and published plugins to the internal skills marketplace, so the same checks ran the same way for everyone.</li>
       </ul>
@@ -221,12 +230,20 @@
     <section class="section" id="projects">
       <h2>Independent projects</h2>
       <p class="lede">
-        Built outside work with AI coding agents (Claude Code, Cursor). The repositories are private;
-        I'm happy to demo any of them on a call. Each one is built around the same question a QA engineer
-        asks: how do we know it works?
+        Built outside work with AI coding agents (Claude Code, Cursor). The Playwright suite below
+        is public and original — same kinds of checks as the Artlist work, rewritten against public
+        demos so no employer code is in it. Happy to demo the rest on a call.
       </p>
 
       <ul class="cases">
+        <li class="case" id="proof">
+          <span class="kind">Public proof</span>
+          <h3><a href="playwright/">Playwright suite — POM, CI, catalog vs storefront</a></h3>
+          <p>Original Playwright + TypeScript against Sauce Demo and DummyJSON. Page objects, a <code>loggedIn</code> fixture, checkout math computed from a catalog of record, a nightly-style price check, REST contract tests, GitHub Actions + GitLab CI, and a known demo defect pinned with <code>test.fail()</code>. Plus a sample bug report (Console/Network), Gherkin, working SQL, and a Postman collection. No employer code, accounts, or prices.</p>
+          <ul class="chips"><li>Playwright</li><li>TypeScript</li><li>Page Object Model</li><li>GitLab CI</li><li>Postman</li><li>SQL</li></ul>
+          <p class="src"><a href="playwright/">Open the suite →</a></p>
+        </li>
+
         <li class="case">
           <span class="kind">Interactive demos</span>
           <h3><a href="../lab/">QA Lab — try the patterns</a></h3>
@@ -257,7 +274,7 @@
       <dl class="facts">
         <div>
           <dt>Automation</dt>
-          <dd>Playwright end-to-end (TypeScript; also Python) · Page Object Model · GitLab CI · JUnit artifacts</dd>
+          <dd>Playwright end-to-end (TypeScript / JavaScript; also Python) · Page Object Model · GitLab CI · JUnit artifacts</dd>
         </div>
         <div>
           <dt>Test design</dt>
@@ -265,7 +282,7 @@
         </div>
         <div>
           <dt>Monitoring &amp; data</dt>
-          <dd>Mixpanel · Datadog · Sentry · Coralogix · automated funnel alerts · working SQL from Mixpanel and Zendesk analysis</dd>
+          <dd>Mixpanel · Datadog · Sentry · Coralogix · automated funnel alerts · working SQL (Mixpanel and Zendesk extracts)</dd>
         </div>
         <div>
           <dt>AI quality</dt>
@@ -277,7 +294,7 @@
         </div>
         <div>
           <dt>Also</dt>
-          <dd>REST APIs · browser log and network analysis · Google Apps Script · Slack · Figma · English and Hebrew, both native level</dd>
+          <dd>REST APIs · Postman · Chrome DevTools (Console, Network) · Google Apps Script · Slack · Figma · English and Hebrew, both native level</dd>
         </div>
       </dl>
     </section>

@@ -51,7 +51,9 @@ press/         — plain-text bio for download
 404.html       — branded not-found page (Cloudflare serves it for misses)
 _headers       — Cloudflare security + cache headers
 _redirects     — retired paths that should 404
+functions/     — Pages Function: hard-404 for /dns /docs /drafts /AGENTS.md
 robots.txt, sitemap.xml
+docs/          — internal AI workspace + Printful runbook (not served)
 l/             — unlisted, noindex pages (shared by direct link only):
                  l/<token>/          hub with three cards
                  l/<token>/qa/       Hi-Tech: QA portfolio + letters
@@ -61,3 +63,8 @@ l/             — unlisted, noindex pages (shared by direct link only):
                  l/<token>/files/    the letter PDFs; l/<token>/media/posters/ reel poster frames
                  (reel videos stream from yoav-scoring.pages.dev; unsigned drafts in files/qa are intentionally unlinked)
 ```
+
+## AI workspace (Claude + Cursor)
+
+Agents use **two subjects max**: this public repo, plus private `yoav-knowledge`
+(iCloud `YoavAI/` on the Mac). Start at `docs/AI-WORKSPACE.md`.

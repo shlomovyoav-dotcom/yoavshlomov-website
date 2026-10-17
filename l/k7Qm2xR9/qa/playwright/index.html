@@ -31,7 +31,7 @@
     <nav class="crumbs" aria-label="Breadcrumb"><a href="../">← QA portfolio</a></nav>
     <p class="eyebrow">Yoav Shlomov · Public rewrite · no employer code</p>
     <h1>Playwright suite</h1>
-    <p class="subtitle">Page objects · CI · catalog vs storefront · API · a pinned known bug</p>
+    <p class="subtitle">Page objects · CI · catalog vs storefront · API · a written-up known bug</p>
     <p class="intro">
       Original Playwright + TypeScript, written against two public demos
       (<a href="https://www.saucedemo.com">Sauce Demo</a> and
@@ -45,7 +45,7 @@
       <li><strong>11</strong>tests — e2e + API — Chromium, green locally 2026-10-17</li>
       <li><strong>POM</strong>Login, Inventory, Cart, Checkout</li>
       <li><strong>CI</strong>GitHub Actions + GitLab CI, HTML + JUnit</li>
-      <li><strong>1</strong>known demo defect pinned with <code>test.fail()</code></li>
+      <li><strong>1</strong>known demo defect written up — not used as a flaky CI gate</li>
     </ul>
 
     <div class="bundle">
@@ -72,7 +72,7 @@
         <li>Checkout totals are <em>computed</em> from the catalog and an 8% tax rate — not copied from a screenshot.</li>
         <li>A nightly-style script scrapes the live inventory and diffs it against <code>src/data/catalog.ts</code>. Exit 1 on mismatch.</li>
         <li>API tests hit DummyJSON: list, get-by-id, 404, cart line-item math.</li>
-        <li><code>problem_user</code> ships with 404 product images. That defect is pinned with <code>test.fail()</code> so CI keeps it visible instead of skipping it.</li>
+        <li><code>problem_user</code> ships with 404 product images in some browsers. The write-up is in the sample bug report. CI checks that the persona can still use the inventory, because the 404 does not reproduce on every runner.</li>
       </ul>
       <p class="sub-h">Layout</p>
       <pre>src/pages/          Login, Inventory, Cart, Checkout

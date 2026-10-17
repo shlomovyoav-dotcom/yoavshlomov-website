@@ -91,7 +91,7 @@
         <li>Turned Jira tickets and specs into test plans — Gherkin cases in CSV, imported into Zephyr Scale — and flagged gaps in the spec before development started.</li>
         <li>Kept the Playwright end-to-end suites green in GitLab CI, and wrote new journey specs and page objects when a plan or flow was added.</li>
         <li>Created and maintained the team's QA accounts in the exact subscription state a scenario needed.</li>
-        <li>Watched production — Datadog monitors, Mixpanel funnel alerts, Sentry — triaged conversion drops and owned incidents to closure.</li>
+        <li>Watched production — Datadog monitors, Mixpanel funnel alerts, Sentry — triaged conversion drops and followed incidents to closure.</li>
         <li>Reproduced customer issues escalated from support, and filed bugs engineers could reproduce first time: account state, steps, Chrome DevTools (Console and Network) evidence.</li>
         <li>Checked billing and Zephyr APIs in Postman when the UI was not enough, and ran basic SQL on Mixpanel and Zendesk extracts.</li>
         <li>Tested the AI features in my area — a generative prompt assistant in the product, and the third-party AI agent answering support — for accuracy and edge cases.</li>
@@ -145,7 +145,7 @@
           <h3>Funnel alerts and triage runbooks</h3>
           <p><strong>Problem:</strong> a broken step in the funnel shows up as a conversion drop long before anyone files a bug.</p>
           <p><strong>What I built:</strong> Mixpanel reports with nightly Slack alerts when conversion breached its threshold, Datadog monitors for the Growth funnel, and triage runbooks that cross-reference Mixpanel, Datadog, Sentry and backend logs to find the cause.</p>
-          <p><strong>Result:</strong> production became a QA signal. I owned the incidents I caught through to closure.</p>
+          <p><strong>Result:</strong> production became a QA signal. I triaged the incidents I caught and followed them to closure.</p>
           <ul class="chips"><li>Mixpanel</li><li>Datadog</li><li>Sentry</li><li>Coralogix</li><li>Slack</li></ul>
           <p class="src">Described in <a href="#yuval-bazilevich">Yuval Bazilevich's letter</a>.</p>
         </li>
@@ -239,7 +239,7 @@
         <li class="case" id="proof">
           <span class="kind">Public proof</span>
           <h3><a href="playwright/">Playwright suite — POM, CI, catalog vs storefront</a></h3>
-          <p>Original Playwright + TypeScript against Sauce Demo and DummyJSON. Page objects, a <code>loggedIn</code> fixture, checkout math computed from a catalog of record, a nightly-style price check, REST contract tests, GitHub Actions + GitLab CI, and a sample bug report for a known demo image defect. Plus a sample bug report (Console/Network), Gherkin, working SQL, and a Postman collection. No employer code, accounts, or prices.</p>
+          <p>Original Playwright + TypeScript against Sauce Demo and DummyJSON — a portfolio sample of the billing-QA pattern, not a long-running product suite. Page objects, a <code>loggedIn</code> fixture, checkout math computed from a catalog of record, a nightly-style price check, REST contract tests, GitHub Actions + GitLab CI, plus a sample bug report, Gherkin, working SQL, and a Postman collection. No employer code, accounts, or prices.</p>
           <ul class="chips"><li>Playwright</li><li>TypeScript</li><li>Page Object Model</li><li>GitLab CI</li><li>Postman</li><li>SQL</li></ul>
           <p class="src"><a href="playwright/">Open the suite →</a> · <a href="https://github.com/shlomovyoav-dotcom/qa-playwright-portfolio" target="_blank" rel="noopener noreferrer">GitHub ↗</a></p>
         </li>

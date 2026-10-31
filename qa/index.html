@@ -3,89 +3,186 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yoav Shlomov — QA Engineer (manual &amp; Playwright automation)</title>
-  <meta name="description" content="QA engineer in Tel Aviv: billing and growth-funnel QA, Playwright + TypeScript automation with page objects and CI, AI-agent testing. Public Playwright sample on GitHub." />
+  <title>Yoav Shlomov — QA Engineer</title>
+  <meta name="description" content="QA Engineer, Tel Aviv. Growth and billing at Artlist: pricing check, test accounts, Playwright, Zephyr plans, signed letters." />
   <link rel="canonical" href="https://yoavshlomov.com/qa/" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="qa.css?v=20261018" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="qa.css?v=20261031" />
 </head>
 <body class="theme-qa">
   <main class="sheet sheet-wide">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="/">← yoavshlomov.com</a></nav>
     <p class="eyebrow">Yoav Shlomov · Tel Aviv · office or remote</p>
     <h1>QA Engineer</h1>
-    <p class="subtitle">Manual &amp; Playwright automation · Growth &amp; billing · AI product quality</p>
+    <p class="subtitle">Manual and Playwright · growth and billing</p>
     <p class="intro">
-      A year as QA engineer on the Growth team at Artlist — pricing, checkout, plan changes,
-      credits and the trial-to-paid journey — after two years of Tier 2 technical support at
-      Artlist and Waves Audio. Signed recommendation letters and the full write-up are available
-      on request.
-      Contact: <a href="mailto:shlomovyoav@gmail.com">shlomovyoav@gmail.com</a> ·
-      <a href="https://www.linkedin.com/in/yoav-shlomov-9ab51611b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      Growth team at Artlist, July 2025 – July 2026, on a QA team led by a QA Lead.
+      Tier 2 support before that, at Artlist and at Waves Audio.
+      <a href="mailto:shlomovyoav@gmail.com">shlomovyoav@gmail.com</a>
+      · <a href="https://www.linkedin.com/in/yoav-shlomov-9ab51611b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </p>
 
     <ul class="metrics" aria-label="At a glance">
-      <li><strong>44</strong>Gherkin test plans (700+ rows) in Zephyr Scale</li>
-      <li><strong>240</strong>QA accounts across 12+ plan types</li>
-      <li><strong>8</strong>currencies checked nightly against the billing catalog</li>
-      <li><strong>2</strong>billing misconfigurations caught before customers did</li>
+      <li><strong>44</strong>Gherkin plans in Zephyr Scale</li>
+      <li><strong>240</strong>QA accounts, mapped to plan and state</li>
+      <li><strong>8</strong>currencies checked against Chargebee nightly</li>
+      <li><strong>2</strong>billing mismatches caught before customers</li>
     </ul>
 
-    <div class="bundle">
-      <p>
-        <strong>Public code: Playwright sample</strong>
-        <span class="meta">Page objects, GitHub Actions + GitLab CI, catalog vs storefront check, API tests, sample bug report, Gherkin, SQL, Postman. Written against public demos — no employer code.</span>
-      </p>
-      <a class="btn btn-primary" href="https://github.com/shlomovyoav-dotcom/qa-playwright-portfolio" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-    </div>
-
-    <section class="section">
-      <h2>QA at Artlist — Growth team</h2>
-      <p class="lede">July 2025 – July 2026, on a QA team led by a QA Lead. The Growth team owns the money paths: pricing page, plan modal, checkout, upgrades, credits wallet, and the free-trial and guest journeys.</p>
-      <ul class="plain">
-        <li>Tested every Growth release on desktop and mobile web, across currencies and VAT.</li>
-        <li>Turned Jira tickets into Gherkin test plans in Zephyr Scale, and flagged spec gaps before development.</li>
-        <li>Maintained and extended the Playwright/TypeScript suites in GitLab CI — journey specs and page objects for new plans and flows.</li>
-        <li>Built a nightly pricing check (TypeScript, GitLab CI) against Chargebee across 8 currencies, VAT and billing periods, alerting in Slack. It caught 2 billing misconfigurations, one an ILS plan off by ₪7.38.</li>
-        <li>Built Entity Builder, a Playwright tool that provisions QA accounts through the Chargebee API in 12+ subscription types, with an audit-and-fix run for drifted accounts.</li>
-        <li>Tested production AI agents — an in-product prompt assistant and a third-party support bot — for accuracy and edge cases, and drove fixes with the vendor.</li>
-        <li>Watched production through Datadog, Mixpanel funnel alerts and Sentry; triaged incidents and followed them to closure.</li>
-        <li>Wrote 49 Claude/Cursor skills and 5 internal plugins the QA team used for test plans, Zephyr sync, bug filing, QA accounts and price checks.</li>
+    <section class="section" id="tools">
+      <h2>Tools I built</h2>
+      <ul class="cases">
+        <li class="case">
+          <span class="kind">Billing</span>
+          <h3>Nightly pricing check</h3>
+          <p>TypeScript job in GitLab CI. It reads the live pricing page every night and diffs it against the Chargebee catalog: 8 currencies, VAT in and out, monthly and yearly. Mismatches go to Slack. It caught 2 misconfigurations, including an ILS plan off by ₪7.38.</p>
+        </li>
+        <li class="case">
+          <span class="kind">Test data</span>
+          <h3>Entity Builder</h3>
+          <p>Playwright tool. Creates QA users through the Chargebee API in 12+ subscription types, then an audit-and-fix run for accounts that drifted. 240 QA accounts, each mapped to a plan and a state.</p>
+        </li>
+        <li class="case">
+          <span class="kind">Plans and automation</span>
+          <h3>Playwright in CI, and the Zephyr CSV</h3>
+          <p>Maintained and extended the existing Playwright suites and their GitLab CI runs: guest, free trial, upgrade, and new page objects when a flow was added. A Jira ticket went to a gap check, then a two-column CSV (Name, BDD Script) imported into Zephyr. 44 plans. 49 skills and 5 plugins the QA team used for the same checks.</p>
+        </li>
       </ul>
     </section>
 
-    <section class="section">
-      <h2>Before QA: Tier 2 support</h2>
-      <p class="lede">Artlist, April 2024 – June 2025, and Waves Audio, October 2022 – June 2023. Escalation point for subscriptions, payments and technical faults; root cause first, then a report engineering could reproduce. At Artlist I helped route a ~1,000-ticket day by subject and set up a Slack bot that opened urgent bugs in Jira and Zendesk together.</p>
+    <section class="section" id="suite">
+      <h2>Playwright suite</h2>
+      <p class="lede">Same kind of billing check, rewritten on <a href="https://www.saucedemo.com">Sauce Demo</a> and <a href="https://dummyjson.com">DummyJSON</a>. 11 tests, page objects, GitHub Actions and GitLab CI. No employer code.</p>
+      <p>
+        <a class="btn btn-primary" href="https://github.com/shlomovyoav-dotcom/qa-playwright-portfolio" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a class="btn" href="/l/k7Qm2xR9/lab/">QA Lab</a>
+      </p>
+      <p class="lede">QA Lab is four of the same checks in the browser, on a fictional product.</p>
+
+      <h3>Bug report</h3>
+      <div class="ticket">
+        <p><strong>problem_user — inventory images 404</strong><br />
+        Major · saucedemo.com · Chrome · 2026-10-17<br />
+        Account: <code>problem_user</code> / <code>secret_sauce</code></p>
+        <p><strong>Steps</strong><br />
+        1. Open the demo. DevTools → Network, filter Img. Console open.<br />
+        2. Log in as <code>problem_user</code>.<br />
+        3. On inventory, compare with a <code>standard_user</code> session.</p>
+        <p><strong>Expected:</strong> each card shows the product image (<code>naturalWidth &gt; 0</code>).<br />
+        <strong>Actual:</strong> every product image has <code>naturalWidth === 0</code>. Network: those image requests return 404. <code>standard_user</code> on the same build is fine.</p>
+        <p class="src"><a href="https://github.com/shlomovyoav-dotcom/qa-playwright-portfolio/blob/main/samples/bug-report.md">Full write-up</a></p>
+      </div>
+
+      <h3>Gherkin</h3>
+      <p class="lede">The Zephyr import was a CSV with two columns, Name and BDD Script. First person. UI copy in single quotes. Prices here are the Sauce Demo catalog.</p>
+      <pre>Name,BDD Script
+[CRITICAL] Checkout - Item total, tax and total match the catalog,"Given I am logged in as a standard user
+And the catalog lists 'Sauce Labs Backpack' at 29.99 USD
+And the catalog lists 'Sauce Labs Bike Light' at 9.99 USD
+When I add 'Sauce Labs Backpack' to the cart
+And I add 'Sauce Labs Bike Light' to the cart
+And I continue to checkout with valid shipping
+Then the item total is 39.98
+And the tax is 3.20
+And the total is 43.18"</pre>
+      <p class="src"><a href="https://github.com/shlomovyoav-dotcom/qa-playwright-portfolio/blob/main/samples/checkout.feature">Feature file</a> · SQL and Postman are in the same repo.</p>
     </section>
 
-    <section class="section">
+    <section class="section" id="letters">
+      <h2>Recommendation letters</h2>
+      <p class="lede">Three signed letters. July 2026.</p>
+      <ul class="letters">
+        <li class="letter" id="yuval-bazilevich">
+          <h3>Yuval Bazilevich</h3>
+          <p class="role">Growth Team Lead, Artlist</p>
+          <span class="badge signed">Signed · Jun 2026</span>
+          <p class="excerpt">“He delivered thorough, dependable manual coverage and took real initiative on automation… Beyond testing, he made the whole team faster.”</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="letters/yuval-letterhead.html">Read</a>
+            <a class="btn" href="letters/yuval-bazilevich-artlist.pdf">Signed PDF</a>
+          </div>
+        </li>
+        <li class="letter" id="vili-medina">
+          <h3>Vili Medina</h3>
+          <p class="role">Head of R&amp;D, Growth, Artlist</p>
+          <span class="badge signed">Signed · Jul 2026</span>
+          <p class="excerpt">“Yoav has shown initiative in adopting automation and AI-assisted tooling in his work, in line with the organization's direction.”</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="letters/vili-letterhead.html">Read</a>
+            <a class="btn" href="letters/vili-medina-artlist.pdf">Signed PDF</a>
+          </div>
+        </li>
+        <li class="letter" id="nir-sobol">
+          <h3>Nir Sobol</h3>
+          <p class="role">Technical Support Manager, Waves Audio</p>
+          <span class="badge signed">Signed · Jun 2023</span>
+          <p class="excerpt">“His position required him to learn quickly, get on top of complex software and hardware systems, solving problems with end customers in real time and under pressure.”</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="letters/nir-sobol-waves.pdf">Signed PDF</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="stack">
       <h2>Stack</h2>
-      <dl class="facts">
-        <div><dt>Automation</dt><dd>Playwright (TypeScript / JavaScript; also Python) · Page Object Model · GitLab CI · GitHub Actions</dd></div>
-        <div><dt>Test design</dt><dd>Manual and exploratory · BDD / Gherkin · Jira · Zephyr Scale</dd></div>
-        <div><dt>Investigation</dt><dd>Chrome DevTools (Console, Network) · REST APIs · Postman · working SQL · Datadog · Mixpanel · Sentry · Coralogix</dd></div>
-        <div><dt>Systems</dt><dd>Chargebee · Zendesk · Salesforce · Slack</dd></div>
-        <div><dt>AI quality</dt><dd>Testing conversational AI agents · evaluating AI output · Claude Code / Cursor skills and plugins</dd></div>
-      </dl>
+      <ul class="chips">
+        <li>Playwright</li>
+        <li>TypeScript</li>
+        <li>Page Object Model</li>
+        <li>GitLab CI</li>
+        <li>GitHub Actions</li>
+        <li>Gherkin</li>
+        <li>Jira</li>
+        <li>Zephyr Scale</li>
+        <li>Chargebee</li>
+        <li>Postman</li>
+        <li>SQL</li>
+        <li>Chrome DevTools</li>
+        <li>Mixpanel</li>
+        <li>Datadog</li>
+        <li>Sentry</li>
+        <li>Zendesk</li>
+      </ul>
+    </section>
+
+    <section class="section" id="work">
+      <h2>Work</h2>
+      <ol class="timeline">
+        <li>
+          <span class="when">Artlist · Jul 2025 – Jul 2026</span>
+          <h3>QA Engineer — Growth team</h3>
+          <p>Pricing, checkout, plan changes, credits, trial-to-paid. The tools above.</p>
+        </li>
+        <li>
+          <span class="when">Artlist · Apr 2024 – Jun 2025</span>
+          <h3>Technical Support Specialist (Tier 2)</h3>
+          <p>Subscriptions, payments, and technical faults. Subject routing on a ~1,000-ticket day. A Slack bot that opened an urgent bug in Jira and Zendesk together.</p>
+        </li>
+        <li>
+          <span class="when">Waves Audio · Oct 2022 – Jun 2023</span>
+          <h3>Technical Support Representative</h3>
+          <p>Live support for pro-audio software and hardware, in English.</p>
+        </li>
+      </ol>
     </section>
 
     <div class="cta-band">
       <div>
-        <h2>Hiring for QA, automation or AI quality?</h2>
-        <p>Happy to walk through the work, share the signed letters, or demo the code on a call.</p>
+        <h2>Hiring for QA, automation, or AI quality?</h2>
+        <p>Happy to walk through the work on a call.</p>
       </div>
       <div class="actions">
         <a class="btn btn-primary" href="mailto:shlomovyoav@gmail.com?subject=QA%20role%20%E2%80%94%20Yoav%20Shlomov">Email me</a>
-        <a class="btn" href="https://github.com/shlomovyoav-dotcom/qa-playwright-portfolio" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a class="btn" href="https://www.linkedin.com/in/yoav-shlomov-9ab51611b" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
       </div>
     </div>
 
     <footer class="foot">
-      <a href="/">yoavshlomov.com</a> · Also a jazz guitarist and composer — see the main site.
+      <a href="/">yoavshlomov.com</a>
     </footer>
   </main>
 </body>

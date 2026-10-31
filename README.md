@@ -52,12 +52,12 @@ press/         — plain-text bio for download
 _headers       — Cloudflare security + cache headers
 _redirects     — retired paths that should 404
 robots.txt, sitemap.xml
-l/             — unlisted, noindex pages (shared by direct link only):
-                 l/<token>/          hub with three cards
-                 l/<token>/qa/       Hi-Tech: QA portfolio + letters
+qa/            — the only QA page: tools, signed letters, Playwright sample
+l/             — music letters and the scoring reel stay unlisted:
+                 l/<token>/          points at music, and at the public QA page
+                 l/<token>/qa/       redirects to /qa/
                  l/<token>/music/    Music & film scoring: portfolio + letters
-                 l/<token>/lab/      QA Lab: four interactive demos on a fictional product (no employer data)
-                 l/<token>/reel/     scoring showreel (media streams from yoav-scoring.pages.dev)
-                 l/<token>/files/    the letter PDFs; l/<token>/media/posters/ reel poster frames
-                 (reel videos stream from yoav-scoring.pages.dev; unsigned drafts in files/qa are intentionally unlinked)
+                 l/<token>/lab/      QA Lab demos, linked from /qa/
+                 l/<token>/reel/     scoring showreel
+                 unsigned drafts in files/qa stay unlinked
 ```

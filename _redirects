@@ -13,3 +13,9 @@
 # Removed temporary iPhone config profiles (2026-07-21)
 /dns/family.mobileconfig      /404.html 404
 /dns/ig-block.mobileconfig     /404.html 404
+
+# QA pages merged into the public page (2026-10-31)
+/l/k7Qm2xR9/qa/playwright/   /qa/#suite   301
+/l/k7Qm2xR9/qa/playwright    /qa/#suite   301
+/l/k7Qm2xR9/qa/              /qa/         301
+/l/k7Qm2xR9/qa               /qa/         301

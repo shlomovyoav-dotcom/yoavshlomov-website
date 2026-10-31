@@ -70,25 +70,27 @@
 
       <h3>Bug report</h3>
       <div class="ticket">
-        <p><strong>Inventory images don't load for problem_user</strong></p>
+        <p><strong>[Inventory] Product images don't load for problem_user — each card shows its image</strong></p>
+        <p><strong>Where:</strong> Inventory (<a href="https://www.saucedemo.com/inventory.html">saucedemo.com/inventory.html</a>)<br />
+        <strong>Environment:</strong> prod (www.saucedemo.com)<br />
+        <strong>User state:</strong> problem_user</p>
+        <p><strong>Expected:</strong> When I look at the inventory, each product card shows its image.<br />
+        <strong>Actual:</strong> The image requests return 404. A standard user on the same build sees the images.</p>
         <p><strong>Steps</strong><br />
-        1. I open saucedemo.com<br />
-        2. I log in as problem_user<br />
-        3. I look at the inventory</p>
-        <p><strong>Expected:</strong> I see a product image on every card.<br />
-        <strong>Actual:</strong> The images are broken. In Network, the image requests return 404. I log in as standard_user on the same build and the images load.</p>
+        1. Open https://www.saucedemo.com<br />
+        2. Sign in as problem_user<br />
+        3. Open the inventory</p>
         <p class="src"><a href="https://github.com/shlomovyoav-dotcom/qa-playwright-portfolio/blob/main/samples/bug-report.md">Full write-up</a></p>
       </div>
 
       <h3>Gherkin</h3>
-      <pre>[CRITICAL] Checkout - Two items, totals match
-Given I am logged in as a standard user
-When I add 'Sauce Labs Backpack' to the cart
-And I add 'Sauce Labs Bike Light' to the cart
-And I continue to checkout with valid shipping
-Then I see item total 39.98
-And I see tax 3.20
-And I see total 43.18</pre>
+      <pre>[CRITICAL] Checkout - Two items, totals on the overview
+Given I am a standard user on the checkout overview
+And the cart has 'Sauce Labs Backpack' and 'Sauce Labs Bike Light'
+When I view the payment overview
+Then I see 'Item total: $39.98'
+And I see 'Tax: $3.20'
+And I see 'Total: $43.18'</pre>
       <p class="src"><a href="https://github.com/shlomovyoav-dotcom/qa-playwright-portfolio/blob/main/samples/checkout.feature">Feature file</a> · SQL and Postman are in the same repo.</p>
     </section>
 

@@ -28,7 +28,6 @@
       <span><strong>44</strong> test plans</span>
       <span><strong>240</strong> QA accounts</span>
       <span><strong>8</strong> currencies</span>
-      <span><strong>2</strong> billing catches</span>
     </p>
 
     <section class="section" id="tools">
@@ -59,7 +58,7 @@
 
     <section class="section" id="suite">
       <h2>Playwright suite</h2>
-      <p class="lede">Same kind of billing check, rewritten on <a href="https://www.saucedemo.com">Sauce Demo</a> and <a href="https://dummyjson.com">DummyJSON</a>. 11 tests, page objects, GitHub Actions and GitLab CI. No employer code.</p>
+      <p class="lede">Same kind of billing check, on <a href="https://www.saucedemo.com">Sauce Demo</a> and <a href="https://dummyjson.com">DummyJSON</a>. 11 tests, page objects, GitHub Actions and GitLab CI.</p>
       <p>
         <a class="btn btn-primary" href="https://github.com/shlomovyoav-dotcom/qa-playwright-portfolio" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
         <a class="btn" href="/qa/lab/">QA Lab</a>
@@ -68,30 +67,25 @@
 
       <h3>Bug report</h3>
       <div class="ticket">
-        <p><strong>problem_user — inventory images 404</strong><br />
-        Major · saucedemo.com · Chrome · 2026-10-17<br />
-        Account: <code>problem_user</code> / <code>secret_sauce</code></p>
+        <p><strong>Inventory images don't load for problem_user</strong></p>
         <p><strong>Steps</strong><br />
-        1. Open the demo. DevTools → Network, filter Img. Console open.<br />
-        2. Log in as <code>problem_user</code>.<br />
-        3. On inventory, compare with a <code>standard_user</code> session.</p>
-        <p><strong>Expected:</strong> each card shows the product image (<code>naturalWidth &gt; 0</code>).<br />
-        <strong>Actual:</strong> every product image has <code>naturalWidth === 0</code>. Network: those image requests return 404. <code>standard_user</code> on the same build is fine.</p>
+        1. I open saucedemo.com<br />
+        2. I log in as problem_user<br />
+        3. I look at the inventory</p>
+        <p><strong>Expected:</strong> I see a product image on every card.<br />
+        <strong>Actual:</strong> The images are broken. In Network, the image requests return 404. I log in as standard_user on the same build and the images load.</p>
         <p class="src"><a href="https://github.com/shlomovyoav-dotcom/qa-playwright-portfolio/blob/main/samples/bug-report.md">Full write-up</a></p>
       </div>
 
       <h3>Gherkin</h3>
-      <p class="lede">The Zephyr import was a CSV with two columns, Name and BDD Script. First person. UI copy in single quotes. Prices here are the Sauce Demo catalog.</p>
-      <pre>Name,BDD Script
-[CRITICAL] Checkout - Item total, tax and total match the catalog,"Given I am logged in as a standard user
-And the catalog lists 'Sauce Labs Backpack' at 29.99 USD
-And the catalog lists 'Sauce Labs Bike Light' at 9.99 USD
+      <pre>[CRITICAL] Checkout - Two items, totals match
+Given I am logged in as a standard user
 When I add 'Sauce Labs Backpack' to the cart
 And I add 'Sauce Labs Bike Light' to the cart
 And I continue to checkout with valid shipping
-Then the item total is 39.98
-And the tax is 3.20
-And the total is 43.18"</pre>
+Then I see item total 39.98
+And I see tax 3.20
+And I see total 43.18</pre>
       <p class="src"><a href="https://github.com/shlomovyoav-dotcom/qa-playwright-portfolio/blob/main/samples/checkout.feature">Feature file</a> · SQL and Postman are in the same repo.</p>
     </section>
 

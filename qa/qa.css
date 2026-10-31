@@ -167,6 +167,24 @@ a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-rad
 }
 .case .src a { color: var(--muted); }
 
+/* one line of proof, not four cards */
+.proof {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.35rem;
+  margin: 1.15rem 0 0;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+.proof span { white-space: nowrap; }
+.proof strong {
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+  margin-right: 0.2rem;
+}
+
 /* at-a-glance numbers */
 .metrics {
   list-style: none;
